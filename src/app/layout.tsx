@@ -19,7 +19,6 @@ import MarketPulseToast from "@/components/ui/MarketPulseToast";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Script from "next/script";
 import dynamic from 'next/dynamic';
-import { cookies } from "next/headers";
 
 const StickyCTA = dynamic(() => import('@/components/layout/StickyCTA'));
 const WhatsAppWidget = dynamic(() => import('@/components/layout/WhatsAppWidget'));
@@ -104,14 +103,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cookieStore = await cookies();
-  const preloaderShown = cookieStore.has('preloader_shown');
-
   return (
     <html
       lang="en"
@@ -145,7 +141,7 @@ export default async function RootLayout({
           <ConciergeProvider>
             <PulseProvider>
               <LenisProvider>
-                <Preloader showPreloader={!preloaderShown} />
+                <Preloader />
                 <Breadcrumbs />
                 <GlobalCursor />
                 <AmbientAudio />

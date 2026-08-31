@@ -5,13 +5,19 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Preloader({ showPreloader = true }: { showPreloader?: boolean }) {
-  const [isLoading, setIsLoading] = useState(showPreloader);
+  const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    if (!showPreloader) {
+    if (!showPreloader || typeof window === 'undefined') {
       return;
     }
+
+    if (document.cookie.includes('preloader_shown=true')) {
+      return;
+    }
+
+    setIsLoading(true);
 
     let start = 0;
     const duration = 2000; // 2 seconds

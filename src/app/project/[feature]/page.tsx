@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ feature: 
   const data = projectData[resolvedParams.feature];
   if (!data) return { title: 'Feature Not Found' };
   
-  const ogUrl = `https://thereserve.koltepatil.digital/api/og?title=${encodeURIComponent(data.title)}`;
+  const ogUrl = `https://thereserve.koltepatil.digital/kolte-patil-logo.jpg`;
   
   return {
     title: `${data.title} | Premium Project Features | The Reserve by Kolte Patil`,

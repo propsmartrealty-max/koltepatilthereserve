@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const resolvedParams = await params;
   try {
     const { meta } = getCompareBySlug(resolvedParams.slug);
-    const ogUrl = `https://thereserve.koltepatil.digital/api/og?title=${encodeURIComponent(meta.title)}`;
+    const ogUrl = `https://thereserve.koltepatil.digital/kolte-patil-logo.jpg`;
     return {
       title: `${meta.title} | Property Comparison Pune | The Reserve by Kolte Patil`,
       description: `${meta.excerpt} Compare luxury properties in Pune. See why The Reserve offers unmatched value and amenities. Enquire today for exclusive details.`,
