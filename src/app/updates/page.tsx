@@ -1,39 +1,65 @@
 
+import RevealFooter from "@/components/layout/RevealFooter";
+import Image from "next/image";
+
 export const metadata = {
-  title: "Construction Updates | The Reserve",
-  description: "Track the progress of your future home with our monthly construction updates.",
+  title: "Construction Updates & Milestone Tracking | The Reserve by Kolte Patil",
+  description: "Track the real-time construction progress and master layout engineering of Vyana Towers T5, T6, T7 at The Reserve, Sinhgad Road, Pune.",
 };
 
 export default function UpdatesPage() {
   const updates = [
-    { date: "October 2026", status: "Tower A Foundation Complete. Tower B excavation in progress.", image: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg" },
-    { date: "September 2026", status: "Site clearing and boundary wall construction completed.", image: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg" }
+    { 
+      date: "Phase 1 Milestone — Q3 2026", 
+      status: "Towers T5, T6 & T7: Substructure excavation, RCC raft foundations, and monolithic Aluform setup progressing per MahaRERA PM1261012600748 timeline.", 
+      image: "https://www.koltepatil.com/assets/uploads/gallery/17853225611596383832.jpg" 
+    },
+    { 
+      date: "Master Infrastructure — Q2 2026", 
+      status: "21.03-Acre Master Layout: Central landscaped boulevard access road, perimeter boundary, and sample experience center completed at Vadgaon Khurd.", 
+      image: "https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" 
+    }
   ];
 
   return (
-    <>      <main className="flex-1 w-full flex flex-col bg-[#151515] text-white">
-        <section className="pt-40 pb-20 px-6 md:px-12">
-          <div className="container mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight">Construction Updates</h1>
-            <p className="max-w-2xl mx-auto text-gray-400 font-light text-lg">
-              Transparency at every step. Track the progress of The Reserve as we bring this masterpiece to life.
+    <div className="relative bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-[#d4af37] selection:text-white">
+      <main className="flex-1 w-full flex flex-col">
+        <section className="pt-40 pb-20 px-6 md:px-12 bg-[#05140D] border-b border-[#d4af37]/20">
+          <div className="container mx-auto text-center max-w-4xl">
+            <span className="text-[#d4af37] tracking-[0.4em] uppercase text-[10px] md:text-xs font-bold mb-4 block">
+              MahaRERA PM1261012600748 Tracking
+            </span>
+            <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight uppercase tracking-tight text-white">
+              Construction Updates
+            </h1>
+            <p className="max-w-2xl mx-auto text-white/70 font-light text-lg leading-relaxed">
+              Transparency at every step. Track the real-time execution of the 21.03-acre master layout and Vyana residential towers on Sinhgad Road.
             </p>
           </div>
         </section>
 
-        <section className="py-20">
+        <section className="py-24">
           <div className="container mx-auto px-6 md:px-12 max-w-4xl">
             {updates.map((update, i) => (
-              <div key={i} className="mb-20 last:mb-0">
-                <span className="text-[#B28A4A] tracking-widest uppercase text-xs font-semibold mb-4 block">{update.date}</span>
-                <p className="text-xl font-light mb-8">{update.status}</p>
-                <div className="w-full h-[400px] bg-gray-800 relative">
-                  <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${update.image})` }}></div>
+              <div key={i} className="mb-24 last:mb-0 p-8 rounded-3xl bg-slate-900/50 border border-white/10 shadow-xl">
+                <span className="text-[#d4af37] tracking-widest uppercase text-xs font-bold mb-4 block">{update.date}</span>
+                <p className="text-xl font-light text-white mb-8 leading-relaxed">{update.status}</p>
+                <div className="w-full h-[400px] relative rounded-2xl overflow-hidden border border-white/5">
+                  <Image 
+                    src={update.image} 
+                    alt={update.date}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 75vw"
+                    className="object-cover"
+                  />
                 </div>
               </div>
             ))}
           </div>
         </section>
-      </main>    </>
+      </main>
+
+      <RevealFooter />
+    </div>
   );
 }

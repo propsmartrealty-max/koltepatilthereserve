@@ -4,19 +4,58 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Image from 'next/image';
 
+import RevealFooter from '@/components/layout/RevealFooter';
+
 const plans = {
   '3BHK': {
-    name: '3 Bed Residence (Vyana)',
-    tower: 'Towers T5, T6, T7 — 21 Floors',
-    carpet: '1,016 Sq.Ft. (Carpet Area)',
-    highlights: ['3.05 m Slab-to-Slab Height (~2.9 m Clear)', 'Glazed Vitrified Flooring (Kajaria / Equiv)', 'Jaquar / Equivalent CP & Sanitary Fittings', 'Panoramic River & NDA Hill Facing Balcony', '1 or 2 Covered/Mechanical Parking Allotment'],
+    name: 'Vyana 3 BHK Luxury Residence',
+    tower: 'Towers T5, T6, T7 — Ground + 21 Floors (487 Units)',
+    carpet: '1,016 Sq.Ft. (RERA Carpet Area)',
+    structure: 'Full Aluform Monolithic Concrete Construction',
+    ceilingHeight: '3.05 m Slab-to-Slab (~2.9 m Clear Height)',
+    rooms: [
+      { name: 'Living & Dining Hall', size: '21\'0" x 11\'6"', desc: 'Expansive open-plan living with direct river deck connectivity.' },
+      { name: 'Master Bedroom Suite', size: '13\'6" x 11\'0"', desc: 'Generous suite with private wardrobe niche and en-suite bath.' },
+      { name: 'Master Bathroom', size: '8\'0" x 5\'0"', desc: 'Jaquar CP & sanitary fittings with concealed cistern.' },
+      { name: 'Bedroom 02 (Guest/Parent)', size: '12\'0" x 10\'6"', desc: 'Natural light-filled room with large sliding windows.' },
+      { name: 'Bedroom 03 (Study/Kids)', size: '11\'0" x 10\'0"', desc: 'Flexible space ideal for home office or children\'s room.' },
+      { name: 'Kitchen & Dry Utility', size: '10\'6" x 8\'0" + 5\'6" x 4\'0"', desc: 'Granite platform, SS sink, and dedicated washing machine provision.' },
+      { name: 'Panoramic River Deck', size: '11\'6" x 5\'0"', desc: 'River and NDA Hill facing private outdoor balcony.' }
+    ],
+    highlights: [
+      '1,016 sq. ft. RERA Carpet Area with zero dead space',
+      '3.05 m Slab-to-Slab Height (~2.9 m Clear)',
+      'Glazed Vitrified Flooring (Kajaria / Equivalent)',
+      'Jaquar Premium Series CP & Sanitary Fittings',
+      'Panoramic River & NDA Hill Facing Balcony',
+      'Digital Door Lock & Video Door Phone',
+      '1 or 2 Covered/Mechanical Parking Allotments'
+    ],
     image: 'https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png'
   },
   '2BHK': {
-    name: '2 Bed Residence (Vyana)',
-    tower: 'Towers T5, T6, T7 — 21 Floors',
-    carpet: '791 Sq.Ft. (Carpet Area)',
-    highlights: ['Aluform Monolithic Concrete Construction', 'Digital Door Lock & Video Door Phone', 'Mosquito Nets for Windows & Sliding Doors', 'AC Provision in Living-Dining & Bedrooms', '1 Dedicated Parking with EV Charging Provision'],
+    name: 'Vyana 2 BHK Riverside Residence',
+    tower: 'Towers T5, T6, T7 — Ground + 21 Floors (487 Units)',
+    carpet: '791 Sq.Ft. (RERA Carpet Area)',
+    structure: 'Full Aluform Monolithic Concrete Construction',
+    ceilingHeight: '3.05 m Slab-to-Slab (~2.9 m Clear Height)',
+    rooms: [
+      { name: 'Living & Dining Room', size: '18\'0" x 11\'0"', desc: 'Space-optimized living area with cross-ventilation.' },
+      { name: 'Master Bedroom', size: '12\'6" x 10\'6"', desc: 'Spacious bedroom with dedicated attached washroom.' },
+      { name: 'Master Bathroom', size: '7\'6" x 4\'6"', desc: 'Premium anti-skid tiles & Jaquar sanitaryware.' },
+      { name: 'Bedroom 02', size: '11\'0" x 10\'0"', desc: 'Well-ventilated second bedroom with hill view window.' },
+      { name: 'Common Bathroom', size: '7\'0" x 4\'6"', desc: 'Full-height glazed tile dado and premium fittings.' },
+      { name: 'Kitchen & Dry Balcony', size: '9\'6" x 7\'6" + 5\'0" x 4\'0"', desc: 'Ergonomic modular layout with separate utility area.' },
+      { name: 'Viewing Balcony', size: '10\'0" x 4\'6"', desc: 'Private outdoor balcony with safety glass railing.' }
+    ],
+    highlights: [
+      '791 sq. ft. RERA Carpet Area with functional layout',
+      'Aluform Monolithic Concrete Construction',
+      'Digital Door Lock & Video Door Phone',
+      'Mosquito Nets for Windows & Sliding Doors',
+      'AC Provision in Living-Dining & Bedrooms',
+      '1 Dedicated Parking with EV Charging Provision'
+    ],
     image: 'https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png'
   }
 };
@@ -99,12 +138,12 @@ export default function FloorPlansPage() {
           </div>
 
           {/* Viewer Placeholder */}
-          <div className="lg:w-2/3">
+          <div className="lg:w-2/3 flex flex-col gap-8">
             <div className="aspect-square md:aspect-[4/3] w-full bg-[#05140D] rounded-[3rem] border border-white/10 relative overflow-hidden flex items-center justify-center group shadow-2xl">
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.08)_0%,rgba(10,25,15,1)_100%)] z-0" />
               
               {/* Official Blueprint Rendering */}
-              <div className="absolute inset-0 z-10 w-full h-full p-6 md:p-16">
+              <div className="absolute inset-0 z-10 w-full h-full p-6 md:p-12">
                  <div className="relative w-full h-full border border-white/10 rounded-2xl bg-white/5 overflow-hidden backdrop-blur-md">
                    <Image 
                      src={plans[activePlan].image} 
@@ -126,10 +165,54 @@ export default function FloorPlansPage() {
                 </motion.div>
               </div>
             </div>
+
+            {/* Room by Room Architectural Dimensions Table */}
+            <div className="bg-[#05140D] border border-white/10 rounded-[2.5rem] p-8 md:p-10 shadow-2xl">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 pb-4 border-b border-white/10 gap-4">
+                <div>
+                  <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-1">Architectural Dimensions</span>
+                  <h3 className="font-serif text-2xl text-white">{plans[activePlan].name}</h3>
+                </div>
+                <div className="bg-[#d4af37]/10 border border-[#d4af37]/30 px-4 py-2 rounded-full text-xs text-[#d4af37] font-bold">
+                  {plans[activePlan].ceilingHeight}
+                </div>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-sm text-white/80">
+                  <thead className="text-[10px] uppercase tracking-widest text-[#d4af37] border-b border-white/10">
+                    <tr>
+                      <th className="py-3 pr-4 font-bold">Space / Room</th>
+                      <th className="py-3 px-4 font-bold">Approx. Dimensions</th>
+                      <th className="py-3 pl-4 font-bold hidden sm:table-cell">Architectural Features</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/5 font-light">
+                    {plans[activePlan].rooms.map((room, idx) => (
+                      <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
+                        <td className="py-3.5 pr-4 font-medium text-white">{room.name}</td>
+                        <td className="py-3.5 px-4 font-mono text-[#e5c158]">{room.size}</td>
+                        <td className="py-3.5 pl-4 text-white/60 text-xs hidden sm:table-cell">{room.desc}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-between items-center gap-4">
+                <span className="text-white/50 text-xs font-mono">Structure: {plans[activePlan].structure}</span>
+                <a href="/contact" className="px-6 py-3 bg-[#d4af37] text-slate-950 text-xs uppercase tracking-widest font-bold rounded-full hover:bg-white transition-colors">
+                  Request Official PDF Blueprint
+                </a>
+              </div>
+            </div>
+
           </div>
         </motion.div>
 
       </div>
+
+      <RevealFooter />
     </main>
   );
 }

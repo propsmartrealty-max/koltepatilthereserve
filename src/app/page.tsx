@@ -103,20 +103,84 @@ export default function Home() {
         <LuxuryTicker />
       </div>
 
-      {/* 2.5 DAY/NIGHT SLIDER SHOWCASE */}
+      {/* 2.5 MASTER LAYOUT & FLOOR PLANS SHOWCASE */}
       <section className="relative z-30 py-32 bg-[#0B2B1B] overflow-hidden -mt-6 rounded-[3rem]">
         <div className="container mx-auto px-6 md:px-12 flex flex-col items-center">
-          <div className="mb-16 text-center max-w-2xl">
-            <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-4">Architectural Brilliance</span>
+          <div className="mb-16 text-center max-w-3xl">
+            <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-4">
+              Master Layout & Floor Plans
+            </span>
             <h2 className="font-serif text-4xl md:text-6xl text-white leading-tight">
-              A masterpiece, from <span className="italic font-light">dawn till dusk.</span>
+              21.03 Acres of Riverside Master Development & <span className="italic font-light text-[#d4af37]">Thoughtful 2 & 3 BHK Layouts.</span>
             </h2>
-            <p className="mt-6 text-white/50 font-sans text-sm tracking-widest uppercase">Drag to explore the transformation</p>
+            <p className="mt-6 text-white/70 font-sans text-base md:text-lg font-light leading-relaxed max-w-2xl mx-auto">
+              Meticulously planned by Kolte-Patil to maximize natural cross-ventilation, expansive riverfront views, and supreme privacy across 21-storey aluform monolithic towers.
+            </p>
           </div>
           
           <div className="w-full max-w-6xl mx-auto shadow-[0_0_100px_rgba(212,175,55,0.15)] rounded-[3rem]">
             <DayNightSlider />
           </div>
+
+          {/* Detailed Master Layout & Floor Plans Quick Spec Grid */}
+          <div className="w-full max-w-6xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-[#05140D] border border-white/10 p-8 md:p-10 rounded-3xl">
+              <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-3">01 // Master Layout Highlights</span>
+              <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">21.03-Acre Masterplan Blueprint</h3>
+              <ul className="space-y-3 text-white/70 text-sm font-light">
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d4af37] font-bold">✓</span>
+                  <span><strong>Riverfront Green Buffer:</strong> Linear park and landscaped promenade running parallel to the river.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d4af37] font-bold">✓</span>
+                  <span><strong>Central Landscaped Boulevard:</strong> Grand arterial vehicular spine ensuring zero-congestion access.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d4af37] font-bold">✓</span>
+                  <span><strong>19,750 Sq.Ft. Clubhouse & 84x27 ft. Pool:</strong> Centrally positioned with amphitheater step seating.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d4af37] font-bold">✓</span>
+                  <span><strong>Multi-Level EV Parking:</strong> 2 Basements (B1+B2) + Stilt with 30% EV-charging provision.</span>
+                </li>
+              </ul>
+              <div className="mt-6">
+                <Link href="/master-layout" className="text-[#d4af37] text-xs uppercase tracking-widest font-bold hover:text-white transition-colors">
+                  Explore 3D Digital Twin Masterplan →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-[#05140D] border border-white/10 p-8 md:p-10 rounded-3xl">
+              <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-3">02 // Floor Plan Engineering</span>
+              <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Vyana 2 & 3 BHK Floorplans</h3>
+              <ul className="space-y-3 text-white/70 text-sm font-light">
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d4af37] font-bold">✓</span>
+                  <span><strong>Vyana 2 BHK (791 sq.ft. Carpet):</strong> Dedicated utility balcony, zero dead-space layout, cross ventilation.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d4af37] font-bold">✓</span>
+                  <span><strong>Vyana 3 BHK (1,016 sq.ft. Carpet):</strong> Expansive living-dining hall, master bedroom suite, panoramic river deck.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d4af37] font-bold">✓</span>
+                  <span><strong>3.05 m Slab-to-Slab Height:</strong> ~2.9 m clear ceiling height for superior thermal comfort and airiness.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d4af37] font-bold">✓</span>
+                  <span><strong>Full Aluform Monolithic Build:</strong> Seamless earthquake-resistant concrete with Kajaria glazed tiles.</span>
+                </li>
+              </ul>
+              <div className="mt-6">
+                <Link href="/floor-plans" className="text-[#d4af37] text-xs uppercase tracking-widest font-bold hover:text-white transition-colors">
+                  View High-Res Floor Plans & Dimensions →
+                </Link>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 

@@ -14,7 +14,7 @@ export default function VisionaryQuote() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-12">
-            The Masterpiece
+            Master Layout & Architectural Philosophy
           </span>
           
           <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-slate-100 leading-[1.4] tracking-wide font-light mb-16">
