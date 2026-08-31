@@ -64,7 +64,7 @@ export default function ContactPage() {
         
         {/* HERO SECTION */}
         <section className="pt-40 pb-20 px-6 md:px-12 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg')] bg-cover bg-center opacity-20 mix-blend-luminosity"></div>
+          <div className="absolute inset-0 bg-[url('/images/gallery/interior-deck.jpg')] bg-cover bg-center opacity-20 mix-blend-luminosity"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-[#0B2B1B] via-transparent to-[#0B2B1B]"></div>
           
           <div className="container mx-auto text-center relative z-10">
