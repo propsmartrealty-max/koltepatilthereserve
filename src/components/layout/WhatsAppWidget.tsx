@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function WhatsAppWidget() {
   return (
     <motion.a
-      href="https://wa.me/919999999999?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil"
+      href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0 }}

@@ -58,28 +58,28 @@ export default function Navbar() {
           }`}
         >
           {/* REBUILT LOGO SECTION: Bird Logo | Divider | THE RESERVE */}
-          <Link href="/" className="flex items-center gap-2 md:gap-3 z-50 group shrink-0" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/" className="flex items-center gap-1.5 md:gap-2 z-50 group shrink-0" onClick={() => setIsMobileMenuOpen(false)}>
             
             {/* Kolte Patil Bird Logo (Transparent) */}
-            <div className="relative h-10 w-28 md:h-12 md:w-32 block transition-transform duration-500 group-hover:scale-105">
+            <div className="relative h-8 w-16 md:h-10 md:w-20 block transition-transform duration-500 group-hover:scale-105">
                 <Image 
                   src="/kolte-patil-logo.png" 
                   alt="Kolte Patil" 
                   fill 
-                  sizes="128px" 
-                  className={`object-contain transition-all duration-500 ${isScrolled ? '' : 'brightness-0 invert'}`}
+                  sizes="80px" 
+                  className={`object-contain object-right transition-all duration-500 ${isScrolled ? '' : 'brightness-0 invert'}`}
                 />
             </div>
 
             {/* Red Divider Line */}
-            <div className={`h-8 md:h-10 w-[2px] transition-colors duration-500 ${isScrolled ? 'bg-red-700' : 'bg-red-500'}`} />
+            <div className={`h-6 md:h-8 w-[1.5px] transition-colors duration-500 ${isScrolled ? 'bg-red-700' : 'bg-red-500'}`} />
 
             {/* The Reserve Text Logo */}
             <div className="flex flex-col justify-center">
-              <span className={`font-serif text-lg md:text-xl tracking-[0.15em] uppercase transition-colors duration-500 ${isScrolled ? "text-[#0B2B1B]" : "text-white"}`}>
+              <span className={`font-serif text-base md:text-lg tracking-[0.15em] uppercase transition-colors duration-500 ${isScrolled ? "text-[#0B2B1B]" : "text-white"}`}>
                 THE RESERVE
               </span>
-              <span className={`font-sans text-[5px] md:text-[6.5px] tracking-[0.25em] font-bold uppercase mt-1 transition-colors duration-500 flex flex-col md:flex-row gap-0.5 md:gap-1 ${isScrolled ? "text-[#0B2B1B]/70" : "text-white/70"}`}>
+              <span className={`font-sans text-[5px] md:text-[6px] tracking-[0.22em] font-bold uppercase transition-colors duration-500 flex flex-col md:flex-row gap-0.5 md:gap-1 ${isScrolled ? "text-[#0B2B1B]/70" : "text-white/70"}`}>
                 <span>BY KOLTE PATIL</span>
                 <span className="hidden md:inline">-</span>
                 <span>SINHGAD ROAD</span>
@@ -201,7 +201,7 @@ export default function Navbar() {
                 className="mt-16 pt-8 border-t border-white/10 flex flex-col gap-4"
               >
                 <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-white/50">Contact Concierge</p>
-                <a href="tel:+910000000000" className="font-serif text-3xl text-[#d4af37] hover:text-white transition-colors">+91 98765 43210</a>
+                <a href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil" target="_blank" rel="noopener noreferrer" className="font-serif text-3xl text-[#d4af37] hover:text-white transition-colors">+91 77440 09295</a>
               </motion.div>
             </div>
           </motion.div>

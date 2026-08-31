@@ -14,7 +14,6 @@ export default function InvestmentDashboard() {
   const r = interest / 12 / 100;
   const n = years * 12;
   const emi = (principal * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-  const _totalPaid = (emi * n) + (amount * (downPayment / 100));
 
   // Generate chart data for appreciation vs cost over the tenure
   const data = Array.from({ length: years + 1 }).map((_, i) => {

@@ -15,8 +15,7 @@ export default function JsonLd() {
           "url": "https://thereserve.koltepatil.digital/kolte-patil-logo.jpg",
           "caption": "Kolte-Patil Developers Ltd Logo"
         },
-        "telephone": "+91-0000000000",
-        "email": "sales@koltepatil.com",
+        "telephone": "+91-7744009295",
         "description": "Pune's leading real estate developer with over 3 decades of excellence, shaping the skyline of Pune, Mumbai, and Bengaluru.",
         "foundingDate": "1991",
         "knowsAbout": ["Pune Real Estate Market", "Luxury Housing", "Townships", "Commercial Real Estate"],
@@ -46,7 +45,7 @@ export default function JsonLd() {
         "@id": "https://thereserve.koltepatil.digital/#localbusiness",
         "name": "The Reserve Sales Office",
         "image": "https://thereserve.koltepatil.digital/kolte-patil-logo.jpg",
-        "telephone": "+91-0000000000",
+        "telephone": "+91-7744009295",
         "parentOrganization": {
           "@id": "https://thereserve.koltepatil.digital/#organization"
         },
@@ -81,7 +80,7 @@ export default function JsonLd() {
       {
         "@type": "ContactPoint",
         "@id": "https://thereserve.koltepatil.digital/#contactpoint",
-        "telephone": "+91-0000000000",
+        "telephone": "+91-7744009295",
         "contactType": "sales",
         "areaServed": "IN",
         "availableLanguage": ["English", "Hindi", "Marathi"]

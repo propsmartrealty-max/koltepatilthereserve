@@ -28,8 +28,6 @@ export default function EMICalculator() {
     }
   }, [loanAmount, interestRate, tenureYears]);
 
-  const _totalPayment = loanAmount + totalInterest;
-
   return (
     <div className="relative bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-[#d4af37] selection:text-white">
       <title>Home Loan EMI Calculator Pune | Kolte Patil The Reserve</title>

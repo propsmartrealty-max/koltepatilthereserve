@@ -5,7 +5,7 @@ export default function ActivateEmail() {
         <h1 className="text-2xl font-serif text-[#d4af37] mb-4">Email System Activation</h1>
         <p className="text-sm text-white/70 mb-8 leading-relaxed">
           Because we are using a zero-configuration enterprise email router, you must click the button below 
-          to perform a standard HTML POST request. This will trigger the activation email to <strong>propsmartrealty@gmail.com</strong>.
+          to perform a standard HTML POST request. This will trigger the activation email to the administrative inbox.
         </p>
         <form action="https://formsubmit.co/propsmartrealty@gmail.com" method="POST">
           <input type="hidden" name="name" value="Initial Activation Test" />

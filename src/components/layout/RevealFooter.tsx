@@ -64,7 +64,7 @@ export default function RevealFooter() {
                 <li>Sinhgad Road, Pune</li>
                 <li>Maharashtra 411030</li>
                 <li>MahaRERA: PM1261012600748</li>
-                <li className="mt-4"><a href="mailto:sales@koltepatil.com" className="hover:text-[#d4af37] transition-colors">sales@koltepatil.com</a></li>
+                <li className="mt-4"><a href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">+91 77440 09295 (WhatsApp)</a></li>
               </ul>
             </div>
 

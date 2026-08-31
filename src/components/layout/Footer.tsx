@@ -36,10 +36,10 @@ export default function Footer() {
               <li>Sinhgad Road, Pune,</li>
               <li>Maharashtra, India</li>
               <li className="pt-4">
-                <a href="tel:+910000000000" className="hover:text-white transition-colors">+91 000 000 0000</a>
+                <a href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+91 77440 09295</a>
               </li>
               <li>
-                <a href="mailto:info@thereserve.com" className="hover:text-white transition-colors">info@thereserve.com</a>
+                <a href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp Enquiry</a>
               </li>
             </ul>
           </div>

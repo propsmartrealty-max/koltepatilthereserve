@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -144,7 +143,7 @@ export default function ContactPage() {
                           value={formData.phone}
                           onChange={(e) => setFormData({...formData, phone: e.target.value})}
                           className="w-full border-b border-white/20 pb-3 focus:outline-none focus:border-[#d4af37] bg-transparent text-xl font-serif text-white transition-colors" 
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 77440 09295"
                         />
                       </div>
 
@@ -157,7 +156,7 @@ export default function ContactPage() {
                           value={formData.email}
                           onChange={(e) => setFormData({...formData, email: e.target.value})}
                           className="w-full border-b border-white/20 pb-3 focus:outline-none focus:border-[#d4af37] bg-transparent text-xl font-serif text-white transition-colors" 
-                          placeholder="john@example.com"
+                          placeholder="Your Email Address"
                         />
                       </div>
                     </div>

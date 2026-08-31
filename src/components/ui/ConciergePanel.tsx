@@ -37,8 +37,9 @@ export default function ConciergePanel() {
     }
     
     // Marketing Bridge: Push conversion event to DataLayer (GTM/GA4/Meta)
-    if (typeof window !== "undefined" && (window as any).dataLayer) {
-      (window as any).dataLayer.push({
+    const win = window as unknown as { dataLayer?: Record<string, unknown>[] };
+    if (typeof window !== "undefined" && win.dataLayer) {
+      win.dataLayer.push({
         event: "generate_lead",
         lead_source: formData.interest || "Organic SEO",
         project: "The Reserve"
