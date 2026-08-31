@@ -1,4 +1,10 @@
+# ==============================================================================
+# CLOUDFLARE ENTERPRISE GRADE EDGE HEADERS & SECURITY CONFIGURATION
+# Project: The Reserve by Kolte-Patil | Domain: thereserve.koltepatil.digital
+# ==============================================================================
+
 /*
+  # Enterprise HTTP Security Headers
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
@@ -6,26 +12,47 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Permissions-Policy: camera=(), microphone=(), geolocation=(self)
   Timing-Allow-Origin: *
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cross-Origin-Resource-Policy: same-origin
+  X-DNS-Prefetch-Control: on
+  X-Permitted-Cross-Domain-Policies: none
+  
+  # Google Search Engine Directives at Edge
+  X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+  
+  # Cloudflare 103 Early Hints for Instant Font & Resource Handshake
+  Link: <https://fonts.googleapis.com>; rel=preconnect; crossorigin, <https://fonts.gstatic.com>; rel=preconnect; crossorigin
+  
+  # Content Security Policy with Google, Cloudflare & Analytics Whitelist
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://images.unsplash.com https://cdn.pixabay.com https://www.koltepatil.com https://*.google.com https://*.googleapis.com https://*.gstatic.com https://www.facebook.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://static.cloudflareinsights.com https://cloudflareinsights.com https://formsubmit.co https://*.clarity.ms; frame-src 'self' https://player.vimeo.com https://maps.google.com https://maps.google.it https://www.google.com https://*.google.com; media-src 'self' https://player.vimeo.com https://*.vimeocdn.com;
 
-# Cache static Next.js JavaScript chunks and CSS bundles for 1 year immutable
+# ------------------------------------------------------------------------------
+# 1-Year Immutable Edge Caching for Static JS / CSS / Fonts / Images
+# ------------------------------------------------------------------------------
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
 
-# Cache public fonts and images
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
 
 /images/*
   Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
 
-# Cache SEO files with fast revalidation
+# ------------------------------------------------------------------------------
+# High-Availability Caching for SEO Sitemap & Robots with Stale-If-Error
+# ------------------------------------------------------------------------------
 /sitemap.xml
-  Cache-Control: public, max-age=86400, stale-while-revalidate=86400
+  Cache-Control: public, max-age=86400, stale-while-revalidate=86400, stale-if-error=604800
   Content-Type: application/xml; charset=utf-8
+  X-Robots-Tag: noindex, follow
 
 /robots.txt
-  Cache-Control: public, max-age=86400, stale-while-revalidate=86400
+  Cache-Control: public, max-age=86400, stale-while-revalidate=86400, stale-if-error=604800
   Content-Type: text/plain; charset=utf-8
+
+/manifest.json
+  Cache-Control: public, max-age=86400, stale-while-revalidate=86400
+  Content-Type: application/manifest+json; charset=utf-8
