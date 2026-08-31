@@ -5,7 +5,7 @@ import RevealFooter from "@/components/layout/RevealFooter";
 import { motion } from "framer-motion";
 
 export default function StampDutyCalculator() {
-  const [propertyValue, setPropertyValue] = useState<number>(15000000); // 1.5 Cr
+  const [propertyValue, setPropertyValue] = useState<number>(9500000); // 95 Lakhs (The Reserve Base)
   const [isFemaleOwner, setIsFemaleOwner] = useState<boolean>(false);
   const [isPMC, setIsPMC] = useState<boolean>(true); // Pune Municipal Corp vs Gram Panchayat
   
@@ -26,7 +26,7 @@ export default function StampDutyCalculator() {
 
   return (
     <div className="relative bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-[#d4af37] selection:text-white">
-      <title>Stamp Duty Calculator Pune, Maharashtra | Kolte Patil</title>
+      <title>Stamp Duty Calculator Pune, Maharashtra | Kolte Patil The Reserve</title>
       <meta name="description" content="Calculate exact stamp duty and registration charges for buying property in Pune, Maharashtra. Includes 1% female homebuyer concession logic." />      
       <main className="flex-1 container mx-auto px-6 py-40 z-10 relative max-w-5xl">
         <div className="text-center mb-16">
@@ -52,7 +52,7 @@ export default function StampDutyCalculator() {
                 <span className="text-[#d4af37] font-bold">₹{(propertyValue / 100000).toFixed(2)} Lakhs</span>
               </label>
               <input 
-                type="range" min="5000000" max="100000000" step="100000"
+                type="range" min="6000000" max="30000000" step="100000"
                 value={propertyValue} onChange={(e) => setPropertyValue(Number(e.target.value))}
                 className="w-full h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-[#d4af37]"
               />
@@ -117,11 +117,16 @@ export default function StampDutyCalculator() {
             {/* Smart Conversion Suggestion */}
             <div className="bg-[#101015] border border-[#d4af37]/30 p-8 rounded-[2rem] text-center">
               <p className="font-sans text-sm text-slate-300 font-light mb-6">
-                Did you know? Booking a unit at The Reserve during our <strong>New Launch Window</strong> may qualify you for Stamp Duty waivers.
+                Did you know? Booking a 2 or 3 BHK unit at The Reserve during our <strong>New Launch Window</strong> may qualify you for Stamp Duty & Registration festive benefits.
               </p>
-              <button className="w-full px-6 py-4 bg-[#d4af37] text-slate-950 font-sans tracking-[0.2em] uppercase text-xs font-bold hover:bg-white transition-colors">
-                Claim Launch Offers
-              </button>
+              <a 
+                href={`https://wa.me/917744009295?text=Hello%2C%20I%20calculated%20Stamp%20Duty%20for%20a%20property%20value%20of%20%E2%82%B9${(propertyValue / 100000).toFixed(0)}%20Lakhs.%20Please%20share%20launch%20waivers%20and%20offers%20for%20The%20Reserve.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-6 py-4 bg-[#d4af37] text-slate-950 font-sans tracking-[0.2em] uppercase text-xs font-bold hover:bg-white transition-colors block text-center rounded-full shadow-lg"
+              >
+                Claim Launch Offers →
+              </a>
             </div>
 
           </div>

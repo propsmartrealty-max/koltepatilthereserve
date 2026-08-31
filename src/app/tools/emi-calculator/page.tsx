@@ -115,13 +115,18 @@ export default function EMICalculator() {
 
             {/* Smart Conversion Suggestion */}
             <div className="bg-[#101015] border border-[#d4af37]/30 p-8 rounded-[2rem] text-center">
-              <span className="font-sans text-[10px] tracking-widest uppercase text-[#d4af37] block mb-4 animate-pulse">Smart Match</span>
+              <span className="font-sans text-[10px] tracking-widest uppercase text-[#d4af37] block mb-4 animate-pulse">Smart Inventory Match</span>
               <p className="font-sans text-sm text-slate-300 font-light mb-6">
-                Based on your selected budget, you pre-qualify for our <strong>{loanAmount > 20000000 ? "Signature 3 BHK" : "Premium 2 BHK"}</strong> riverside residences.
+                Based on your selected budget, you qualify for <strong>{loanAmount >= 11500000 ? "Vyana 3 BHK (1,016 sq.ft.)" : "Vyana 2 BHK (791 sq.ft.)"}</strong> riverside residences at The Reserve.
               </p>
-              <button className="w-full px-6 py-4 bg-[#d4af37] text-slate-950 font-sans tracking-[0.2em] uppercase text-xs font-bold hover:bg-white transition-colors">
-                Lock VIP Price
-              </button>
+              <a 
+                href={`https://wa.me/917744009295?text=Hello%2C%20I%20used%20your%20EMI%20Calculator%20for%20a%20budget%20of%20%E2%82%B9${(loanAmount / 100000).toFixed(0)}%20Lakhs.%20Please%20share%20the%20official%20cost%20sheet%20and%20payment%20plan%20for%20The%20Reserve.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-6 py-4 bg-[#d4af37] text-slate-950 font-sans tracking-[0.2em] uppercase text-xs font-bold hover:bg-white transition-colors block text-center rounded-full shadow-lg"
+              >
+                Request Verified Cost Sheet →
+              </a>
             </div>
 
           </div>
