@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "../ui/Button";
 
 export default function RevealFooter() {
@@ -57,16 +58,33 @@ export default function RevealFooter() {
             </ul>
           </div>
 
-          {/* Contact */}
-            <div className="text-right">
-              <span className="font-serif text-xl text-white block mb-2">Connect</span>
-              <ul className="space-y-1 font-sans text-xs text-white/60">
-                <li>Vadgaon Khurd, Sinhgad Road</li>
-                <li>Pune, Maharashtra 411041</li>
-                <li className="text-[#d4af37] font-medium">MahaRERA: PM1261012600748</li>
-                <li className="mt-4"><a href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">+91 77440 09295 (WhatsApp)</a></li>
-              </ul>
+          {/* Contact & MahaRERA QR */}
+          <div className="flex flex-col items-start md:items-end text-left md:text-right">
+            <span className="font-serif text-xl text-white block mb-2">Connect</span>
+            <ul className="space-y-1 font-sans text-xs text-white/60 mb-4">
+              <li>Vadgaon Khurd, Sinhgad Road</li>
+              <li>Pune, Maharashtra 411041</li>
+              <li className="text-[#d4af37] font-medium font-mono text-[11px]">RERA: PM1261012600748</li>
+              <li className="mt-2"><a href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors font-medium">+91 77440 09295 (WhatsApp)</a></li>
+            </ul>
+            
+            {/* MahaRERA Official QR Badge */}
+            <div className="flex items-center gap-3 bg-white/5 p-2 rounded-xl border border-white/10">
+              <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-white p-0.5 shrink-0">
+                <Image 
+                  src="/images/qr/maharera-qr.png" 
+                  alt="MahaRERA PM1261012600748 QR"
+                  fill
+                  sizes="48px"
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-left">
+                <span className="text-[8px] uppercase tracking-wider text-[#d4af37] font-bold block">Scan MahaRERA</span>
+                <span className="text-[8px] text-white/50 block font-mono">PM1261012600748</span>
+              </div>
             </div>
+          </div>
 
           {/* CTA */}
           <div className="flex flex-col items-start">
