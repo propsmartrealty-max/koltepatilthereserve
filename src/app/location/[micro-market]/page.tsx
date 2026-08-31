@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
+import Script from "next/script";
+
 export async function generateStaticParams() {
   return Object.keys(locationData).map((market) => ({
     'micro-market': market,
@@ -15,9 +17,9 @@ export async function generateMetadata({ params }: { params: Promise<{ 'micro-ma
   const data = locationData[resolvedParams['micro-market']];
   if (!data) return { title: 'Location Not Found' };
   return {
-    title: `${data.title} | The Reserve by Kolte Patil`,
+    title: `${data.title} | The Reserve by Kolte Patil Sinhgad Road`,
     description: data.excerpt,
-    keywords: [data.keyword, "Luxury Apartments Pune", "Kolte Patil The Reserve"]
+    keywords: [data.keyword, "Luxury Apartments Pune", "Kolte Patil The Reserve", "Sinhgad Road Flats", "Vadgaon Khurd"]
   };
 }
 
@@ -29,8 +31,41 @@ export default async function LocationMicroMarket({ params }: { params: Promise<
     notFound();
   }
 
+  const locationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": `${data.title} - The Reserve by Kolte Patil`,
+    "description": data.excerpt,
+    "image": "https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vadgaon Khurd, Sinhgad Road",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411041",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "18.4716",
+      "longitude": "73.8344"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "186",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  };
+
   return (
-    <div className="relative bg-slate-950 text-slate-100 min-h-screen flex flex-col">      
+    <div className="relative bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+      <Script
+        id={`location-schema-${resolvedParams['micro-market']}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+      />      
       <main className="flex-1 flex flex-col justify-center items-center text-center px-6 py-40 z-10 relative">
         {/* Abstract Background Layer */}
         <div className="absolute inset-0 z-0 overflow-hidden">

@@ -8,7 +8,15 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: ['Googlebot', 'Bingbot'],
+        userAgent: [
+          'Googlebot',
+          'Googlebot-Image',
+          'Googlebot-Mobile',
+          'Googlebot-News',
+          'Google-InspectionTool',
+          'Mediapartners-Google',
+          'Bingbot'
+        ],
         allow: '/',
         disallow: ['/api/', '/private/'],
       },

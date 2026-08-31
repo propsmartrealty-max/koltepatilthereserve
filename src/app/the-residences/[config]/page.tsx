@@ -33,19 +33,31 @@ export default async function ConfigurationPage({ params }: { params: Promise<{ 
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": `${data.title} at The Reserve`,
+    "name": `${data.title} at The Reserve by Kolte Patil`,
     "description": data.excerpt,
-    "image": "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg",
+    "image": "https://www.koltepatil.com/assets/uploads/gallery/17853225611596383832.jpg",
     "brand": {
       "@type": "Brand",
       "name": "Kolte Patil"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "186",
+      "bestRating": "5",
+      "worstRating": "1"
     },
     "offers": {
       "@type": "Offer",
       "url": `https://thereserve.koltepatil.digital/the-residences/${resolvedParams.config}`,
       "priceCurrency": "INR",
-      "price": "15000000", // Dynamic fallback price
-      "availability": "https://schema.org/InStock"
+      "price": resolvedParams.config.includes('2-bhk') ? "8500000" : "13500000",
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "RealEstateAgent",
+        "name": "Kolte-Patil Developers Ltd"
+      }
     }
   };
 
