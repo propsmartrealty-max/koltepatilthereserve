@@ -83,7 +83,7 @@ export default function LocationPage() {
             <div className="absolute inset-0 z-10 p-6 md:p-8">
                <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/10">
                  <Image 
-                   src="https://www.koltepatil.com/assets/uploads/projects/map_image/17847905231331533846.jpg" 
+                   src="/images/overview/location-map.jpg" 
                    alt="The Reserve Location Map Sinhgad Road"
                    fill sizes="(max-width: 1200px) 100vw, 50vw" className="object-cover hover:scale-[1.03] transition-transform duration-1000 ease-out"
                  />

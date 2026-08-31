@@ -10,12 +10,17 @@ export const metadata = {
 };
 
 const images = [
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/17853225611596383832.jpg", alt: "Elegant living room interior at The Reserve by Kolte Patil in Vadgaon on Sinhgad Road, Pune", caption: "Signature Living Room" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/1785322623788205512.jpg", alt: "Spacious master bedroom designed for luxury living at The Reserve by Kolte Patil, Vadgaon, Pune", caption: "Master Bedroom Suite" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/17853218911227367318.jpg", alt: "Spacious balcony with scenic views at The Reserve by Kolte Patil, Sinhgad Road, Vadgaon, Pune", caption: "Private Riverside Balcony" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/17853229111036034291.jpg", alt: "Resort-style swimming pool at dusk at The Reserve by Kolte Patil in Vadgaon, Pune", caption: "Resort-Style Adult & Kids Pool" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/1785322203994334241.jpg", alt: "Beautifully landscaped garden illuminated at night at The Reserve by Kolte Patil, Vadgaon, Pune", caption: "Central Landscaped Garden" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg", alt: "Contemporary clubhouse entrance with step seating at The Reserve by Kolte Patil, Sinhgad Road, Vadgaon", caption: "19,750 Sq.Ft. Clubhouse Entrance" },
+  { src: "/images/gallery/vyana-towers.jpg", alt: "Vyana Towers T5, T6, T7 at The Reserve by Kolte Patil in Vadgaon on Sinhgad Road, Pune", caption: "Vyana 21-Storey Residential Towers" },
+  { src: "/images/gallery/interior-deck.jpg", alt: "Signature living room and expansive river-facing viewing deck at The Reserve by Kolte Patil", caption: "Signature Living Room & Viewing Deck" },
+  { src: "/images/gallery/master-bedroom.jpg", alt: "Spacious master bedroom designed for luxury living at The Reserve by Kolte Patil, Vadgaon, Pune", caption: "Master Bedroom Suite" },
+  { src: "/images/gallery/river-hills.jpg", alt: "Spacious balcony with scenic views of Mutha River and NDA hills at The Reserve", caption: "Private Riverside & Hill-Facing Balcony" },
+  { src: "/images/gallery/resort-swimming-pool.jpg", alt: "84 ft. x 27 ft. resort-style adult swimming pool and kids splash pool at The Reserve", caption: "84x27 ft. Resort Swimming Pool & Deck" },
+  { src: "/images/gallery/clubhouse-step-seating.jpg", alt: "Contemporary 19,750 sq.ft. clubhouse with step seating amphitheater architecture at The Reserve", caption: "19,750 Sq.Ft. Clubhouse with Step Seating" },
+  { src: "/images/gallery/central-boulevard.jpg", alt: "Central landscaped boulevard and grand green spine across 21.03 acres master development", caption: "Central Landscaped Boulevard" },
+  { src: "/images/gallery/sports-turf.jpg", alt: "Championship pickleball court and outdoor sports turf at The Reserve by Kolte Patil", caption: "Pickleball Court & Sports Turf" },
+  { src: "/images/gallery/landscaped-plazas.jpg", alt: "Open-air landscaped plazas, family gathering zones, and reflexology paths at The Reserve", caption: "Landscaped Plazas & Nature Trails" },
+  { src: "/images/gallery/clubhouse-lounge.jpg", alt: "Double-height designer resident lounge and banquet hall at The Reserve Clubhouse", caption: "Designer Resident Lounge & Co-Working" },
+  { src: "/images/gallery/architectural-grandeur.jpg", alt: "Full Aluform monolithic concrete construction and architectural elevation at The Reserve", caption: "Monolithic Aluform Architectural Design" },
 ];
 
 export default function GalleryPage() {

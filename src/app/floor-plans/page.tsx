@@ -31,7 +31,7 @@ const plans = {
       'Digital Door Lock & Video Door Phone',
       '1 or 2 Covered/Mechanical Parking Allotments'
     ],
-    image: 'https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png'
+    image: '/images/floor-plans/vyana-3bhk-floorplan.png'
   },
   '2BHK': {
     name: 'Vyana 2 BHK Riverside Residence',
@@ -56,7 +56,7 @@ const plans = {
       'AC Provision in Living-Dining & Bedrooms',
       '1 Dedicated Parking with EV Charging Provision'
     ],
-    image: 'https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png'
+    image: '/images/floor-plans/vyana-2bhk-floorplan.png'
   }
 };
 

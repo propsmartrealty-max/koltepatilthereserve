@@ -6,12 +6,12 @@ import RevealFooter from '@/components/layout/RevealFooter';
 import Link from 'next/link';
 
 const amenitiesList = [
-  { title: '19,750 Sq.Ft. Contemporary Clubhouse', desc: 'Step seating architecture, resident lounges, indoor game arenas, and lifestyle wellness hubs.', colSpan: 'col-span-1 md:col-span-2', image: 'https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg' },
-  { title: 'Resort-Style Adult Pool (84x27 ft.)', desc: 'Sprawling 84 ft. x 27 ft. lap pool paired with a dedicated 14 ft. x 18 ft. kids pool and sun deck.', colSpan: 'col-span-1 md:col-span-1', image: 'https://www.koltepatil.com/assets/uploads/gallery/17853229111036034291.jpg' },
-  { title: 'Central Landscaped Boulevard', desc: 'A grand arterial green spine running across the 21.03 acres master development, framed by lush flora and seating pavilions.', colSpan: 'col-span-1 md:col-span-3', image: 'https://www.koltepatil.com/assets/uploads/gallery/1785322203994334241.jpg' },
-  { title: 'Pickleball Court & Sports Turf', desc: 'Dedicated sports recreation zones for active fitness, pickleball matches, and wellness activities.', colSpan: 'col-span-1 md:col-span-1', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg' },
-  { title: 'River-Facing Greens & Scenic NDA Hill Views', desc: 'Panoramic riverfront buffers and unhindered green vistas offering pure cross ventilation and serenity.', colSpan: 'col-span-1 md:col-span-2', image: 'https://www.koltepatil.com/assets/uploads/gallery/17853218911227367318.jpg' },
-  { title: 'Landscaped Plazas & Family Gathering Zones', desc: 'Open-air amphitheater, family picnic plazas, reflexology paths, and dedicated children play areas.', colSpan: 'col-span-1 md:col-span-3', image: 'https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg' },
+  { title: '19,750 Sq.Ft. Contemporary Clubhouse', desc: 'Step seating architecture, resident lounges, indoor game arenas, and lifestyle wellness hubs.', colSpan: 'col-span-1 md:col-span-2', image: '/images/gallery/clubhouse-step-seating.jpg' },
+  { title: 'Resort-Style Adult Pool (84x27 ft.)', desc: 'Sprawling 84 ft. x 27 ft. lap pool paired with a dedicated 14 ft. x 18 ft. kids pool and sun deck.', colSpan: 'col-span-1 md:col-span-1', image: '/images/gallery/resort-swimming-pool.jpg' },
+  { title: 'Central Landscaped Boulevard', desc: 'A grand arterial green spine running across the 21.03 acres master development, framed by lush flora and seating pavilions.', colSpan: 'col-span-1 md:col-span-3', image: '/images/gallery/central-boulevard.jpg' },
+  { title: 'Pickleball Court & Sports Turf', desc: 'Dedicated sports recreation zones for active fitness, pickleball matches, and wellness activities.', colSpan: 'col-span-1 md:col-span-1', image: '/images/gallery/sports-turf.jpg' },
+  { title: 'River-Facing Greens & Scenic NDA Hill Views', desc: 'Panoramic riverfront buffers and unhindered green vistas offering pure cross ventilation and serenity.', colSpan: 'col-span-1 md:col-span-2', image: '/images/gallery/river-hills.jpg' },
+  { title: 'Landscaped Plazas & Family Gathering Zones', desc: 'Open-air amphitheater, family picnic plazas, reflexology paths, and dedicated children play areas.', colSpan: 'col-span-1 md:col-span-3', image: '/images/gallery/landscaped-plazas.jpg' },
 ];
 
 const amenityClusters = [
