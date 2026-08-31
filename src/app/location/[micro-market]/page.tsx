@@ -168,8 +168,6 @@ export default async function MicroMarketPage({ params }: { params: Promise<{ 'm
           </div>
         </div>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

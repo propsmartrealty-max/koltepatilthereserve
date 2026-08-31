@@ -101,8 +101,6 @@ export default function FAQPage() {
           </Link>
         </div>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

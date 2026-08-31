@@ -141,8 +141,6 @@ export default async function ConfigurationPage({ params }: { params: Promise<{ 
         </div>
 
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

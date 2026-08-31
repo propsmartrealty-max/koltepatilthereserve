@@ -79,8 +79,6 @@ export default function MasterPlanPage() {
           </Link>
         </div>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

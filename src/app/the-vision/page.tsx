@@ -111,14 +111,12 @@ export default function TheVision() {
             <div className="flex flex-wrap justify-center gap-12 md:gap-24 opacity-60">
               <span className="font-serif text-2xl tracking-widest uppercase">IGBC Platinum</span>
               <span className="font-serif text-2xl tracking-widest uppercase">Bespoke Living</span>
-              <span className="font-serif text-2xl tracking-widest uppercase">50 Acres</span>
+              <span className="font-serif text-2xl tracking-widest uppercase">21.03 Acres</span>
             </div>
           </motion.div>
         </section>
 
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

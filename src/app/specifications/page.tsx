@@ -161,8 +161,6 @@ export default function SpecificationsPage() {
         </div>
 
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

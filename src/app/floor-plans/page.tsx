@@ -259,10 +259,7 @@ export default function FloorPlansPage() {
             </a>
           </div>
         </section>
-
       </div>
-
-      <RevealFooter />
     </main>
   );
 }

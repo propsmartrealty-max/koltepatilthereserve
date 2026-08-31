@@ -58,8 +58,6 @@ export default function UpdatesPage() {
           </div>
         </section>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

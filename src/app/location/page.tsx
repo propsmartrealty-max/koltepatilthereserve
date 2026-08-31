@@ -161,8 +161,6 @@ export default function LocationPage() {
         </div>
 
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

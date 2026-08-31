@@ -69,8 +69,6 @@ export default async function ProjectFeaturePage({ params }: { params: Promise<{
           </div>
         </div>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

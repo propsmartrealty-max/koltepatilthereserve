@@ -133,8 +133,6 @@ export default function StampDutyCalculator() {
 
         </div>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

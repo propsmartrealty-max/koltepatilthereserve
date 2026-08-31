@@ -200,9 +200,9 @@ export default function RootLayout({
                 <FloatingAction />
                 <MarketPulseToast />
                 <Navbar />
-                <div className="relative z-10 isolate transform-gpu mb-[100svh] bg-[#0B2B1B] rounded-b-[3rem] md:rounded-b-[5rem] overflow-hidden shadow-2xl">
+                <main className="relative z-10 isolate flex-1 bg-[#0B2B1B]">
                   {children}
-                </div>
+                </main>
                 <RevealFooter />
               </LenisProvider>
             </PulseProvider>

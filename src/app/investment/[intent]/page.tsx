@@ -59,8 +59,6 @@ export default async function InvestmentIntentPage({ params }: { params: Promise
           </div>
         </div>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

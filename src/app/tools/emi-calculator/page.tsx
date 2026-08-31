@@ -133,8 +133,6 @@ export default function EMICalculator() {
 
         </div>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

@@ -68,8 +68,6 @@ export default function VirtualTourPage() {
           </div>
         </div>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

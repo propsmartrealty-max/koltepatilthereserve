@@ -129,7 +129,6 @@ export default function TheClub() {
         </section>
 
       </main>
-      <RevealFooter />
     </div>
   );
 }

@@ -150,8 +150,6 @@ export default function MasterLayoutPage() {
         </div>
 
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

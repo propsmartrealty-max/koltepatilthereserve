@@ -161,8 +161,6 @@ export default function ResidencesPage() {
         </section>
         
       </main>
-
-      <RevealFooter />
     </div>
   );
 }

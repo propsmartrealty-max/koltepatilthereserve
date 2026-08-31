@@ -14,11 +14,11 @@ export default function Home() {
   const { setCursorType } = useCursor();
   
   return (
-    <div className="relative bg-white text-[#0B2B1B] selection:bg-[#d4af37] selection:text-white overflow-hidden">
+    <div className="relative bg-[#0B2B1B] text-white selection:bg-[#d4af37] selection:text-[#0B2B1B] overflow-hidden">
       <FluidBackground />
 
-      {/* 1. BEST-IN-CLASS CINEMATIC HERO (100dvh) */}
-      <section className="relative h-[100dvh] w-full flex items-center justify-center overflow-hidden rounded-b-[3rem] md:rounded-b-[5rem] shadow-2xl z-20 bg-[#0B2B1B]">
+      {/* 1. BEST-IN-CLASS CINEMATIC HERO */}
+      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden z-20 bg-[#0B2B1B]">
         <div className="absolute inset-0 z-0">
           <Image
             priority
@@ -26,7 +26,7 @@ export default function Home() {
             alt="The Reserve by Kolte Patil Vyana Towers Sinhgad Road Pune"
             fill
             sizes="100vw"
-            className="object-cover object-center transform scale-105 animate-pulse duration-[10000ms]"
+            className="object-cover object-center transform scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0B2B1B]/70 via-[#0B2B1B]/40 to-[#0B2B1B]/95"></div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#0B2B1B]/50 to-[#0B2B1B]"></div>
@@ -75,14 +75,14 @@ export default function Home() {
       </section>
 
       {/* 2. NON-PINNED STORYTELLING */}
-      <section className="relative z-20 py-24 md:py-36 bg-white/95 backdrop-blur-3xl -mt-10 rounded-t-[3rem] md:rounded-t-[5rem] border-t border-white/20">
+      <section className="relative z-20 py-24 md:py-36 bg-[#05140D] border-t border-white/10 text-white">
         <div className="max-w-5xl mx-auto text-center px-6">
           <motion.h2 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#0B2B1B] leading-[1.1] mb-8"
+            className="font-serif text-4xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-8"
           >
             Where Nature&apos;s Calm Meets <br/>
             Pune&apos;s Next <span className="text-[#d4af37] italic">Growth Epicenter</span>.
@@ -92,15 +92,15 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[#0B2B1B]/70 font-light text-base md:text-xl leading-relaxed max-w-3xl mx-auto mb-10"
+            className="text-white/70 font-light text-base md:text-xl leading-relaxed max-w-3xl mx-auto mb-10"
           >
             Spread across 21.03 acres along the tranquil Mutha River at Vadgaon Khurd on Sinhgad Road, The Reserve by Kolte-Patil brings together river-facing greens, scenic NDA hill views, 19,750 sq.ft. contemporary clubhouse, and thoughtful 2 & 3 BHK residences — adjoining the upcoming Pune Ring Road.
           </motion.p>
           <div className="flex flex-col sm:flex-row justify-center gap-8 items-center">
-            <Link href="/overview" className="border-b border-[#0B2B1B] text-[#0B2B1B] uppercase tracking-[0.2em] text-xs font-bold pb-1 hover:text-[#d4af37] hover:border-[#d4af37] transition-colors">
+            <Link href="/overview" className="border-b border-[#d4af37] text-white uppercase tracking-[0.2em] text-xs font-bold pb-1 hover:text-[#d4af37] transition-colors">
               Discover The Vision →
             </Link>
-            <Link href="/gallery" className="border-b border-[#0B2B1B]/30 text-[#0B2B1B]/60 uppercase tracking-[0.2em] text-xs font-bold pb-1 hover:text-[#d4af37] hover:border-[#d4af37] transition-colors">
+            <Link href="/gallery" className="border-b border-white/30 text-white/70 uppercase tracking-[0.2em] text-xs font-bold pb-1 hover:text-[#d4af37] hover:border-[#d4af37] transition-colors">
               View Project Gallery →
             </Link>
           </div>

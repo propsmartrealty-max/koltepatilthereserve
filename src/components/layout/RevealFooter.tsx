@@ -6,7 +6,7 @@ import { Button } from "../ui/Button";
 
 export default function RevealFooter() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full h-[100svh] -z-10 bg-[#0B2B1B] flex flex-col justify-end overflow-hidden">
+    <footer className="relative w-full bg-[#05140D] border-t border-white/10 flex flex-col justify-end overflow-hidden text-white z-20">
       
       {/* Background Video Layer */}
       <div className="absolute inset-0 z-0">
@@ -15,14 +15,14 @@ export default function RevealFooter() {
           muted 
           loop 
           playsInline 
-          className="object-cover w-full h-full opacity-30 grayscale"
+          className="object-cover w-full h-full opacity-20 grayscale"
         >
           <source src="https://player.vimeo.com/external/394627252.hd.mp4?s=d00e57262ba627d3568853c89657f8cfec47fb21&profile_id=174" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-[#0B2B1B]/95 to-[#0B2B1B]/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#05140D] via-[#05140D]/95 to-[#0B2B1B]"></div>
       </div>
 
-      <div className="relative z-20 w-full container mx-auto px-6 md:px-12 pb-12 pt-32 h-full flex flex-col justify-end">
+      <div className="relative z-20 w-full container mx-auto px-6 md:px-12 pb-12 pt-20 flex flex-col justify-end">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-12">
           
           {/* Brand */}

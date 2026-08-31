@@ -75,8 +75,6 @@ export default function GalleryPage() {
           ))}
         </div>
       </main>
-
-      <RevealFooter />
     </div>
   );
 }
