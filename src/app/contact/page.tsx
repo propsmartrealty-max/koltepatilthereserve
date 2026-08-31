@@ -11,7 +11,7 @@ export default function ContactPage() {
     name: "",
     email: "",
     phone: "",
-    interest: "3 BHK Premium",
+    interest: "Vyana 3 BHK (1,016 sq.ft.)",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -164,13 +164,13 @@ export default function ContactPage() {
                     {/* Input Field: Configuration */}
                     <div className="relative group">
                       <label className="text-[9px] uppercase tracking-[0.2em] text-[#d4af37] mb-4 block font-bold transition-colors group-focus-within:text-white">Configuration Interest</label>
-                      <div className="grid grid-cols-2 gap-4">
-                        {["2 BHK Luxury", "3 BHK Premium", "4 BHK Signature", "Penthouse"].map((opt) => (
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {["Vyana 2 BHK (791 sq.ft.)", "Vyana 3 BHK (1,016 sq.ft.)", "Site Visit & VIP Tour", "Download Brochure & Cost Sheet"].map((opt) => (
                           <button
                             key={opt}
                             type="button"
                             onClick={() => setFormData({...formData, interest: opt})}
-                            className={`py-3 px-4 text-left border text-sm font-sans tracking-wide transition-all duration-300 ${formData.interest === opt ? 'border-[#d4af37] bg-[#d4af37]/10 text-white' : 'border-white/10 text-white/50 hover:border-white/30 hover:text-white'}`}
+                            className={`py-3 px-4 text-left border text-xs font-sans tracking-wide transition-all duration-300 rounded-xl ${formData.interest === opt ? 'border-[#d4af37] bg-[#d4af37]/10 text-white' : 'border-white/10 text-white/50 hover:border-white/30 hover:text-white'}`}
                           >
                             {opt}
                           </button>
