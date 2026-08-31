@@ -83,9 +83,14 @@ export default function JsonLd() {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "18.4716",
-          "longitude": "73.8344"
+          "latitude": "18.4622871",
+          "longitude": "73.8013712"
         },
+        "hasMap": "https://www.google.com/maps/place/The+Reserve+by+Kolte+Patil/@18.4622871,73.8013712,15z/data=!4m6!3m5!1s0x3bc29503207d73ff:0xbcace0773986e884!8m2!3d18.4622871!4d73.8013712!16s%2Fg%2F11ywbwz1k0",
+        "sameAs": [
+          "https://www.google.com/maps/place/The+Reserve+by+Kolte+Patil/@18.4622871,73.8013712,15z/data=!4m6!3m5!1s0x3bc29503207d73ff:0xbcace0773986e884!8m2!3d18.4622871!4d73.8013712!16s%2Fg%2F11ywbwz1k0",
+          "https://www.koltepatil.com"
+        ],
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
@@ -145,6 +150,12 @@ export default function JsonLd() {
         "description": "2 & 3 BHK riverside luxury residences at Vadgaon Khurd, Sinhgad Road, Pune. 21.03 acres master development with 19,750 sq.ft. clubhouse, resort pool, and scenic NDA hill views. MahaRERA PM1261012600748.",
         "url": "https://thereserve.koltepatil.digital",
         "image": "https://thereserve.koltepatil.digital/images/gallery/vyana-towers.jpg",
+        "hasMap": "https://www.google.com/maps/place/The+Reserve+by+Kolte+Patil/@18.4622871,73.8013712,15z/data=!4m6!3m5!1s0x3bc29503207d73ff:0xbcace0773986e884!8m2!3d18.4622871!4d73.8013712!16s%2Fg%2F11ywbwz1k0",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "18.4622871",
+          "longitude": "73.8013712"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Vadgaon Khurd, Sinhgad Road",

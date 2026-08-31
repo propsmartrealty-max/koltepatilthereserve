@@ -143,10 +143,20 @@ export default function LocationPage() {
           </div>
 
           <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-            <span className="text-white/50 text-xs font-mono">Site Location: Vadgaon Khurd, Sinhgad Road, Pune - 411041</span>
-            <Link href="/contact" className="px-8 py-3.5 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors shadow-lg">
-              Get Driving Directions & Coordinates
-            </Link>
+            <span className="text-white/50 text-xs font-mono">GPS Coordinates: 18.4622871, 73.8013712 | Vadgaon Khurd, Pune</span>
+            <div className="flex gap-3">
+              <a 
+                href="https://www.google.com/maps/place/The+Reserve+by+Kolte+Patil/@18.4622871,73.8013712,15z/data=!4m6!3m5!1s0x3bc29503207d73ff:0xbcace0773986e884!8m2!3d18.4622871!4d73.8013712!16s%2Fg%2F11ywbwz1k0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3.5 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors shadow-lg"
+              >
+                Open Google Maps Navigation 📍
+              </a>
+              <Link href="/contact" className="px-6 py-3.5 bg-white/10 text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white hover:text-slate-950 transition-colors">
+                Book Visit
+              </Link>
+            </div>
           </div>
         </div>
 

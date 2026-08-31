@@ -3,64 +3,66 @@ import { locationData, configData, investmentData, projectData } from '@/lib/seo
 import { getAllInsights, getAllGuides, getAllCompares } from '@/lib/mdx';
 
 export const dynamic = 'force-static';
-export const revalidate = 86400; // Harden: Cache at the Edge for 24 hours to prevent CPU exhaustion attacks
-
+export const revalidate = 86400; // Edge Cache for 24 hours
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://thereserve.koltepatil.digital';
+  const now = new Date();
 
-  // 1. Core Static Pages
-  const staticRoutes = [
-    '',
-    '/overview',
-    '/master-layout',
-    '/master-plan',
-    '/amenities',
-    '/specifications',
-    '/the-vision',
-    '/the-club',
-    '/the-residences',
-    '/location',
-    '/insights',
-    '/blog',
-    '/updates',
-    '/gallery',
-    '/virtual-tour',
-    '/faq',
-    '/floor-plans',
-    '/contact',
-    '/developer',
-    '/privacy',
-    '/terms',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1 : 0.9,
+  // 1. High-Priority Core Landing Pages
+  const coreRoutes = [
+    { route: '', priority: 1.0, changeFrequency: 'daily' as const },
+    { route: '/overview', priority: 0.95, changeFrequency: 'daily' as const },
+    { route: '/the-residences', priority: 0.95, changeFrequency: 'daily' as const },
+    { route: '/floor-plans', priority: 0.95, changeFrequency: 'daily' as const },
+    { route: '/master-layout', priority: 0.9, changeFrequency: 'weekly' as const },
+    { route: '/master-plan', priority: 0.9, changeFrequency: 'weekly' as const },
+    { route: '/amenities', priority: 0.9, changeFrequency: 'weekly' as const },
+    { route: '/specifications', priority: 0.9, changeFrequency: 'weekly' as const },
+    { route: '/location', priority: 0.9, changeFrequency: 'weekly' as const },
+    { route: '/investment', priority: 0.9, changeFrequency: 'weekly' as const },
+    { route: '/contact', priority: 0.9, changeFrequency: 'daily' as const },
+    { route: '/residences', priority: 0.85, changeFrequency: 'weekly' as const },
+    { route: '/the-club', priority: 0.85, changeFrequency: 'weekly' as const },
+    { route: '/the-vision', priority: 0.85, changeFrequency: 'weekly' as const },
+    { route: '/developer', priority: 0.85, changeFrequency: 'weekly' as const },
+    { route: '/gallery', priority: 0.85, changeFrequency: 'weekly' as const },
+    { route: '/virtual-tour', priority: 0.85, changeFrequency: 'weekly' as const },
+    { route: '/updates', priority: 0.85, changeFrequency: 'weekly' as const },
+    { route: '/faq', priority: 0.85, changeFrequency: 'weekly' as const },
+    { route: '/insights', priority: 0.85, changeFrequency: 'daily' as const },
+    { route: '/blog', priority: 0.85, changeFrequency: 'daily' as const },
+    { route: '/privacy', priority: 0.5, changeFrequency: 'monthly' as const },
+    { route: '/terms', priority: 0.5, changeFrequency: 'monthly' as const },
+  ].map((item) => ({
+    url: `${baseUrl}${item.route}`,
+    lastModified: now,
+    changeFrequency: item.changeFrequency,
+    priority: item.priority,
   }));
 
-  // 2. Dynamic Location Micro-Market Pages
+  // 2. Dynamic Location Micro-Market Pages (22 Micro-Markets)
   const locationRoutes = Object.keys(locationData).map((market) => ({
     url: `${baseUrl}/location/${market}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
   }));
 
-  // 3. Dynamic Configuration Pages
+  // 3. Dynamic Configuration Pages (7 Configurations)
   const configRoutes = Object.keys(configData).map((config) => ({
     url: `${baseUrl}/the-residences/${config}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
   }));
 
-  // 4. Dynamic Investment Intent Pages
+  // 4. Dynamic Investment Intent Pages (7 Intent Hubs)
   const investmentRoutes = Object.keys(investmentData).map((intent) => ({
     url: `${baseUrl}/investment/${intent}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
   }));
 
   // 5. Dynamic MDX Insight Articles
@@ -68,8 +70,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const insightRoutes = insights.map((insight) => ({
     url: `${baseUrl}/insights/${insight.slug}`,
     lastModified: new Date(insight.meta.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
   }));
 
   // 6. Dynamic MDX Guide Pillars
@@ -77,40 +79,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const guideRoutes = guides.map((guide) => ({
     url: `${baseUrl}/guides/${guide.slug}`,
     lastModified: new Date(guide.meta.date),
-    changeFrequency: 'monthly' as const,
+    changeFrequency: 'weekly' as const,
     priority: 0.9,
   }));
 
-  // 7. Dynamic MDX Compare Hub
+  // 7. Dynamic MDX Compare Hubs
   const compares = getAllCompares();
   const compareRoutes = compares.map((compare) => ({
     url: `${baseUrl}/compare/${compare.slug}`,
     lastModified: new Date(compare.meta.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
   }));
 
   // 8. Dynamic Project Feature Pages
   const projectRoutes = Object.keys(projectData).map((feat) => ({
     url: `${baseUrl}/project/${feat}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
   }));
 
-  // 9. Interactive SEO Tools
+  // 9. Interactive Financial SEO Tools
   const toolRoutes = [
-    '/tools/emi-calculator',
-    '/tools/stamp-duty-calculator',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.9,
+    { route: '/tools/emi-calculator', priority: 0.9 },
+    { route: '/tools/stamp-duty-calculator', priority: 0.9 },
+  ].map((item) => ({
+    url: `${baseUrl}${item.route}`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: item.priority,
   }));
 
   return [
-    ...staticRoutes,
+    ...coreRoutes,
     ...locationRoutes,
     ...configRoutes,
     ...investmentRoutes,
@@ -121,3 +123,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...toolRoutes,
   ];
 }
+

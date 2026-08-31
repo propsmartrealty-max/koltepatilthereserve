@@ -149,8 +149,8 @@ export default function RootLayout({
         {/* Geo & Local Search Signals for Google SERP */}
         <meta name="geo.region" content="IN-MH" />
         <meta name="geo.placename" content="Vadgaon Khurd, Sinhgad Road, Pune" />
-        <meta name="geo.position" content="18.4716;73.8344" />
-        <meta name="ICBM" content="18.4716, 73.8344" />
+        <meta name="geo.position" content="18.4622871;73.8013712" />
+        <meta name="ICBM" content="18.4622871, 73.8013712" />
         <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
         
         {/* High-Performance Edge Preconnects for Core Web Vitals */}

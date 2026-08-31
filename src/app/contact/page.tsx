@@ -208,6 +208,42 @@ export default function ContactPage() {
 
           </div>
         </section>
+
+        {/* EXPERIENCE CENTRE GOOGLE MAPS LOCATION */}
+        <section className="pb-28 px-6 md:px-12 relative z-10">
+          <div className="container mx-auto max-w-4xl p-8 md:p-12 rounded-[2.5rem] bg-[#05140D] border border-white/10 shadow-2xl">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
+              <div>
+                <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-2">Sales Experience Centre</span>
+                <h3 className="font-serif text-3xl text-white">Visit The Reserve On Site</h3>
+                <p className="text-white/60 text-xs font-light mt-1">Survey Nos. 39/41/42/43/44/45/46/59/parts, Vadgaon Khurd, Sinhgad Road, Pune - 411041</p>
+              </div>
+              <a 
+                href="https://www.google.com/maps/place/The+Reserve+by+Kolte+Patil/@18.4622871,73.8013712,15z/data=!4m6!3m5!1s0x3bc29503207d73ff:0xbcace0773986e884!8m2!3d18.4622871!4d73.8013712!16s%2Fg%2F11ywbwz1k0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3.5 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors shrink-0 shadow-lg"
+              >
+                Open in Google Maps 📍
+              </a>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-white/10 text-xs font-light text-white/70">
+              <div>
+                <span className="text-[#d4af37] font-bold block mb-1">GPS Coordinates</span>
+                <p className="font-mono text-white/90">18.4622871, 73.8013712</p>
+              </div>
+              <div>
+                <span className="text-[#d4af37] font-bold block mb-1">Operating Hours</span>
+                <p className="text-white/90">Mon – Sun: 09:00 AM – 08:00 PM</p>
+              </div>
+              <div>
+                <span className="text-[#d4af37] font-bold block mb-1">VIP Concierge</span>
+                <p className="text-white/90">+91 77440 09295</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

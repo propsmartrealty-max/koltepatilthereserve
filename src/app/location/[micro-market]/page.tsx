@@ -45,10 +45,11 @@ export default async function MicroMarketPage({ params }: { params: Promise<{ 'm
       "postalCode": "411041",
       "addressCountry": "IN"
     },
+    "hasMap": "https://www.google.com/maps/place/The+Reserve+by+Kolte+Patil/@18.4622871,73.8013712,15z/data=!4m6!3m5!1s0x3bc29503207d73ff:0xbcace0773986e884!8m2!3d18.4622871!4d73.8013712!16s%2Fg%2F11ywbwz1k0",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "18.4716",
-      "longitude": "73.8344"
+      "latitude": "18.4622871",
+      "longitude": "73.8013712"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
