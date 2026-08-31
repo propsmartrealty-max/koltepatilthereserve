@@ -62,7 +62,7 @@ export default function LuxuryCursor() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 w-8 h-8 rounded-full border border-[#d4af37]/50 pointer-events-none z-[9999] mix-blend-difference"
+        className="fixed top-0 left-0 w-8 h-8 rounded-full border border-[#d4af37]/50 pointer-events-none z-[9999] shadow-[0_0_10px_rgba(212,175,55,0.3)]"
         style={{
           x: cursorX,
           y: cursorY,
@@ -76,7 +76,7 @@ export default function LuxuryCursor() {
       />
       {/* Tiny solid dot that tracks exactly with the mouse (no spring) */}
       <motion.div
-        className="fixed top-0 left-0 w-1 h-1 bg-[#d4af37] rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        className="fixed top-0 left-0 w-1 h-1 bg-[#d4af37] rounded-full pointer-events-none z-[9999]"
         style={{
           x: dotX,
           y: dotY,

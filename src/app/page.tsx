@@ -247,12 +247,12 @@ export default function Home() {
       </section>
 
       {/* 3. SIMPLIFIED BENTO BOX GRID */}
-      <section className="relative z-40 bg-[#FAFAFA] py-28 md:py-36 rounded-[3rem] -mt-6 shadow-2xl">
+      <section className="relative z-40 bg-[#05140D] py-28 md:py-36 rounded-[3rem] -mt-6 border-t border-white/10 shadow-2xl text-white">
         <div className="container mx-auto px-6 md:px-12">
           <div className="mb-14 md:mb-20 max-w-2xl">
             <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-3">The Privileges</span>
-            <h2 className="font-serif text-4xl md:text-6xl text-[#0B2B1B] leading-tight">
-              An ecosystem of <br/><span className="italic">unrivaled luxury.</span>
+            <h2 className="font-serif text-4xl md:text-6xl text-white leading-tight">
+              An ecosystem of <br/><span className="italic text-[#d4af37]">unrivaled luxury.</span>
             </h2>
           </div>
           
@@ -260,31 +260,31 @@ export default function Home() {
             {/* Bento Block 1 */}
             <motion.div 
               initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-              className="md:col-span-2 md:row-span-2 relative rounded-[2rem] overflow-hidden group shadow-lg bg-white"
+              className="md:col-span-2 md:row-span-2 relative rounded-[2rem] overflow-hidden group shadow-xl bg-[#0B2B1B] border border-white/10"
               onMouseEnter={() => setCursorType('explore')} onMouseLeave={() => setCursorType('default')}
             >
               <div className="absolute inset-0 w-full h-full">
                 <Image src="/images/gallery/clubhouse-step-seating.jpg" alt="19,750 Sq.Ft. Clubhouse at The Reserve by Kolte Patil" fill sizes="(max-width: 1200px) 100vw, 66vw" className="object-cover group-hover:scale-105 transition-transform duration-[2s] ease-out" />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B]/90 via-[#0B2B1B]/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#05140D] via-[#0B2B1B]/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 md:p-10 z-10 w-full">
-                <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-white/70 block mb-2 font-bold">Centerpiece</span>
+                <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#d4af37] block mb-2 font-bold">Centerpiece</span>
                 <h3 className="font-serif text-3xl md:text-5xl text-white mb-3">19,750 sq.ft. Clubhouse</h3>
-                <p className="font-sans text-white/80 max-w-sm font-light leading-relaxed hidden md:block">Contemporary step seating architecture, 84x27 ft. resort swimming pool, and dedicated wellness pavilions.</p>
+                <p className="font-sans text-white/70 max-w-sm font-light leading-relaxed hidden md:block">Contemporary step seating architecture, 84x27 ft. resort swimming pool, and dedicated wellness pavilions.</p>
               </div>
             </motion.div>
 
             {/* Bento Block 2 */}
             <motion.div 
               initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }}
-              className="md:col-span-1 md:row-span-2 relative rounded-[2rem] overflow-hidden group shadow-lg bg-gradient-to-br from-white to-[#F5F5F5] flex flex-col p-8 justify-between border border-[#0B2B1B]/5"
+              className="md:col-span-1 md:row-span-2 relative rounded-[2rem] overflow-hidden group shadow-xl bg-[#0B2B1B]/80 border border-white/10 flex flex-col p-8 justify-between"
             >
               <div className="relative z-10">
                 <span className="font-serif text-6xl text-[#d4af37] block mb-2 drop-shadow-sm">21.03</span>
-                <h3 className="font-serif text-2xl text-[#0B2B1B] mb-3">Acres Master Development</h3>
-                <p className="font-sans text-[#0B2B1B]/70 font-light leading-relaxed text-sm">River-facing greens, scenic NDA hill views, and central landscaped boulevard at Vadgaon Khurd, Sinhgad Road.</p>
+                <h3 className="font-serif text-2xl text-white mb-3">Acres Master Development</h3>
+                <p className="font-sans text-white/70 font-light leading-relaxed text-sm">River-facing greens, scenic NDA hill views, and central landscaped boulevard at Vadgaon Khurd, Sinhgad Road.</p>
               </div>
-              <div className="relative h-48 md:h-64 w-full rounded-2xl overflow-hidden mt-6 shadow-inner">
+              <div className="relative h-48 md:h-64 w-full rounded-2xl overflow-hidden mt-6 shadow-inner border border-white/10">
                 <Image src="/images/overview/21-acres-masterplan.jpg" alt="21.03 Acres Landscape at The Reserve Kolte Patil" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-110 transition-transform duration-[3s]" />
               </div>
             </motion.div>
@@ -292,10 +292,10 @@ export default function Home() {
             {/* Bento Block 3 */}
             <motion.div 
               initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }}
-              className="md:col-span-1 md:row-span-1 relative rounded-[2rem] overflow-hidden group shadow-lg bg-[#0B2B1B] p-8 flex flex-col justify-end"
+              className="md:col-span-1 md:row-span-1 relative rounded-[2rem] overflow-hidden group shadow-xl bg-[#0B2B1B] border border-white/10 p-8 flex flex-col justify-end"
             >
               <div className="absolute inset-0 w-full h-full z-0">
-                  <Image src="/images/gallery/vyana-towers.jpg" alt="Vyana 2 and 3 BHK Apartments Sinhgad Road" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-1000 mix-blend-luminosity" />
+                  <Image src="/images/gallery/vyana-towers.jpg" alt="Vyana 2 and 3 BHK Apartments Sinhgad Road" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-1000" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] to-transparent"></div>
               <div className="relative z-10">
@@ -307,13 +307,13 @@ export default function Home() {
             {/* Bento Block 4 */}
             <motion.div 
               initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.3 }}
-              className="md:col-span-2 md:row-span-1 relative rounded-[2rem] overflow-hidden group shadow-lg bg-white p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 border border-[#0B2B1B]/5"
+              className="md:col-span-2 md:row-span-1 relative rounded-[2rem] overflow-hidden group shadow-xl bg-[#0B2B1B]/80 border border-white/10 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8"
             >
               <div className="relative z-10 w-full md:w-1/2 pr-0 md:pr-4">
-                <h3 className="font-serif text-3xl text-[#0B2B1B] mb-3">Aluform Construction</h3>
-                <p className="font-sans text-[#0B2B1B]/70 text-sm font-light leading-relaxed">Full aluform monolithic structure, 3.05 m slab height, Kajaria glazed vitrified tiles, and Jaquar fittings.</p>
+                <h3 className="font-serif text-3xl text-white mb-3">Aluform Construction</h3>
+                <p className="font-sans text-white/70 text-sm font-light leading-relaxed">Full aluform monolithic structure, 3.05 m slab height, Kajaria glazed vitrified tiles, and Jaquar fittings.</p>
               </div>
-              <div className="relative h-40 md:h-full w-full md:w-1/2 rounded-[1.5rem] overflow-hidden shadow-inner">
+              <div className="relative h-40 md:h-full w-full md:w-1/2 rounded-[1.5rem] overflow-hidden shadow-inner border border-white/10">
                 <Image src="/images/gallery/master-bedroom.jpg" alt="Master Bedroom at The Reserve Kolte Patil" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-[2s]" />
               </div>
             </motion.div>

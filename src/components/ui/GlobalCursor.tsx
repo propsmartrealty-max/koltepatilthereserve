@@ -73,7 +73,7 @@ export default function GlobalCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 rounded-full pointer-events-none z-[9999] mix-blend-difference flex items-center justify-center font-sans text-[8px] tracking-[0.2em] uppercase text-[#d4af37]"
+      className="fixed top-0 left-0 rounded-full pointer-events-none z-[9999] flex items-center justify-center font-sans text-[8px] tracking-[0.2em] uppercase text-white shadow-[0_0_15px_rgba(212,175,55,0.4)]"
       style={{ x: cursorX, y: cursorY }}
       variants={variants}
       animate={cursorType}

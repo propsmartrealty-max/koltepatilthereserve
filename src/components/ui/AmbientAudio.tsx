@@ -49,7 +49,7 @@ export default function AmbientAudio() {
       
       <button 
         onClick={toggleAudio}
-        className="fixed bottom-8 left-8 z-50 flex items-center gap-3 group mix-blend-difference"
+        className="fixed bottom-8 left-8 z-50 flex items-center gap-3 group bg-black/70 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 shadow-xl hover:border-[#d4af37]/40 transition-colors"
       >
         <div className="flex items-end gap-[2px] h-3">
           <motion.div 

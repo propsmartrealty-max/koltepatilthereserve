@@ -10,7 +10,6 @@ import { ConciergeProvider } from "@/context/ConciergeContext";
 import ConciergePanel from "@/components/ui/ConciergePanel";
 import FloatingAction from "@/components/ui/FloatingAction";
 import AmbientAudio from "@/components/ui/AmbientAudio";
-import Preloader from "@/components/ui/Preloader";
 import NoiseOverlay from "@/components/ui/NoiseOverlay";
 import JsonLd from "@/components/seo/JsonLd";
 import LenisProvider from "@/components/ui/LenisProvider";
@@ -194,7 +193,6 @@ export default function RootLayout({
           <ConciergeProvider>
             <PulseProvider>
               <LenisProvider>
-                <Preloader />
                 <Breadcrumbs />
                 <GlobalCursor />
                 <AmbientAudio />
