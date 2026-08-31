@@ -210,6 +210,56 @@ export default function FloorPlansPage() {
           </div>
         </motion.div>
 
+        {/* 3. ALL-INCLUSIVE COST ESTIMATOR & FINANCIAL MATRIX */}
+        <section className="mb-24 p-8 md:p-12 rounded-[2.5rem] bg-[#05140D] border border-[#d4af37]/30 shadow-2xl">
+          <div className="text-center mb-10 max-w-2xl mx-auto">
+            <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-2">Financial Transparency</span>
+            <h3 className="font-serif text-3xl md:text-4xl text-white">Indicative Cost Breakdown</h3>
+            <p className="text-white/60 text-xs font-light mt-2">Estimated statutory government levies and total acquisition cost for {plans[activePlan].name}.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/10">
+              <span className="text-[10px] uppercase tracking-wider text-white/50 block mb-1">Configuration</span>
+              <p className="font-serif text-xl text-white font-medium">{activePlan === '3BHK' ? '3 BHK (1,016 Sq.Ft.)' : '2 BHK (791 Sq.Ft.)'}</p>
+              <p className="text-[11px] text-[#d4af37] mt-1 font-mono">{activePlan === '3BHK' ? 'Towers T5, T6, T7' : 'Towers T5, T6, T7'}</p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/10">
+              <span className="text-[10px] uppercase tracking-wider text-white/50 block mb-1">Stamp Duty (7% PMC)</span>
+              <p className="font-serif text-xl text-white font-medium">{activePlan === '3BHK' ? '₹9.45 Lakhs*' : '₹5.95 Lakhs*'}</p>
+              <p className="text-[11px] text-white/50 mt-1 font-light">1% concession for female owners</p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/10">
+              <span className="text-[10px] uppercase tracking-wider text-white/50 block mb-1">GST (5% RERA)</span>
+              <p className="font-serif text-xl text-white font-medium">{activePlan === '3BHK' ? '₹6.75 Lakhs*' : '₹4.25 Lakhs*'}</p>
+              <p className="text-[11px] text-white/50 mt-1 font-light">Applicable on construction</p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#0B2B1B] border border-[#d4af37]/40 shadow-xl">
+              <span className="text-[10px] uppercase tracking-wider text-[#d4af37] font-bold block mb-1">All-Inclusive Indicative</span>
+              <p className="font-serif text-2xl text-[#d4af37] font-bold">{activePlan === '3BHK' ? 'Request Cost Sheet' : 'Request Cost Sheet'}</p>
+              <p className="text-[11px] text-white/70 mt-1 font-light">Customized floor & unit specific</p>
+            </div>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-black/40 border border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <div>
+              <p className="text-white text-sm font-medium">Looking for a customized unit quote with floor-rise & preferred views?</p>
+              <p className="text-white/50 text-xs font-light mt-0.5">Our sales concierge will share the official Kolte-Patil cost sheet PDF on WhatsApp.</p>
+            </div>
+            <a 
+              href="https://wa.me/917744009295?text=Hello%20Team%20Kolte%20Patil%20The%20Reserve,%20please%20share%20the%20official%20all-inclusive%20cost%20sheet%20and%20floor%20plans." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-8 py-3.5 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors shrink-0 shadow-lg"
+            >
+              Get Cost Sheet on WhatsApp →
+            </a>
+          </div>
+        </section>
+
       </div>
 
       <RevealFooter />
