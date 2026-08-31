@@ -6,18 +6,18 @@ import Image from 'next/image';
 
 const plans = {
   '3BHK': {
-    name: '3 Bed Residence',
-    tower: 'Tower 05 — Type 02',
-    carpet: 'Approx. 1,450 Sq.Ft.',
-    highlights: ['L-Shaped Living/Dining', 'Master Suite with Walk-in Closet', 'Grand River-facing Deck', 'Maids Room with Separate Entry'],
+    name: '3 Bed Residence (Vyana)',
+    tower: 'Towers T5, T6, T7 — 21 Floors',
+    carpet: '1,016 Sq.Ft. (Carpet Area)',
+    highlights: ['3.05 m Slab-to-Slab Height (~2.9 m Clear)', 'Glazed Vitrified Flooring (Kajaria / Equiv)', 'Jaquar / Equivalent CP & Sanitary Fittings', 'Panoramic River & NDA Hill Facing Balcony', '1 or 2 Covered/Mechanical Parking Allotment'],
     image: 'https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png'
   },
   '2BHK': {
-    name: '2 Bed Residence',
-    tower: 'Tower 06 — Type 03',
-    carpet: 'Approx. 950 Sq.Ft.',
-    highlights: ['Spacious Rectangular Living Room', 'En-suite Master Bedroom', 'Utility Balcony', 'Optimized Zero-Wastage Layout'],
-    image: 'https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png' // Using same image as placeholder
+    name: '2 Bed Residence (Vyana)',
+    tower: 'Towers T5, T6, T7 — 21 Floors',
+    carpet: '791 Sq.Ft. (Carpet Area)',
+    highlights: ['Aluform Monolithic Concrete Construction', 'Digital Door Lock & Video Door Phone', 'Mosquito Nets for Windows & Sliding Doors', 'AC Provision in Living-Dining & Bedrooms', '1 Dedicated Parking with EV Charging Provision'],
+    image: 'https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png'
   }
 };
 

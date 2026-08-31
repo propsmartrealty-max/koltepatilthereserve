@@ -15,22 +15,22 @@ export const locationData: Record<string, { title: string; keyword: string; exce
 };
 
 export const configData: Record<string, { title: string; keyword: string; excerpt: string; }> = {
-  "2-bhk-pune": { title: "Premium 2 BHK Luxury Apartment Pune", keyword: "2 BHK Pune", excerpt: "Master-crafted 2 BHK luxury apartments in Pune offering expansive living spaces, Italian marble flooring, and smart home automation." },
-  "3-bhk-pune": { title: "Spacious 3 Bedroom Flat Pune", keyword: "3 BHK Pune", excerpt: "Ultra-luxury 3 BHK flats in Pune designed for large families seeking privacy, panoramic river views, and IGBC Platinum lifestyle." },
-  "luxury-apartments-pune": { title: "Best Luxury Flats Pune", keyword: "Luxury Apartments Pune", excerpt: "Setting the new standard for luxury property in Pune. Experience our 50,000 sq.ft. private clubhouse and automated residences." },
-  "new-launch-pune": { title: "New Launch Apartments Pune", keyword: "New Launch Property Pune", excerpt: "Kolte Patil The Reserve - The most anticipated new residential project launch in Pune. Secure your VIP access today." },
+  "2-bhk-pune": { title: "2 BHK Luxury Apartments on Sinhgad Road, Pune (791 Sq.Ft.)", keyword: "2 BHK Pune", excerpt: "Thoughtfully designed 2 BHK riverside residences at Vyana, The Reserve by Kolte Patil with 791 sq.ft. carpet area, aluform structure, and river/hill views." },
+  "3-bhk-pune": { title: "Spacious 3 BHK Luxury Apartments Pune (1,016 Sq.Ft.)", keyword: "3 BHK Pune", excerpt: "Ultra-luxury 3 BHK flats at The Reserve on Sinhgad Road featuring 1,016 sq.ft. carpet area, zero space wastage, Jaquar/Kajaria fittings, and panoramic river views." },
+  "luxury-apartments-pune": { title: "Vyana at The Reserve by Kolte Patil | Riverside Residences", keyword: "Luxury Apartments Pune", excerpt: "21.03 acres master development at Vadgaon Khurd, Sinhgad Road. 19,750 sq.ft. contemporary clubhouse, resort-style pools, and 40+ lifestyle amenities." },
+  "new-launch-pune": { title: "New Launch at The Reserve by Kolte Patil Pune", keyword: "New Launch Property Pune", excerpt: "Phase I launch of Towers T5, T6, T7 with 21 floors and 487 residences. MahaRERA PM1261012600748. Enquire for exclusive launch pricing." },
 };
 
 export const investmentData: Record<string, { title: string; keyword: string; excerpt: string; }> = {
-  "roi-apartments-pune": { title: "High ROI Apartments Pune", keyword: "ROI Apartments Pune", excerpt: "Maximize your real estate portfolio. The Reserve is strategically located in Pune's highest capital appreciation corridor." },
-  "best-residential-investment-pune": { title: "Best Residential Investment Pune", keyword: "Investment Property Pune", excerpt: "Invest in Kolte Patil The Reserve for guaranteed rental yields, MahaRERA security, and 100-year legacy architecture." },
-  "buy-apartment-pune": { title: "Buy Apartment Pune | Schedule Site Visit", keyword: "Buy Apartment Pune", excerpt: "Ready to buy an apartment in Pune? Schedule a private VIP site visit to The Reserve and experience ultra-luxury living." },
+  "roi-apartments-pune": { title: "High ROI Apartments on Sinhgad Road Corridor", keyword: "ROI Apartments Pune", excerpt: "Capital appreciation driven by the upcoming Pune Ring Road and proposed Metro corridor adjoining The Reserve at Vadgaon Khurd." },
+  "best-residential-investment-pune": { title: "Best Residential Investment in Pune | The Reserve", keyword: "Investment Property Pune", excerpt: "Invest in Kolte Patil The Reserve for guaranteed delivery heritage, MahaRERA PM1261012600748 security, and 21.03 acres of riverside master planning." },
+  "buy-apartment-pune": { title: "Buy 2 & 3 BHK Apartment in Pune | Schedule Site Visit", keyword: "Buy Apartment Pune", excerpt: "Book your VIP presentation at The Reserve site office, Vadgaon Khurd, Sinhgad Road, Pune - 411041." },
 };
 
 export const projectData: Record<string, { title: string; keyword: string; excerpt: string; }> = {
-  "master-plan": { title: "The Reserve Master Plan", keyword: "Master Plan", excerpt: "Explore the expansive master plan of Kolte Patil The Reserve. Low density living by the Mutha River." },
-  "pricing": { title: "Luxury Apartment Pricing Pune", keyword: "Pricing", excerpt: "View transparent pricing and flexible payment plans for our 2 & 3 BHK signature residences." },
-  "amenities": { title: "Ultra Luxury Amenities Pune", keyword: "Amenities", excerpt: "Discover our 50,000 sq.ft. private clubhouse, infinity pool, and world-class lifestyle amenities." },
-  "security-systems": { title: "Gated Community Security Pune", keyword: "Security Systems", excerpt: "State-of-the-art biometric and 24/7 CCTV security ensures absolute peace of mind for your family." },
-  "sustainability": { title: "IGBC Platinum Sustainable Homes Pune", keyword: "Sustainability Features", excerpt: "Eco-friendly luxury living. Solar heating, rainwater harvesting, and lush green landscapes." },
+  "master-plan": { title: "21.03 Acres Master Plan | The Reserve by Kolte Patil", keyword: "Master Plan", excerpt: "Explore the 21.03-acre riverside master development featuring central landscaped boulevard, riverfront greens, and well-spaced residential towers." },
+  "pricing": { title: "2 & 3 BHK Pricing & Offers | The Reserve Sinhgad Road", keyword: "Pricing", excerpt: "Request official pricing, payment plans, and floor plans for 791 sq.ft. 2 BHK and 1,016 sq.ft. 3 BHK residences." },
+  "amenities": { title: "40+ World-Class Amenities | The Reserve by Kolte Patil", keyword: "Amenities", excerpt: "19,750 sq.ft. clubhouse, 84x27 ft. adult swimming pool, kids pool, pickleball court, and central landscaped promenade." },
+  "security-systems": { title: "Advanced Security & Smart Access | The Reserve", keyword: "Security Systems", excerpt: "Digital door locks, video door phones, CCTV surveillance, and 30% EV-enabled multi-level basement parking." },
+  "sustainability": { title: "IGBC Pre-Certified Sustainable Riverside Homes Pune", keyword: "Sustainability Features", excerpt: "Eco-conscious living with solar power integration, rainwater harvesting, full aluform construction, and riverside green buffers." },
 };

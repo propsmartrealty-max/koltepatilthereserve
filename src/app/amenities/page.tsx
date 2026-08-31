@@ -4,11 +4,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const amenitiesList = [
-  { title: '50,000 Sq.Ft. Clubhouse', desc: 'The crown jewel of The Reserve. An architectural masterpiece featuring a fully equipped gymnasium, spa pavilions, indoor temperature-controlled pool, and exclusive resident lounges.', colSpan: 'col-span-1 md:col-span-2', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg' },
-  { title: 'Riverside Walkway', desc: 'A deeply serene, beautifully landscaped walking trail that traces the natural contours of the river, entirely separated from vehicular traffic.', colSpan: 'col-span-1 md:col-span-1', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg' },
-  { title: 'The Great Boulevard', desc: 'A massive central landscaped artery that connects the entire 21-acre community. Lined with exotic flora, seating pavilions, and interactive water features.', colSpan: 'col-span-1 md:col-span-3', image: 'https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg' },
-  { title: 'International Sports Arena', desc: 'Championship-grade tennis courts, pickleball arenas, and a multi-purpose sports turf designed for high-end active recreation.', colSpan: 'col-span-1 md:col-span-1', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg' },
-  { title: 'Holistic Wellness Zones', desc: 'Dedicated outdoor yoga decks, meditation pavilions, and reflexology paths enveloped in dense greenery for complete mind-body rejuvenation.', colSpan: 'col-span-1 md:col-span-2', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847868911484090893.jpg' },
+  { title: '19,750 Sq.Ft. Contemporary Clubhouse', desc: 'Step seating architecture, resident lounges, indoor game arenas, and lifestyle wellness hubs.', colSpan: 'col-span-1 md:col-span-2', image: 'https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg' },
+  { title: 'Resort-Style Adult Pool (84x27 ft.)', desc: 'Sprawling 84 ft. x 27 ft. lap pool paired with a dedicated 14 ft. x 18 ft. kids pool and sun deck.', colSpan: 'col-span-1 md:col-span-1', image: 'https://www.koltepatil.com/assets/uploads/gallery/17853229111036034291.jpg' },
+  { title: 'Central Landscaped Boulevard', desc: 'A grand arterial green spine running across the 21.03 acres master development, framed by lush flora and seating pavilions.', colSpan: 'col-span-1 md:col-span-3', image: 'https://www.koltepatil.com/assets/uploads/gallery/1785322203994334241.jpg' },
+  { title: 'Pickleball Court & Sports Turf', desc: 'Dedicated sports recreation zones for active fitness, pickleball matches, and wellness activities.', colSpan: 'col-span-1 md:col-span-1', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg' },
+  { title: 'River-Facing Greens & Scenic NDA Hill Views', desc: 'Panoramic riverfront buffers and unhindered green vistas offering pure cross ventilation and serenity.', colSpan: 'col-span-1 md:col-span-2', image: 'https://www.koltepatil.com/assets/uploads/gallery/17853218911227367318.jpg' },
+  { title: 'Landscaped Plazas & Family Gathering Zones', desc: 'Open-air amphitheater, family picnic plazas, reflexology paths, and dedicated children play areas.', colSpan: 'col-span-1 md:col-span-3', image: 'https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg' },
 ];
 
 export default function AmenitiesPage() {

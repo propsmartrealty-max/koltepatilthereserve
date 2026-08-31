@@ -71,10 +71,10 @@ export default function OverviewPage() {
               <span className="text-[#d4af37] tracking-[0.2em] text-xs uppercase mb-4 block font-bold">The Location</span>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 text-white leading-tight">A Rare Riverside Setting in Pune.</h2>
               <p className="text-lg text-white/70 leading-relaxed font-light mb-6">
-                Spread across an expansive <strong className="text-white font-medium">21.03 acres</strong> at Wadgaon Budruk, The Reserve brings together premium river-facing greens, scenic NDA hill views, and a central landscaped boulevard that spans the entire project. 
+                Spread across an expansive <strong className="text-white font-medium">21.03 acres</strong> of master development in a rare riverside setting at Vadgaon Khurd on Sinhgad Road, The Reserve by Kolte-Patil brings together river-facing greens, scenic NDA hill views and a central landscaped boulevard — a life where river, hills, sky and nature converge, minutes from the everyday conveniences of Sinhgad Road.
               </p>
               <p className="text-lg text-white/70 leading-relaxed font-light mb-10">
-                Experience ultra-luxury apartments in Pune where river, hills, sky, and nature converge seamlessly. It is an island of tranquility, located just minutes from the everyday conveniences and rapid infrastructural growth of Sinhagad Road.
+                Sinhgad Road itself is one of Pune's most promising growth corridors. With the proposed Pune Ring Road, metro connectivity plans, corridor expansion and a mature ecosystem of schools, hospitals and retail already in place, The Reserve places you at the centre of the city's next chapter — without giving up the calm of the riverside.
               </p>
               <MagneticButton>
                 <Link href="/location" className="inline-block px-8 py-4 border border-[#d4af37] text-[#d4af37] font-sans tracking-[0.2em] uppercase text-[10px] font-bold rounded-full hover:bg-[#d4af37] hover:text-[#0B2B1B] transition-colors">
@@ -87,12 +87,12 @@ export default function OverviewPage() {
               initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}
               className="aspect-square bg-[#05140D] rounded-3xl border border-white/5 p-8 flex flex-col justify-end relative overflow-hidden group shadow-2xl"
             >
-                <Image src="https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" alt="21 Acres Landscape" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-70 transition-all duration-1000 ease-out" />
+                <Image src="https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" alt="21.03 Acres Master Development" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-70 transition-all duration-1000 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-transparent to-transparent z-10" />
                 
                 <div className="relative z-20 w-full bg-black/40 backdrop-blur-md p-6 rounded-2xl border border-white/10">
-                  <h3 className="text-7xl font-light text-white/20 absolute -top-12 right-6">21</h3>
-                  <p className="text-[#d4af37] uppercase tracking-widest text-xs mb-2 font-bold">Preserved Landscape</p>
+                  <h3 className="text-7xl font-light text-white/20 absolute -top-12 right-6">21.03</h3>
+                  <p className="text-[#d4af37] uppercase tracking-widest text-xs mb-2 font-bold">Master Development</p>
                   <p className="text-xl text-white font-light">Acres of lush, riverside nature.</p>
                 </div>
             </motion.div>
@@ -109,16 +109,16 @@ export default function OverviewPage() {
               initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}
               className="order-2 md:order-1 aspect-[4/5] bg-[#0B2B1B] rounded-3xl border border-white/5 p-8 flex flex-col justify-between relative overflow-hidden group shadow-2xl"
             >
-              <Image src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" alt="The Residences" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-70 transition-all duration-1000 ease-out" />
+              <Image src="https://www.koltepatil.com/assets/uploads/gallery/17853225611596383832.jpg" alt="Vyana at The Reserve Residences" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-70 transition-all duration-1000 ease-out" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-transparent to-[#0B2B1B]/80 z-10" />
               
               <div className="flex justify-between items-start w-full relative z-20">
-                 <span className="text-[#e5c158] text-xl font-light">Phase 1</span>
-                 <span className="text-[#0B2B1B] bg-[#d4af37] font-bold text-[10px] tracking-[0.2em] uppercase px-4 py-1.5 rounded-full shadow-lg">Now Open</span>
+                 <span className="text-[#e5c158] text-xl font-light">Vyana Phase 1</span>
+                 <span className="text-[#0B2B1B] bg-[#d4af37] font-bold text-[10px] tracking-[0.2em] uppercase px-4 py-1.5 rounded-full shadow-lg">T5, T6, T7</span>
               </div>
               <div className="relative z-20 w-full bg-black/40 backdrop-blur-md p-6 rounded-2xl border border-white/10">
-                <h3 className="text-3xl font-light text-white mb-2">2, 3 & 4 Bed</h3>
-                <p className="text-white/70 font-light text-sm">Designed around complete openness and light.</p>
+                <h3 className="text-3xl font-light text-white mb-2">2 & 3 Bed Residences</h3>
+                <p className="text-white/70 font-light text-sm">791 sq. ft. (2 BHK) & 1,016 sq. ft. (3 BHK) Carpet Areas.</p>
               </div>
             </motion.div>
 
@@ -127,9 +127,9 @@ export default function OverviewPage() {
               className="order-1 md:order-2"
             >
               <span className="text-[#d4af37] tracking-[0.2em] text-xs uppercase mb-4 block font-bold">The Architecture</span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 text-white leading-tight">Ultra Luxury 2 & 3 BHK Apartments.</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 text-white leading-tight">2 & 3 Bed Riverside Residences.</h2>
               <p className="text-lg text-white/70 leading-relaxed font-light mb-8">
-                Introducing thoughtfully planned luxury residences designed around a core philosophy: absolute spaciousness. Premium real estate crafted exclusively for the elite, featuring zero space-wastage layouts and grand terraces.
+                Vyana at The Reserve presents thoughtfully designed 2 & 3 BHK residences across 3 towers (T5, T6, T7) with 21 floors each and 8 units per floor (487 total units). Constructed with full aluform and 3.05 m slab-to-slab height.
               </p>
               <ul className="space-y-6 mb-10">
                 {[

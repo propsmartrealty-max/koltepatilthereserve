@@ -5,12 +5,12 @@ import Image from 'next/image';
 import SplitText from '@/components/ui/SplitText';
 
 const specs = [
-  { category: "Living & Dining", details: ["Imported Italian Marble flooring", "Gypsum-finished walls with premium plastic emulsion paint", "Floor-to-ceiling powder-coated aluminum sliding windows", "Designer veneer-finish main door with biometric digital lock"] },
-  { category: "Kitchen", details: ["Premium Granite/Engineered Quartz kitchen platform", "Stainless steel sink with drain board", "Designer dado tiles up to 2 ft above platform", "Provision for water purifier, exhaust fan, and dishwasher"] },
-  { category: "Bedrooms", details: ["Premium engineered wooden flooring in Master Bedroom", "High-grade vitrified tiles in secondary bedrooms", "Provision for split AC in all bedrooms", "Laminated flush doors with premium mortise locks"] },
-  { category: "Bathrooms", details: ["Imported CP & Sanitary fittings (Grohe/Kohler or equivalent)", "Anti-skid ceramic tile flooring", "Designer dado tiles up to lintel level", "Glass partition in Master Bathroom", "Concealed plumbing with premium UPVC pipes"] },
-  { category: "Electrical & Tech", details: ["Concealed fire-resistant copper wiring", "Premium modular switches (Legrand/Schneider or equivalent)", "Smart home automation readiness", "100% DG backup for common areas and essential flat points"] },
-  { category: "Safety & Security", details: ["Advanced 3-tier security system with CCTV surveillance", "Video door phone integrated with lobby", "Firefighting system as per NBC norms", "Seismic-resistant RCC framed structure"] },
+  { category: "Structure & Architecture", details: ["Full Aluform monolithic concrete construction", "Slab-to-slab height of 3.05 m (Clear height ~2.9 m)", "Well-spaced towers (T5, T6, T7) with 21 floors and 8 units per floor", "Seismic-resistant RCC design ensuring durability and acoustics"] },
+  { category: "Flooring & Tiling", details: ["Glazed vitrified tiles (Kajaria or equivalent) in living, dining, and all bedrooms", "Anti-skid vitrified tiles in bathrooms, balconies, and dry utility areas", "Designer ceramic wall tiles up to lintel level in all bathrooms"] },
+  { category: "Fittings & Sanitaryware", details: ["Premium CP and sanitary fittings by Jaquar or equivalent", "Concealed dual-flush cisterns and premium diverters", "Exhaust fan provision in kitchen and all toilets", "Stainless steel sink with premium granite/quartz counter"] },
+  { category: "Doors, Windows & Automation", details: ["Biometric digital lock for main entrance door", "Video Door Phone integrated with security concierge", "Powder-coated aluminum sliding windows and doors with mosquito nets", "Laminated flush doors with premium mortise locks"] },
+  { category: "Electrical & HVAC", details: ["Concealed fire-resistant copper wiring with modular switches", "AC piping and electrical provisions in living-dining and all bedrooms", "100% DG power backup for elevators and common utilities", "TV and broadband points strategically positioned"] },
+  { category: "Parking & Sustainability", details: ["Multi-level parking across 2 basements (B1 + B2) and 1 stilt level", "30% of all parking spots equipped with dedicated EV charging provision", "Rainwater harvesting and organic waste management systems", "Solar water heating system integration"] },
 ];
 
 export default function SpecificationsPage() {

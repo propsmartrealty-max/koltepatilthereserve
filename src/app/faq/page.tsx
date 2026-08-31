@@ -10,24 +10,40 @@ export const metadata = {
 
 const faqs = [
   {
-    question: "What is the RERA registration number for The Reserve?",
-    answer: "The Reserve by Kolte Patil is a MahaRERA registered project. The RERA numbers are P52100000001, P52100000002. Please verify on the official MahaRERA website."
+    question: "Where is Vyana at The Reserve located?",
+    answer: "Vyana at The Reserve is located on Sinhgad Road, Pune (Vadgaon Khurd, Survey Nos. 39/41/42/43/44/45/46/59/parts, Pune - 411041). It sits along a river-edge with views of the NDA hills and adjoins the upcoming ring road and proposed metro corridor. The project is well connected to Sinhgad Institutes, Swargate, Katraj, Pune Railway Station and the International Airport."
   },
   {
-    question: "What apartment configurations are available?",
-    answer: "We offer premium 2 BHK and ultra-luxury 3 BHK signature residences, featuring expansive balconies and smart home automation."
+    question: "What configurations are available at Vyana at The Reserve?",
+    answer: "Vyana at The Reserve presents thoughtfully designed 2 & 3 BHK apartments with carpet areas of 791 sq. ft. (2 BHK) and 1,016 sq. ft. (3 BHK). Detailed floor plans are available on request."
   },
   {
-    question: "What is the expected possession date?",
-    answer: "Phase 1 possession is scheduled for December 2026. Construction is currently advancing ahead of schedule."
+    question: "How many towers are being launched and how many floors does each tower have?",
+    answer: "The initial launch covers 3 towers — T5, T6 and T7 — each with 21 floors and 8 units per floor. The total unit count across these three towers is 487 apartments."
   },
   {
-    question: "Are home loans available from major banks?",
-    answer: "Yes, the project is pre-approved by all major financial institutions including SBI, HDFC, ICICI, and Axis Bank. View our Home Loan EMI Calculator for more details."
+    question: "What is the land parcel size for Vyana at The Reserve?",
+    answer: "Vyana at The Reserve is spread across 6.95 acres with river-edge greens & central boulevard amidst 21.03 acres of master development."
   },
   {
-    question: "What amenities are included in the clubhouse?",
-    answer: "Residents enjoy access to a 50,000 sq.ft. private clubhouse featuring an Olympic-length infinity pool, professional gymnasium, organic juice bar, and a dedicated senior citizen zone."
+    question: "What is the MahaRERA number for Vyana at The Reserve?",
+    answer: "Vyana at The Reserve (Phase I — T5, T6, T7) is registered with MahaRERA under registration number PM1261012600748. Project details are available on the MahaRERA portal at maharera.maharashtra.gov.in."
+  },
+  {
+    question: "What type of parking is available?",
+    answer: "The project has two basements (B1 + B2) and one stilt level with a mix of covered, mechanical and open parking. 2 BHK units get 1 parking and 3 BHK units get 1 or 2 parkings as per allotment. 30% of parking spots have EV charging provision. Visitor parking is also available."
+  },
+  {
+    question: "What are the key specifications and fittings?",
+    answer: "Construction is full aluform with a slab-to-slab height of 3.05 m and clear height of approximately 2.9 m. Flooring is glazed vitrified tiles in living areas, bedrooms and kitchen. Sanitary and CP fittings are Jaquar or equivalent. Tiles are Kajaria or equivalent. All units come with digital lock, video door phone, mosquito nets for windows and sliding doors, AC provision in living-dining and all bedrooms, and exhaust fan provision in kitchen and toilets."
+  },
+  {
+    question: "What is the clubhouse and swimming pool like?",
+    answer: "The clubhouse is approximately 19,750 sq. ft. The adult swimming pool measures 84 ft. x 27 ft. and the kids pool measures 14 ft. x 18 ft."
+  },
+  {
+    question: "How can I get configuration details and pricing for Vyana at The Reserve?",
+    answer: "Configuration details, floor plans, and pricing for Vyana at The Reserve are available on request. Submit your details through our enquiry form or contact our concierge directly at +91 77440 09295."
   }
 ];
 

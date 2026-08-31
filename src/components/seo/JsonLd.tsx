@@ -51,10 +51,10 @@ export default function JsonLd() {
         },
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "The Reserve Site, Sinhgad Road",
+          "streetAddress": "Survey Nos. 39/41/42/43/44/45/46/59/parts, Vadgaon Khurd, Sinhgad Road",
           "addressLocality": "Pune",
           "addressRegion": "Maharashtra",
-          "postalCode": "411030",
+          "postalCode": "411041",
           "addressCountry": "IN"
         },
         "geo": {
@@ -89,14 +89,14 @@ export default function JsonLd() {
         "@type": "ApartmentComplex",
         "@id": "https://thereserve.koltepatil.digital/#property",
         "name": "The Reserve by Kolte Patil",
-        "description": "Experience ultra-premium luxury living at The Reserve by Kolte Patil in Sinhgad Road, Pune. Master-crafted 2 & 3 BHK riverside residences.",
+        "description": "Experience ultra-premium luxury living at The Reserve by Kolte Patil in Sinhgad Road, Pune. Master-crafted 2 & 3 BHK riverside residences (791 sq.ft. & 1,016 sq.ft.). MahaRERA PM1261012600748.",
         "url": "https://thereserve.koltepatil.digital",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Sinhgad Road",
+          "streetAddress": "Vadgaon Khurd, Sinhgad Road",
           "addressLocality": "Pune",
           "addressRegion": "Maharashtra",
-          "postalCode": "411030",
+          "postalCode": "411041",
           "addressCountry": "IN"
         },
         "amenityFeature": [

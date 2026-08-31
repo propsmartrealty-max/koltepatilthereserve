@@ -10,12 +10,12 @@ export const metadata = {
 };
 
 const images = [
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg", alt: "Kolte Patil The Reserve Exterior Elevation", caption: "Premium Riverside Facade" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg", alt: "Luxury Apartment Interior Pune", caption: "Signature 3 BHK Living Room" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg", alt: "Clubhouse Amenities at The Reserve", caption: "50,000 sq.ft. Private Clubhouse" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg", alt: "Smart Home Features", caption: "Integrated Home Automation" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg", alt: "Pune Real Estate Investment Views", caption: "Uninterrupted Mutha River Views" },
-  { src: "https://www.koltepatil.com/assets/uploads/gallery/17847868911484090893.jpg", alt: "Infinity Pool The Reserve", caption: "Olympic-length Infinity Pool" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/17853225611596383832.jpg", alt: "Elegant living room interior at The Reserve by Kolte Patil in Vadgaon on Sinhgad Road, Pune", caption: "Signature Living Room" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/1785322623788205512.jpg", alt: "Spacious master bedroom designed for luxury living at The Reserve by Kolte Patil, Vadgaon, Pune", caption: "Master Bedroom Suite" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/17853218911227367318.jpg", alt: "Spacious balcony with scenic views at The Reserve by Kolte Patil, Sinhgad Road, Vadgaon, Pune", caption: "Private Riverside Balcony" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/17853229111036034291.jpg", alt: "Resort-style swimming pool at dusk at The Reserve by Kolte Patil in Vadgaon, Pune", caption: "Resort-Style Adult & Kids Pool" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/1785322203994334241.jpg", alt: "Beautifully landscaped garden illuminated at night at The Reserve by Kolte Patil, Vadgaon, Pune", caption: "Central Landscaped Garden" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg", alt: "Contemporary clubhouse entrance with step seating at The Reserve by Kolte Patil, Sinhgad Road, Vadgaon", caption: "19,750 Sq.Ft. Clubhouse Entrance" },
 ];
 
 export default function GalleryPage() {

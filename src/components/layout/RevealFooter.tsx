@@ -61,9 +61,9 @@ export default function RevealFooter() {
             <div className="text-right">
               <span className="font-serif text-xl text-white block mb-2">Connect</span>
               <ul className="space-y-1 font-sans text-xs text-white/60">
-                <li>Sinhgad Road, Pune</li>
-                <li>Maharashtra 411030</li>
-                <li>MahaRERA: PM1261012600748</li>
+                <li>Vadgaon Khurd, Sinhgad Road</li>
+                <li>Pune, Maharashtra 411041</li>
+                <li className="text-[#d4af37] font-medium">MahaRERA: PM1261012600748</li>
                 <li className="mt-4"><a href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">+91 77440 09295 (WhatsApp)</a></li>
               </ul>
             </div>
@@ -74,16 +74,23 @@ export default function RevealFooter() {
             <p className="text-sm text-white/60 font-light mb-6">
               Register your interest to receive exclusive details and floor plans.
             </p>
-            <Button variant="golden" className="rounded-none px-8 w-full bg-[#d4af37] text-[#0B2B1B] hover:bg-white hover:text-[#0B2B1B]">
-              Enquire Now
-            </Button>
+            <Link href="/contact" className="w-full">
+              <Button variant="golden" className="rounded-none px-8 w-full bg-[#d4af37] text-[#0B2B1B] hover:bg-white hover:text-[#0B2B1B]">
+                Enquire Now
+              </Button>
+            </Link>
           </div>
 
         </div>
 
+        {/* Disclaimer */}
+        <div className="pb-6 text-[8px] text-white/30 leading-relaxed max-w-5xl mx-auto text-center">
+          DISCLAIMER: The project is registered under the name &lsquo;Vyana Phase-I-T5, T6, T7&rsquo;, under MAHARERA Registration No: PM1261012600748, details of which are available at maharera.maharashtra.gov.in. &ldquo;The Reserve&rdquo; is the marketing name of the larger layout. Site: Survey Nos. 39/41/42/43/44/45/46/59/parts, Vadgaon Khurd, Sinhgad Road, Pune - 411041.
+        </div>
+
         {/* Legal */}
-        <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/50 uppercase tracking-[0.2em]">
-          <p>&copy; {new Date().getFullYear()} The Reserve by Kolte Patil.</p>
+        <div className="pt-6 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/50 uppercase tracking-[0.2em]">
+          <p>&copy; {new Date().getFullYear()} The Reserve by Kolte Patil. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-[#fd8e03] transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-[#fd8e03] transition-colors">Terms</Link>

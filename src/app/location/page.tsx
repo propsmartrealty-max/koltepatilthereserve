@@ -4,12 +4,13 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const locations = [
-  { category: "Infrastructure", name: "Proposed Pune Ring Road", distance: "2 Mins", desc: "Providing seamless connectivity to Hinjewadi, PCMC, and highways." },
-  { category: "Infrastructure", name: "Upcoming Metro Station", distance: "5 Mins", desc: "Walking distance to the massive public transit overhaul." },
-  { category: "Healthcare", name: "Deenanath Mangeshkar Hospital", distance: "12 Mins", desc: "World-class multi-specialty healthcare infrastructure." },
-  { category: "Education", name: "Abhinav Vidyalaya", distance: "8 Mins", desc: "Premium education and schooling for the future." },
-  { category: "Leisure", name: "Pune-Okayama Friendship Garden", distance: "10 Mins", desc: "The iconic Japanese garden for weekend retreats." },
-  { category: "Connectivity", name: "Mumbai-Bengaluru Highway", distance: "5 Mins", desc: "Direct exit avoiding internal city traffic." },
+  { category: "Retail & Essentials", name: "DMart", distance: "~1 KM", desc: "Daily essentials handled, just down the road." },
+  { category: "Education", name: "Orchids The International School", distance: "~4 KM", desc: "Quality education for kids, just a stone's throw away." },
+  { category: "Healthcare", name: "Sinhgad Hospital", distance: "~4 KM", desc: "Top-class healthcare facilities for you in close vicinity." },
+  { category: "Education", name: "Sinhgad Institutes & College", distance: "~5 KM", desc: "Premier higher education institutions right in the neighbourhood." },
+  { category: "Key Junction", name: "Chandani Chowk", distance: "~10 KM", desc: "One major junction, connected to all of West and Central Pune." },
+  { category: "Transit Hub", name: "Pune Railway Station", distance: "~15 KM", desc: "With railways so close, be on track with your travel plans." },
+  { category: "Infrastructure", name: "Proposed Pune Ring Road & Metro", distance: "~2 Mins", desc: "Adjoins upcoming ring road and proposed metro corridor." },
 ];
 
 export default function LocationPage() {
