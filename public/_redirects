@@ -1,7 +1,13 @@
-# Cloudflare Pages Edge 301 Redirect Rules for PageRank Preservation
-/the-reserve/*   /overview 301
-/kolte-patil-the-reserve/* /overview 301
-/vyana/* /the-residences 301
-/project/the-reserve /overview 301
-/home / 301
-/index.html / 301
+# ==============================================================================
+# CLOUDFLARE PAGES EDGE 301 REDIRECTS & CANONICALIZATION
+# ==============================================================================
+
+# Legacy URL Normalization
+/the-reserve/*              /overview 301
+/kolte-patil-the-reserve/*  /overview 301
+/vyana/*                    /the-residences 301
+/project/the-reserve        /overview 301
+/home                       / 301
+/index.html                 / 301
+/index                      / 301
+/default.html               / 301
