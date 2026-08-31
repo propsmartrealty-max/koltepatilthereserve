@@ -8,6 +8,7 @@ import MagneticButton from "@/components/ui/MagneticButton";
 import FluidBackground from "@/components/ui/FluidBackground";
 import LuxuryTicker from "@/components/home/LuxuryTicker";
 import MasterplanNavigator from "@/components/home/MasterplanNavigator";
+import CompetitorComparison from "@/components/home/CompetitorComparison";
 
 export default function Home() {
   const { setCursorType } = useCursor();
@@ -317,6 +318,13 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* 4. SINHGAD ROAD COMPETITOR COMPARISON BENCHMARK */}
+      <section className="relative z-30 py-24 bg-[#0B2B1B] -mt-6 rounded-[3rem] border-t border-white/10">
+        <div className="container mx-auto px-6 md:px-12 max-w-6xl">
+          <CompetitorComparison />
         </div>
       </section>
 
