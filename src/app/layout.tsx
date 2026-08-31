@@ -128,6 +128,26 @@ export default function RootLayout({
     >
       <head>
         <meta name="google-site-verification" content="_KeXkPdmvdlGxf7txGc-eGMTTLpaxsssiNgaIHAX_IA" />
+        <meta name="google-site-verification" content="VU-EOSplCFYBZtl4QpzXU4VucNJ7Noa26k5J-3xVO-E" />
+        
+        {/* Geo & Local Search Signals for Google SERP */}
+        <meta name="geo.region" content="IN-MH" />
+        <meta name="geo.placename" content="Vadgaon Khurd, Sinhgad Road, Pune" />
+        <meta name="geo.position" content="18.4716;73.8344" />
+        <meta name="ICBM" content="18.4716, 73.8344" />
+        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
+        
+        {/* High-Performance Edge Preconnects for Core Web Vitals */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.koltepatil.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        
+        {/* DNS Prefetching */}
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
+        <link rel="dns-prefetch" href="https://formsubmit.co" />
+        <link rel="dns-prefetch" href="https://player.vimeo.com" />
       </head>
       <body className="min-h-full flex flex-col font-sans bg-[#0B2B1B] text-[var(--foreground)] selection:bg-[#d4af37] selection:text-white overflow-x-hidden">
         {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}

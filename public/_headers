@@ -1,14 +1,31 @@
 /*
-  X-Frame-Options: DENY
+  X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://images.unsplash.com https://cdn.pixabay.com https://www.koltepatil.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://static.cloudflareinsights.com https://formsubmit.co; frame-src 'self' https://player.vimeo.com;
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self)
+  Timing-Allow-Origin: *
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://images.unsplash.com https://cdn.pixabay.com https://www.koltepatil.com https://*.google.com https://*.googleapis.com https://*.gstatic.com https://www.facebook.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://static.cloudflareinsights.com https://cloudflareinsights.com https://formsubmit.co https://*.clarity.ms; frame-src 'self' https://player.vimeo.com https://maps.google.com https://maps.google.it https://www.google.com https://*.google.com; media-src 'self' https://player.vimeo.com https://*.vimeocdn.com;
 
-# Cache static assets for 1 year
+# Cache static Next.js JavaScript chunks and CSS bundles for 1 year immutable
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Cache public fonts and images
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
 
 /images/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Cache SEO files with fast revalidation
+/sitemap.xml
+  Cache-Control: public, max-age=86400, stale-while-revalidate=86400
+  Content-Type: application/xml; charset=utf-8
+
+/robots.txt
+  Cache-Control: public, max-age=86400, stale-while-revalidate=86400
+  Content-Type: text/plain; charset=utf-8
