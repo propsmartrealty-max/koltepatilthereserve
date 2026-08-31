@@ -39,11 +39,11 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="flex flex-col items-center"
           >
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white drop-shadow-2xl mb-4 tracking-tight">
-              The Reserve
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white drop-shadow-2xl mb-4 tracking-tight">
+              The Reserve <span className="text-[#d4af37] font-light">by Kolte Patil</span>
             </h1>
-            <p className="font-sans text-xs md:text-sm text-white/90 tracking-[0.4em] uppercase max-w-xl mx-auto mb-12 drop-shadow-md">
-              Sinhagad Road's Most Premium Address
+            <p className="font-sans text-xs md:text-sm text-white/90 tracking-[0.3em] uppercase max-w-2xl mx-auto mb-12 drop-shadow-md">
+              2 & 3 BHK Riverside Residences on Sinhgad Road, Pune • MahaRERA PM1261012600748
             </p>
             <MagneticButton>
               <Link href="/contact" className="px-10 py-5 bg-[#d4af37] text-[#0B2B1B] font-sans tracking-[0.2em] uppercase text-[10px] font-bold rounded-full shadow-2xl hover:bg-white transition-colors block">
@@ -75,17 +75,17 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#0B2B1B] leading-[1.1] mb-10"
           >
-            Luxury is not just a standard.<br/>
-            It is a state of mind, crafted in <span className="text-[#d4af37] italic">every detail</span>.
+            Where Nature&apos;s Charm Meets <br/>
+            Pune&apos;s Next <span className="text-[#d4af37] italic">Chapter of Growth</span>.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[#0B2B1B]/70 font-light text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12"
+            className="text-[#0B2B1B]/70 font-light text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-12"
           >
-            Experience ultra luxury apartments in Pune where river, hills, sky, and nature converge seamlessly, minutes from the everyday conveniences of Sinhagad Road.
+            Spread across 21.03 acres of master development in a rare riverside setting at Vadgaon Khurd on Sinhgad Road, The Reserve by Kolte-Patil brings together river-facing greens, scenic NDA hill views and a central landscaped boulevard — minutes from Pune Ring Road and proposed metro connectivity.
           </motion.p>
           <div className="flex flex-col sm:flex-row justify-center gap-8 items-center">
             <Link href="/overview" className="border-b border-[#0B2B1B] text-[#0B2B1B] uppercase tracking-[0.2em] text-xs font-bold pb-1 hover:text-[#d4af37] hover:border-[#d4af37] transition-colors">
@@ -138,13 +138,13 @@ export default function Home() {
               onMouseEnter={() => setCursorType('explore')} onMouseLeave={() => setCursorType('default')}
             >
               <div className="absolute inset-0 w-full h-full">
-                <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg" alt="The Club" fill sizes="(max-width: 1200px) 100vw, 66vw" className="object-cover group-hover:scale-105 transition-transform duration-[2s] ease-out" />
+                <Image src="https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg" alt="19,750 Sq.Ft. Clubhouse at The Reserve by Kolte Patil" fill sizes="(max-width: 1200px) 100vw, 66vw" className="object-cover group-hover:scale-105 transition-transform duration-[2s] ease-out" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B]/90 via-[#0B2B1B]/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 md:p-10 z-10 w-full">
                 <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-white/70 block mb-2 font-bold">Centerpiece</span>
-                <h3 className="font-serif text-3xl md:text-5xl text-white mb-3">50,000 sq.ft. Club</h3>
-                <p className="font-sans text-white/80 max-w-sm font-light leading-relaxed hidden md:block">An exclusive resident club featuring spa pavilions, infinity pools, and holistic wellness zones.</p>
+                <h3 className="font-serif text-3xl md:text-5xl text-white mb-3">19,750 sq.ft. Clubhouse</h3>
+                <p className="font-sans text-white/80 max-w-sm font-light leading-relaxed hidden md:block">Contemporary step seating architecture, 84x27 ft. resort swimming pool, and dedicated wellness pavilions.</p>
               </div>
             </motion.div>
 
@@ -154,12 +154,12 @@ export default function Home() {
               className="md:col-span-1 md:row-span-2 relative rounded-[2rem] overflow-hidden group shadow-lg bg-gradient-to-br from-white to-[#F5F5F5] flex flex-col p-8 justify-between border border-[#0B2B1B]/5"
             >
               <div className="relative z-10">
-                <span className="font-serif text-6xl text-[#d4af37] block mb-2 drop-shadow-sm">50</span>
-                <h3 className="font-serif text-2xl text-[#0B2B1B] mb-3">Acres of Greenery</h3>
-                <p className="font-sans text-[#0B2B1B]/70 font-light leading-relaxed text-sm">Sprawling curated greenery, bio-diverse parks, and serene walking trails right at your doorstep.</p>
+                <span className="font-serif text-6xl text-[#d4af37] block mb-2 drop-shadow-sm">21.03</span>
+                <h3 className="font-serif text-2xl text-[#0B2B1B] mb-3">Acres Master Development</h3>
+                <p className="font-sans text-[#0B2B1B]/70 font-light leading-relaxed text-sm">River-facing greens, scenic NDA hill views, and central landscaped boulevard at Vadgaon Khurd, Sinhgad Road.</p>
               </div>
               <div className="relative h-48 md:h-64 w-full rounded-2xl overflow-hidden mt-6 shadow-inner">
-                <Image src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" alt="Greenery" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-110 transition-transform duration-[3s]" />
+                <Image src="https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" alt="21.03 Acres Landscape at The Reserve Kolte Patil" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-110 transition-transform duration-[3s]" />
               </div>
             </motion.div>
 
@@ -169,12 +169,12 @@ export default function Home() {
               className="md:col-span-1 md:row-span-1 relative rounded-[2rem] overflow-hidden group shadow-lg bg-[#0B2B1B] p-8 flex flex-col justify-end"
             >
               <div className="absolute inset-0 w-full h-full z-0">
-                  <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" alt="Smart Home" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-1000 mix-blend-luminosity" />
+                  <Image src="https://www.koltepatil.com/assets/uploads/gallery/17853225611596383832.jpg" alt="Vyana 2 and 3 BHK Apartments Sinhgad Road" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-1000 mix-blend-luminosity" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] to-transparent"></div>
               <div className="relative z-10">
-                <h3 className="font-serif text-2xl text-white mb-2">Automated Homes</h3>
-                <p className="font-sans text-white/70 text-sm font-light">State-of-the-art smart integration.</p>
+                <h3 className="font-serif text-2xl text-white mb-2">Vyana Phase 1</h3>
+                <p className="font-sans text-white/70 text-sm font-light">791 & 1,016 sq.ft. 2 & 3 BHK residences.</p>
               </div>
             </motion.div>
 
@@ -184,11 +184,11 @@ export default function Home() {
               className="md:col-span-2 md:row-span-1 relative rounded-[2rem] overflow-hidden group shadow-lg bg-white p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 border border-[#0B2B1B]/5"
             >
               <div className="relative z-10 w-full md:w-1/2 pr-0 md:pr-4">
-                <h3 className="font-serif text-3xl text-[#0B2B1B] mb-3">Global Standards</h3>
-                <p className="font-sans text-[#0B2B1B]/70 text-sm font-light leading-relaxed">Crafted with imported Italian marble, European fixtures, and bespoke minimalist finishing.</p>
+                <h3 className="font-serif text-3xl text-[#0B2B1B] mb-3">Aluform Construction</h3>
+                <p className="font-sans text-[#0B2B1B]/70 text-sm font-light leading-relaxed">Full aluform monolithic structure, 3.05 m slab height, Kajaria glazed vitrified tiles, and Jaquar fittings.</p>
               </div>
               <div className="relative h-40 md:h-full w-full md:w-1/2 rounded-[1.5rem] overflow-hidden shadow-inner">
-                <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847868911484090893.jpg" alt="Interior" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-[2s]" />
+                <Image src="https://www.koltepatil.com/assets/uploads/gallery/1785322623788205512.jpg" alt="Master Bedroom at The Reserve Kolte Patil" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-[2s]" />
               </div>
             </motion.div>
           </div>
