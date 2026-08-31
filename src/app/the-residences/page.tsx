@@ -16,12 +16,12 @@ export default function TheResidences() {
   return (
     <div className="relative bg-slate-950 text-slate-100 selection:bg-[#d4af37] selection:text-white">
       {/* Cinematic Hero */}
-      <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl border-b border-[#d4af37]/20">
+      <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl border-b border-[#d4af37]/20 bg-[#05140D]">
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
           <Image priority 
-            src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
-            alt="The Residences Hero"
-            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-40 mix-blend-luminosity"
+            src="/images/gallery/vyana-towers.jpg"
+            alt="The Residences Hero at The Reserve"
+            fill sizes="100vw" className="object-cover opacity-50 mix-blend-luminosity scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950"></div>
         </motion.div>
@@ -33,7 +33,7 @@ export default function TheResidences() {
             transition={{ duration: 1, delay: 0.2 }}
             className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-[#d4af37] mb-8 block font-bold"
           >
-            Luxury Apartments Pune
+            2 & 3 BHK Luxury Apartments Pune
           </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 50 }}
@@ -61,7 +61,7 @@ export default function TheResidences() {
                 <span className="italic text-[#d4af37]">Flats for Sale Pune.</span>
               </h2>
               <p className="font-sans text-slate-400 font-light leading-relaxed mb-6">
-                Every luxury residence at Kolte Patil The Reserve is a testament to meticulous planning and flawless execution. Expansive living areas seamlessly transition into private terraces, offering panoramic views of the Pune skyline, setting the standard for premium residential projects in Pune.
+                Every luxury residence at Kolte Patil The Reserve is a testament to meticulous planning and flawless execution. Expansive living areas seamlessly transition into private terraces, offering panoramic views of the Mutha River and NDA hills, setting the standard for premium residential projects in Pune.
               </p>
             </motion.div>
 
@@ -70,11 +70,11 @@ export default function TheResidences() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1 }}
-              className="relative h-[60vh] rounded-[3rem] overflow-hidden border border-[#d4af37]/20 shadow-2xl"
+              className="relative h-[60vh] rounded-[3rem] overflow-hidden border border-[#d4af37]/20 shadow-2xl bg-[#05140D]"
             >
               <Image 
-                src="https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg"
-                alt="Interior Render"
+                src="/images/gallery/interior-deck.jpg"
+                alt="Signature Living Room & Deck"
                 fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-80"
               />
             </motion.div>
@@ -91,28 +91,35 @@ export default function TheResidences() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-[#d4af37]/20 pb-8">
               <div>
                 <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-4">Availability</span>
-                <h2 className="font-serif text-4xl text-slate-100">Floorplans</h2>
+                <h2 className="font-serif text-4xl text-slate-100">Vyana Floor Plans</h2>
               </div>
-              <button className="text-[10px] tracking-[0.2em] uppercase text-[#d4af37] border border-[#d4af37] px-6 py-3 hover:bg-[#d4af37] hover:text-slate-950 transition-colors mt-8 md:mt-0">
-                Download Brochure
-              </button>
+              <a href="/floor-plans" className="text-[10px] tracking-[0.2em] uppercase text-[#d4af37] border border-[#d4af37] px-6 py-3 hover:bg-[#d4af37] hover:text-slate-950 transition-colors mt-8 md:mt-0 font-bold rounded-full">
+                View Full Room Dimensions →
+              </a>
             </div>
 
-            <div className="flex flex-col gap-6">
-              {floorplans.map((plan, i) => (
-                <div key={i} className="flex flex-col md:flex-row justify-between items-center py-6 px-8 bg-slate-950 rounded-2xl border border-slate-800 hover:border-[#d4af37]/50 transition-colors group cursor-pointer">
-                  <div className="flex flex-col w-full md:w-auto mb-4 md:mb-0">
-                    <span className="font-serif text-2xl text-slate-100 group-hover:text-[#d4af37] transition-colors">{plan.type}</span>
-                    <span className="font-sans text-xs text-slate-500">{plan.size}</span>
-                  </div>
-                  <div className="w-full md:w-auto flex justify-between items-center gap-12 border-t md:border-t-0 border-slate-800 pt-4 md:pt-0">
-                    <span className="font-sans text-xs uppercase tracking-widest text-[#d4af37]">{plan.price}</span>
-                    <span className="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center group-hover:bg-[#d4af37] group-hover:border-[#d4af37] group-hover:text-slate-950 transition-colors">
-                      →
-                    </span>
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="p-8 rounded-3xl bg-[#05140D] border border-white/10">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-black/40 border border-white/5 mb-6 p-4">
+                  <Image src="/images/floor-plans/vyana-3bhk-floorplan.png" alt="3 BHK Blueprint" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain p-2" />
                 </div>
-              ))}
+                <h3 className="font-serif text-2xl text-white mb-2">Vyana 3 BHK (1,016 Sq.Ft.)</h3>
+                <p className="text-white/60 text-xs font-light mb-4">Towers T5, T6, T7 | 3.05 m Slab-to-Slab Height</p>
+                <a href="/floor-plans" className="text-xs uppercase tracking-widest text-[#d4af37] font-bold hover:text-white transition-colors">
+                  Explore 3 BHK Specifications →
+                </a>
+              </div>
+
+              <div className="p-8 rounded-3xl bg-[#05140D] border border-white/10">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-black/40 border border-white/5 mb-6 p-4">
+                  <Image src="/images/floor-plans/vyana-2bhk-floorplan.png" alt="2 BHK Blueprint" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain p-2" />
+                </div>
+                <h3 className="font-serif text-2xl text-white mb-2">Vyana 2 BHK (791 Sq.Ft.)</h3>
+                <p className="text-white/60 text-xs font-light mb-4">Towers T5, T6, T7 | Full Aluform Monolithic Structure</p>
+                <a href="/floor-plans" className="text-xs uppercase tracking-widest text-[#d4af37] font-bold hover:text-white transition-colors">
+                  Explore 2 BHK Specifications →
+                </a>
+              </div>
             </div>
           </motion.div>
 
