@@ -148,6 +148,10 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
         <link rel="dns-prefetch" href="https://formsubmit.co" />
         <link rel="dns-prefetch" href="https://player.vimeo.com" />
+
+        {/* PWA & Brand Manifest */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#0B2B1B" />
       </head>
       <body className="min-h-full flex flex-col font-sans bg-[#0B2B1B] text-[var(--foreground)] selection:bg-[#d4af37] selection:text-white overflow-x-hidden">
         {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}

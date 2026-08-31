@@ -1,0 +1,22 @@
+{
+  "name": "The Reserve by Kolte Patil",
+  "short_name": "The Reserve",
+  "description": "2 & 3 BHK Riverside Luxury Residences on Sinhgad Road, Pune by Kolte-Patil Developers Ltd.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B2B1B",
+  "theme_color": "#0B2B1B",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/kolte-patil-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/kolte-patil-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
