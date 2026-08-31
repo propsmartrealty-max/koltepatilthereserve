@@ -13,7 +13,7 @@ export default function VirtualTourPage() {
     "@type": "VideoObject",
     "name": "Kolte Patil The Reserve - Virtual Walkthrough & Overview",
     "description": "A comprehensive virtual walkthrough of The Reserve 2 & 3 BHK riverside residences by Kolte Patil at Vadgaon Khurd, Sinhgad Road, Pune.",
-    "thumbnailUrl": "https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg",
+    "thumbnailUrl": "https://thereserve.koltepatil.digital/images/gallery/vyana-towers.jpg",
     "uploadDate": "2026-08-01T09:00:00+05:30",
     "contentUrl": "https://player.vimeo.com/video/394627252",
     "embedUrl": "https://player.vimeo.com/video/394627252"

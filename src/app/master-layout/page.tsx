@@ -140,7 +140,7 @@ export default function MasterLayoutPage() {
              initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}
              className="relative aspect-[4/5] rounded-[3rem] overflow-hidden group shadow-2xl border border-white/5"
            >
-             <Image src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" alt="Masterplan Aerial" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-60 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-80 transition-all duration-1000 ease-out" />
+             <Image src="/images/overview/21-acres-masterplan.jpg" alt="Masterplan Aerial" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-60 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-80 transition-all duration-1000 ease-out" />
              <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-transparent to-transparent" />
              <div className="absolute bottom-10 left-10 right-10 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
                <p className="text-[#d4af37] text-xs uppercase tracking-[0.2em] mb-2 font-bold">Vastu Compliant</p>

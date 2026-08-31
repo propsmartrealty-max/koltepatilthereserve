@@ -9,18 +9,19 @@ import RevealFooter from '@/components/layout/RevealFooter';
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
+  "@type": "ApartmentComplex",
   "name": "The Reserve by Kolte Patil",
-  "image": "https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg",
-  "description": "Ultra Luxury 3 BHK & 4 BHK Riverside Apartments in Sinhagad Road, Pune.",
+  "image": "https://thereserve.koltepatil.digital/images/overview/21-acres-masterplan.jpg",
+  "description": "Ultra Luxury 2 & 3 BHK Riverside Apartments on Sinhgad Road, Vadgaon Khurd, Pune. MahaRERA PM1261012600748.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Sinhagad Road",
+    "streetAddress": "Survey Nos. 39/41/42/43/44/45/46/59/parts, Vadgaon Khurd, Sinhgad Road",
     "addressLocality": "Pune",
     "addressRegion": "Maharashtra",
+    "postalCode": "411041",
     "addressCountry": "IN"
   },
-  "priceRange": "₹ 2.5 Cr - ₹ 4 Cr"
+  "priceRange": "₹ 85 Lakhs - ₹ 1.65 Cr"
 };
 
 export default function OverviewPage() {
