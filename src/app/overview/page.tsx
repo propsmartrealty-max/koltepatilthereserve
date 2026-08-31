@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Script from 'next/script';
 import Link from 'next/link';
 import MagneticButton from '@/components/ui/MagneticButton';
+import RevealFooter from '@/components/layout/RevealFooter';
 
 const schema = {
   "@context": "https://schema.org",
@@ -157,6 +158,74 @@ export default function OverviewPage() {
           </div>
         </div>
       </section>
+
+      {/* 4. EXHAUSTIVE PROJECT DATA MATRIX */}
+      <section className="relative z-20 py-24 bg-[#0B2B1B] border-b border-white/5">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <span className="text-[#d4af37] tracking-[0.3em] uppercase text-xs font-bold mb-3 block">
+              Official Project Blueprint
+            </span>
+            <h2 className="font-serif text-3xl md:text-5xl text-white">
+              The Reserve by Kolte-Patil at a Glance
+            </h2>
+            <p className="text-white/70 font-light text-base mt-4">
+              Comprehensive key metrics, zoning configurations, and statutory compliance details registered under MahaRERA PM1261012600748.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="p-8 rounded-3xl bg-[#05140D] border border-white/10 shadow-xl">
+              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-bold block mb-2">Master Development</span>
+              <h3 className="font-serif text-3xl text-white mb-2">21.03 Acres</h3>
+              <p className="text-white/60 text-xs font-light leading-relaxed">Integrated riverside sanctuary at Vadgaon Khurd, Sinhgad Road, Pune.</p>
+            </div>
+
+            <div className="p-8 rounded-3xl bg-[#05140D] border border-white/10 shadow-xl">
+              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-bold block mb-2">Phase 1 (Vyana) Parcel</span>
+              <h3 className="font-serif text-3xl text-white mb-2">6.95 Acres</h3>
+              <p className="text-white/60 text-xs font-light leading-relaxed">Dedicated Phase 1 residential enclave comprising Towers T5, T6, and T7.</p>
+            </div>
+
+            <div className="p-8 rounded-3xl bg-[#05140D] border border-white/10 shadow-xl">
+              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-bold block mb-2">Tower Elevation</span>
+              <h3 className="font-serif text-3xl text-white mb-2">G + 21 Floors</h3>
+              <p className="text-white/60 text-xs font-light leading-relaxed">3 High-speed elevators per tower with 8 residences per floor plate.</p>
+            </div>
+
+            <div className="p-8 rounded-3xl bg-[#05140D] border border-white/10 shadow-xl">
+              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-bold block mb-2">Total Residences (Phase 1)</span>
+              <h3 className="font-serif text-3xl text-white mb-2">487 Units</h3>
+              <p className="text-white/60 text-xs font-light leading-relaxed">Spacious 2 & 3 BHK residences designed for optimal wind and sunlight.</p>
+            </div>
+
+            <div className="p-8 rounded-3xl bg-[#05140D] border border-white/10 shadow-xl">
+              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-bold block mb-2">Carpet Area Spectrum</span>
+              <h3 className="font-serif text-3xl text-white mb-2">791 & 1,016 Sq.Ft.</h3>
+              <p className="text-white/60 text-xs font-light leading-relaxed">791 sq.ft. (2 BHK) & 1,016 sq.ft. (3 BHK) RERA carpet areas.</p>
+            </div>
+
+            <div className="p-8 rounded-3xl bg-[#05140D] border border-white/10 shadow-xl">
+              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-bold block mb-2">Contemporary Clubhouse</span>
+              <h3 className="font-serif text-3xl text-white mb-2">19,750 Sq.Ft.</h3>
+              <p className="text-white/60 text-xs font-light leading-relaxed">Step seating amphitheater architecture, 84x27 ft. pool & 14x18 ft. kids pool.</p>
+            </div>
+          </div>
+
+          <div className="mt-16 p-8 rounded-3xl bg-[#05140D] border border-[#d4af37]/30 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-bold block mb-1">MahaRERA Registered</span>
+              <p className="font-mono text-xl text-white font-bold">Registration No: PM1261012600748</p>
+              <p className="text-white/50 text-xs font-light mt-1">Project Registered as Vyana Phase-I-T5, T6, T7 | maharera.maharashtra.gov.in</p>
+            </div>
+            <Link href="/contact" className="px-8 py-4 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors shrink-0 shadow-lg">
+              Book Site Visit
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <RevealFooter />
     </main>
   );
 }

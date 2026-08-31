@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
+import RevealFooter from '@/components/layout/RevealFooter';
+import Link from 'next/link';
+
 const ArchitecturalModel3D = dynamic(() => import('@/components/ui/ArchitecturalModel3D'), { 
   ssr: false,
   loading: () => (
@@ -15,11 +18,11 @@ const ArchitecturalModel3D = dynamic(() => import('@/components/ui/Architectural
 
 export default function MasterLayoutPage() {
   return (
-    <main className="min-h-screen bg-[#0B2B1B] text-white relative pt-32 pb-24 selection:bg-[#d4af37] selection:text-[#0B2B1B] overflow-hidden">
+    <div className="relative bg-[#0B2B1B] text-white min-h-screen flex flex-col selection:bg-[#d4af37] selection:text-[#0B2B1B] overflow-hidden">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none z-10" />
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#d4af37]/5 rounded-full blur-[120px] pointer-events-none z-0 translate-x-1/3 -translate-y-1/3" />
       
-      <div className="container mx-auto px-6 relative z-20">
+      <main className="flex-1 container mx-auto px-6 relative z-20 pt-32 pb-24">
         
         {/* Header */}
         <div className="mb-16 md:mb-24 max-w-4xl text-center mx-auto">
@@ -27,19 +30,19 @@ export default function MasterLayoutPage() {
             initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
             className="text-[#d4af37] tracking-[0.2em] text-sm uppercase mb-4 font-bold"
           >
-            The Blueprint
+            21.03-Acre Blueprint
           </motion.p>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-light tracking-tight mb-8 text-white"
+            className="text-5xl md:text-7xl font-light tracking-tight mb-8 text-white uppercase"
           >
-            Master Layout
+            Master Layout & Masterplan
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.4 }}
-            className="text-lg md:text-xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-white/70 font-light max-w-3xl mx-auto leading-relaxed"
           >
-            An expansive 21.03-acre canvas meticulously engineered for luxury. Where the river sets the pace, the architecture gives you room to breathe, and nature dictates the flow.
+            An expansive 21.03-acre canvas meticulously engineered for luxury. Where the Mutha River sets the pace, the NDA hill backdrop provides serenity, and thoughtful master planning dictates seamless flow.
           </motion.p>
         </div>
 
@@ -55,40 +58,81 @@ export default function MasterLayoutPage() {
           </div>
         </motion.div>
 
-        {/* Details Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
+        {/* 6 Masterplan Zones */}
+        <div className="mb-24">
+          <div className="text-center mb-16 max-w-2xl mx-auto">
+            <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-2">Masterplan Zoning</span>
+            <h2 className="font-serif text-3xl md:text-5xl text-white">6 Distinct Architectural Zones</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                num: "01",
+                title: "Riverfront Green Buffer",
+                desc: "An expansive linear eco-park facing the river, offering a peaceful walking trail completely separated from vehicular traffic."
+              },
+              {
+                num: "02",
+                title: "Central Landscaped Boulevard",
+                desc: "A wide, tree-lined arterial spine connecting all residential drop-offs and drop-off plazas with zero congestion."
+              },
+              {
+                num: "03",
+                title: "19,750 Sq.Ft. Clubhouse & Pool",
+                desc: "Contemporary step seating architecture with 84x27 ft. resort swimming pool, 14x18 ft. kids pool, and wellness pavilions."
+              },
+              {
+                num: "04",
+                title: "Vyana Towers (T5, T6, T7)",
+                desc: "Phase 1 residential cluster featuring 21 storeys, 8 units per floor, and full aluform monolithic concrete construction."
+              },
+              {
+                num: "05",
+                title: "Sports & Recreational Arena",
+                desc: "Championship-grade pickleball courts, multipurpose turf, cricket bowling pitch, and open fitness decks."
+              },
+              {
+                num: "06",
+                title: "Multi-Level EV Parking Enclave",
+                desc: "2 Basements (B1+B2) and Stilt level parking with 30% EV-charging enabled bays and RFID automated boom barriers."
+              }
+            ].map((zone, idx) => (
+              <div key={idx} className="p-8 rounded-3xl bg-[#05140D] border border-white/10 shadow-xl hover:border-[#d4af37]/40 transition-colors">
+                <span className="text-2xl font-serif text-[#d4af37] block mb-3">{zone.num}</span>
+                <h3 className="font-serif text-xl text-white mb-2">{zone.title}</h3>
+                <p className="text-white/60 text-sm font-light leading-relaxed">{zone.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Masterplan Engineering Details Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center mb-24">
            <motion.div 
              initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
            >
-             <h2 className="text-3xl md:text-4xl font-light mb-8 text-white leading-tight">Zones Engineered for <br/><span className="text-[#e5c158] italic">Absolute Perfection.</span></h2>
+             <h2 className="text-3xl md:text-4xl font-light mb-8 text-white leading-tight">Masterplan Engineering for <br/><span className="text-[#e5c158] italic">Uncompromised Living.</span></h2>
              
-             <div className="space-y-8">
-                {[
-                  {
-                    title: "The Riverfront Promenade",
-                    desc: "A massive dedicated green buffer facing the river, offering a tranquil walkway completely isolated from vehicular movement."
-                  },
-                  {
-                    title: "The Central Boulevard",
-                    desc: "A sprawling landscaped artery that acts as the spine of the project, connecting all residential towers with pedestrian-friendly, tree-lined pathways."
-                  },
-                  {
-                    title: "The Elevated Club Enclave",
-                    desc: "The 19,750 sq.ft. contemporary clubhouse is centrally positioned with step seating architecture, ensuring equal access for all residents while maintaining architectural prominence."
-                  },
-                  {
-                    title: "The Tower Sanctuaries",
-                    desc: "Each residential tower is strategically spaced to maximize cross-ventilation, minimize overlooking, and ensure every apartment gets unobstructed natural light."
-                  }
-                ].map((zone, i) => (
-                  <div key={i} className="flex gap-6">
-                    <div className="text-[#d4af37] font-sans font-bold text-lg mt-1">0{i+1}</div>
-                    <div>
-                      <h3 className="text-xl font-medium text-white mb-2">{zone.title}</h3>
-                      <p className="text-white/60 font-light text-sm leading-relaxed">{zone.desc}</p>
-                    </div>
-                  </div>
-                ))}
+             <div className="space-y-6 text-white/70 font-light leading-relaxed text-sm">
+                <p>
+                  <strong>Wind Tunneling & Cross-Ventilation:</strong> Tower alignments were calculated using aerodynamic computational fluid dynamics to maximize breeze channeling from the Mutha river valley.
+                </p>
+                <p>
+                  <strong>Sunlight Path Optimization:</strong> Strategic spacing between Towers T5, T6, and T7 ensures uninterrupted daylight across living rooms and private balconies throughout every season.
+                </p>
+                <p>
+                  <strong>Pedestrian-First Safety:</strong> Vehicular traffic is routed immediately to basement ramps upon entering the main gate, keeping 80% of ground-level walkways 100% vehicle-free.
+                </p>
+                <p>
+                  <strong>100% Eco-Sustainable Infrastructure:</strong> Rainwater harvesting pits, dedicated on-site sewage treatment plant (STP) for landscape irrigation, and solar illumination along boulevard paths.
+                </p>
+             </div>
+
+             <div className="mt-8">
+               <Link href="/floor-plans" className="px-8 py-4 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors inline-block shadow-lg">
+                 Explore Vyana Floor Plans →
+               </Link>
              </div>
            </motion.div>
 
@@ -105,7 +149,9 @@ export default function MasterLayoutPage() {
            </motion.div>
         </div>
 
-      </div>
-    </main>
+      </main>
+
+      <RevealFooter />
+    </div>
   );
 }
