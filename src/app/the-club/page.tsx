@@ -13,10 +13,10 @@ export default function TheClub() {
   const [activeSpecTab, setActiveSpecTab] = useState(0);
 
   const amenities = [
-    { title: "84x27 ft. Resort Swimming Pool", desc: "Sprawling adult swimming pool paired with a dedicated 14x18 ft. kids pool and sun deck.", img: "https://www.koltepatil.com/assets/uploads/gallery/17853229111036034291.jpg" },
-    { title: "19,750 Sq.Ft. Clubhouse", desc: "Contemporary step seating architecture with resident lounges, multi-purpose halls, and recreational zones.", img: "https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg" },
-    { title: "Central Landscaped Boulevard", desc: "Grand green spine connecting the 21.03 acres master development with nature trails and seating pavilions.", img: "https://www.koltepatil.com/assets/uploads/gallery/1785322203994334241.jpg" },
-    { title: "Pickleball & Sports Turf", desc: "Championship-grade sports courts and outdoor recreation spaces for active fitness.", img: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" }
+    { title: "84x27 ft. Resort Swimming Pool", desc: "Sprawling adult swimming pool paired with a dedicated 14x18 ft. kids pool and sun deck.", img: "/images/gallery/resort-swimming-pool.jpg" },
+    { title: "19,750 Sq.Ft. Clubhouse", desc: "Contemporary step seating architecture with resident lounges, multi-purpose halls, and recreational zones.", img: "/images/gallery/clubhouse-step-seating.jpg" },
+    { title: "Central Landscaped Boulevard", desc: "Grand green spine connecting the 21.03 acres master development with nature trails and seating pavilions.", img: "/images/gallery/central-boulevard.jpg" },
+    { title: "Pickleball & Sports Turf", desc: "Championship-grade sports courts and outdoor recreation spaces for active fitness.", img: "/images/gallery/sports-turf.jpg" }
   ];
 
   const specs = [
@@ -34,7 +34,7 @@ export default function TheClub() {
         <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl mb-32 border-b border-[#d4af37]/20">
           <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
             <Image priority 
-              src="https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg"
+              src="/images/gallery/clubhouse-step-seating.jpg"
               alt="19,750 Sq.Ft. Clubhouse at The Reserve by Kolte Patil"
               fill
               className="object-cover opacity-40 mix-blend-luminosity"

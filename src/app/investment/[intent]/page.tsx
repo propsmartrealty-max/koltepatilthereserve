@@ -34,7 +34,7 @@ export default async function InvestmentIntentPage({ params }: { params: Promise
       <main className="flex-1 flex flex-col justify-center items-center text-center px-6 py-40 z-10 relative">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image 
-            src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
+            src="/images/gallery/interior-deck.jpg"
             alt="Investment Strategy"
             fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-10 mix-blend-luminosity grayscale"
           />

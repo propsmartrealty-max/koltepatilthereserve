@@ -104,7 +104,7 @@ export default function SpecificationsPage() {
     <div className="relative bg-[#0B2B1B] text-white min-h-screen flex flex-col selection:bg-[#d4af37] selection:text-[#0B2B1B]">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none z-10" />
       <div className="absolute inset-0 z-0 opacity-20">
-        <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg" alt="Luxury Specifications" fill sizes="100vw" className="object-cover mix-blend-luminosity" />
+        <Image src="/images/gallery/interior-deck.jpg" alt="Luxury Specifications" fill sizes="100vw" className="object-cover mix-blend-luminosity" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B2B1B]/80 via-[#0B2B1B] to-[#0B2B1B]" />
       </div>
       

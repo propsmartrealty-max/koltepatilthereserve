@@ -36,7 +36,7 @@ export default async function LocationMicroMarket({ params }: { params: Promise<
     "@type": "Place",
     "name": `${data.title} - The Reserve by Kolte Patil`,
     "description": data.excerpt,
-    "image": "https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg",
+    "image": "https://thereserve.koltepatil.digital/images/overview/21-acres-masterplan.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Vadgaon Khurd, Sinhgad Road",
@@ -70,7 +70,7 @@ export default async function LocationMicroMarket({ params }: { params: Promise<
         {/* Abstract Background Layer */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image 
-            src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
+            src="/images/gallery/interior-deck.jpg"
             alt="Pune Skyline"
             fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-10 mix-blend-luminosity grayscale"
           />

@@ -26,7 +26,7 @@ export default function ResidencesPage() {
         "Dedicated Utility Balcony",
         "1 Covered Parking with EV Provision"
       ],
-      image: "https://www.koltepatil.com/assets/uploads/gallery/17853225611596383832.jpg"
+      image: "/images/floor-plans/vyana-2bhk-floorplan.png"
     },
     {
       id: "3bhk",
@@ -45,7 +45,7 @@ export default function ResidencesPage() {
         "Concealed Copper Wiring with AC Points",
         "1 or 2 Parking Slots with EV Provision"
       ],
-      image: "https://www.koltepatil.com/assets/uploads/gallery/1785322623788205512.jpg"
+      image: "/images/floor-plans/vyana-3bhk-floorplan.png"
     }
   ];
 

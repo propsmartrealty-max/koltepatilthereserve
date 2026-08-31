@@ -8,30 +8,30 @@ import { AnimatedReveal } from "./AnimatedReveal";
 const galleryImages = [
   {
     id: "img-1",
-    src: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg",
-    title: "Statuario Marble",
-    desc: "Book-matched Italian marble sourced from Carrara.",
+    src: "/images/gallery/interior-deck.jpg",
+    title: "Signature River Decks",
+    desc: "Seamless indoor-outdoor transitions overlooking the Mutha River.",
     className: "col-span-12 md:col-span-7 h-[60vh]"
   },
   {
     id: "img-2",
-    src: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg",
-    title: "Brushed Champagne",
-    desc: "Custom-forged metalwork detailing.",
+    src: "/images/gallery/clubhouse-lounge.jpg",
+    title: "Resident Club Lounges",
+    desc: "19,750 sq.ft. contemporary lifestyle sanctuary.",
     className: "col-span-12 md:col-span-5 h-[40vh] md:h-[60vh] md:mt-24"
   },
   {
     id: "img-3",
-    src: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg",
-    title: "European Oak",
-    desc: "Acoustically treated wide-plank flooring.",
+    src: "/images/gallery/landscaped-plazas.jpg",
+    title: "Landscaped Green Plazas",
+    desc: "70% open green terrain and central boulevard.",
     className: "col-span-12 md:col-span-6 h-[50vh]"
   },
   {
     id: "img-4",
-    src: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg",
-    title: "The Lounge",
-    desc: "Seamless indoor-outdoor transitions.",
+    src: "/images/gallery/sports-turf.jpg",
+    title: "Active Sports Turf",
+    desc: "Championship pickleball & multi-sport turf.",
     className: "col-span-12 md:col-span-6 h-[50vh] md:-mt-12"
   }
 ];

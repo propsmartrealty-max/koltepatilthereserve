@@ -12,12 +12,12 @@ export default function UpdatesPage() {
     { 
       date: "Phase 1 Milestone — Q3 2026", 
       status: "Towers T5, T6 & T7: Substructure excavation, RCC raft foundations, and monolithic Aluform setup progressing per MahaRERA PM1261012600748 timeline.", 
-      image: "https://www.koltepatil.com/assets/uploads/gallery/17853225611596383832.jpg" 
+      image: "/images/gallery/vyana-towers.jpg" 
     },
     { 
       date: "Master Infrastructure — Q2 2026", 
       status: "21.03-Acre Master Layout: Central landscaped boulevard access road, perimeter boundary, and sample experience center completed at Vadgaon Khurd.", 
-      image: "https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" 
+      image: "/images/overview/21-acres-masterplan.jpg" 
     }
   ];
 

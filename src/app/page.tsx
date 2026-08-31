@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import MagneticButton from "@/components/ui/MagneticButton";
 import FluidBackground from "@/components/ui/FluidBackground";
 import LuxuryTicker from "@/components/home/LuxuryTicker";
-import DayNightSlider from "@/components/ui/DayNightSlider";
+import MasterplanNavigator from "@/components/home/MasterplanNavigator";
 
 export default function Home() {
   const { setCursorType } = useCursor();
@@ -195,7 +195,7 @@ export default function Home() {
           </div>
 
           <div className="w-full max-w-6xl mx-auto shadow-[0_0_100px_rgba(212,175,55,0.15)] rounded-[3rem]">
-            <DayNightSlider />
+            <MasterplanNavigator />
           </div>
         </div>
       </section>

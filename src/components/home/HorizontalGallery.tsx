@@ -15,24 +15,24 @@ export default function HorizontalGallery() {
 
   const galleryItems = [
     {
-      img: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg",
-      title: "The Grand Lobby",
-      desc: "Double-height ceilings with custom glass chandeliers."
+      img: "/images/gallery/interior-deck.jpg",
+      title: "Signature River Decks",
+      desc: "Expansive living spaces with panoramic views of Mutha River & NDA Hills."
     },
     {
-      img: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg",
-      title: "Master Suites",
-      desc: "Bespoke Italian marble and panoramic city views."
+      img: "/images/gallery/master-bedroom.jpg",
+      title: "Master Bedroom Suites",
+      desc: "3.05 m slab heights, Kajaria vitrified finishes, and designer en-suites."
     },
     {
-      img: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg",
-      title: "Private Wellness",
-      desc: "Temperature-controlled infinity pools."
+      img: "/images/gallery/resort-swimming-pool.jpg",
+      title: "84x27 ft. Resort Pool",
+      desc: "Olympic-inspired lap pool & kids splash pool alongside 19,750 sq.ft. clubhouse."
     },
     {
-      img: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg",
-      title: "Automated Living",
-      desc: "Seamless integration of lighting, climate, and security."
+      img: "/images/gallery/sports-turf.jpg",
+      title: "Championship Sports Turf",
+      desc: "Pickleball court, cricket practice net pitch, and wellness jogging loop."
     }
   ];
 

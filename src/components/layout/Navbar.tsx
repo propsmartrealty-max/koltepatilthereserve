@@ -156,7 +156,7 @@ export default function Navbar() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="hidden md:block w-1/2 h-full relative"
             >
-              <div className="absolute inset-0 bg-[url('https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg')] bg-cover bg-center opacity-60 mix-blend-luminosity"></div>
+              <div className="absolute inset-0 bg-[url('/images/gallery/interior-deck.jpg')] bg-cover bg-center opacity-60 mix-blend-luminosity"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0B2B1B]/50 to-[#0B2B1B]"></div>
             </motion.div>
             

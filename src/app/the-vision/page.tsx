@@ -15,7 +15,7 @@ export default function TheVision() {
       <div className="h-screen w-full relative overflow-hidden flex flex-col justify-center shadow-2xl">
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
           <Image priority 
-            src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
+            src="/images/gallery/vyana-towers.jpg"
             alt="The Vision Hero"
             fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-30"
           />
@@ -79,7 +79,7 @@ export default function TheVision() {
               >
                 <motion.div style={{ y: imageY }} className="absolute inset-0 h-[120%] -top-[10%]">
                   <Image 
-                    src="https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg"
+                    src="/images/gallery/interior-deck.jpg"
                     alt="Architectural Details"
                     fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover mix-blend-luminosity opacity-80"
                   />
@@ -97,7 +97,7 @@ export default function TheVision() {
 
         {/* Global Standard Banner */}
         <section className="py-40 bg-slate-900/50 border-y border-[#d4af37]/10 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg')] opacity-5 mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-[url('/images/gallery/landscaped-plazas.jpg')] opacity-5 mix-blend-overlay"></div>
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

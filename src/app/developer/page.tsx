@@ -17,7 +17,7 @@ export default function DeveloperPage() {
         <section className="pt-40 pb-24 px-6 md:px-12 bg-[#05140D] border-b border-[#d4af37]/20 relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image 
-              src="https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg"
+              src="/images/overview/21-acres-masterplan.jpg"
               alt="Kolte Patil Legacy"
               fill
               className="object-cover opacity-20 mix-blend-luminosity"

@@ -13,9 +13,9 @@ export default function FloorPlansLayout({ children }: { children: React.ReactNo
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "2 & 3 BHK Luxury Apartments",
-    "image": "https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png",
-    "description": "Premium 2 and 3 BHK riverside residences by Kolte Patil on Sinhgad Road, Pune.",
+    "name": "Vyana 2 & 3 BHK Luxury Apartments",
+    "image": "https://thereserve.koltepatil.digital/images/floor-plans/vyana-3bhk-floorplan.png",
+    "description": "Premium 2 and 3 BHK riverside residences by Kolte Patil on Sinhgad Road, Pune. 791 and 1,016 sq. ft. carpet areas with 3.05 m slab heights.",
     "brand": {
       "@type": "Brand",
       "name": "Kolte Patil Developers"
@@ -23,9 +23,9 @@ export default function FloorPlansLayout({ children }: { children: React.ReactNo
     "offers": {
       "@type": "AggregateOffer",
       "priceCurrency": "INR",
-      "lowPrice": "15000000",
-      "highPrice": "25000000",
-      "availability": "https://schema.org/PreOrder"
+      "lowPrice": "8500000",
+      "highPrice": "16500000",
+      "availability": "https://schema.org/InStock"
     }
   };
 

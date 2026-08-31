@@ -65,7 +65,7 @@ export default function JsonLd() {
         "@type": ["RealEstateAgent", "LocalBusiness"],
         "@id": "https://thereserve.koltepatil.digital/#localbusiness",
         "name": "The Reserve by Kolte Patil Sales Experience Centre",
-        "image": "https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg",
+        "image": "https://thereserve.koltepatil.digital/images/overview/21-acres-masterplan.jpg",
         "telephone": "+91-7744009295",
         "priceRange": "₹ 85 Lakhs - ₹ 1.65 Cr",
         "currenciesAccepted": "INR",
@@ -144,7 +144,7 @@ export default function JsonLd() {
         "name": "The Reserve by Kolte Patil (Vyana Phase 1)",
         "description": "2 & 3 BHK riverside luxury residences at Vadgaon Khurd, Sinhgad Road, Pune. 21.03 acres master development with 19,750 sq.ft. clubhouse, resort pool, and scenic NDA hill views. MahaRERA PM1261012600748.",
         "url": "https://thereserve.koltepatil.digital",
-        "image": "https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg",
+        "image": "https://thereserve.koltepatil.digital/images/gallery/vyana-towers.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Vadgaon Khurd, Sinhgad Road",

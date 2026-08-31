@@ -31,11 +31,10 @@ export default function OverviewPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      
-      {/* 1. NATURAL HERO SECTION */}
+         {/* 1. NATURAL HERO SECTION */}
       <section className="relative h-[80dvh] w-full flex items-center justify-center overflow-hidden rounded-b-[3rem] md:rounded-b-[5rem] bg-[#05140D] shadow-2xl z-20 pt-20">
         <div className="absolute inset-0 z-0">
-          <Image src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg" alt="The Reserve Hero" fill sizes="100vw" className="object-cover opacity-40 mix-blend-luminosity" priority />
+          <Image src="/images/gallery/vyana-towers.jpg" alt="The Reserve Hero" fill sizes="100vw" className="object-cover opacity-40 mix-blend-luminosity" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0B2B1B]/80 via-[#0B2B1B]/40 to-[#0B2B1B]"></div>
         </div>
 
@@ -88,7 +87,7 @@ export default function OverviewPage() {
               initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}
               className="aspect-square bg-[#05140D] rounded-3xl border border-white/5 p-8 flex flex-col justify-end relative overflow-hidden group shadow-2xl"
             >
-                <Image src="https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" alt="21.03 Acres Master Development" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-70 transition-all duration-1000 ease-out" />
+                <Image src="/images/overview/21-acres-masterplan.jpg" alt="21.03 Acres Master Development" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-70 transition-all duration-1000 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-transparent to-transparent z-10" />
                 
                 <div className="relative z-20 w-full bg-black/40 backdrop-blur-md p-6 rounded-2xl border border-white/10">
@@ -110,7 +109,7 @@ export default function OverviewPage() {
               initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}
               className="order-2 md:order-1 aspect-[4/5] bg-[#0B2B1B] rounded-3xl border border-white/5 p-8 flex flex-col justify-between relative overflow-hidden group shadow-2xl"
             >
-              <Image src="https://www.koltepatil.com/assets/uploads/gallery/17853225611596383832.jpg" alt="Vyana at The Reserve Residences" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-70 transition-all duration-1000 ease-out" />
+              <Image src="/images/gallery/interior-deck.jpg" alt="Vyana at The Reserve Residences" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-70 transition-all duration-1000 ease-out" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-transparent to-[#0B2B1B]/80 z-10" />
               
               <div className="flex justify-between items-start w-full relative z-20">
