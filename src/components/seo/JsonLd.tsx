@@ -239,7 +239,7 @@ export default function JsonLd() {
             "name": "Where is Kolte Patil The Reserve located in Pune?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The project is located at Survey Nos. 39/41/42/43/44/45/46/59/parts, Vadgaon Khurd, Sinhgad Road, Pune - 411041, nestled along the Mutha River with direct connectivity to Pune Ring Road, Swargate, and Mumbai-Bengaluru Highway (NH 48)."
+              "text": "The project is located at Survey Nos. 39/41/42/43/44/45/46/59/parts, Vadgaon Khurd, Sinhgad Road, Pune - 411041, right near Nanded Fata with direct frontage to the upcoming Pune Ring Road corridor and Mutha River."
             }
           },
           {
@@ -247,7 +247,7 @@ export default function JsonLd() {
             "name": "What configurations and carpet areas are offered in Vyana Phase 1?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Vyana Phase 1 features 2 BHK residences with 791 sq.ft. RERA carpet area and 3 BHK luxury residences with 1,016 sq.ft. RERA carpet area across Towers T5, T6, and T7 (G+21 floors)."
+              "text": "Vyana Phase 1 features 2 BHK residences with 791 sq.ft. RERA carpet area and 3 BHK luxury residences with 1,016 sq.ft. RERA carpet area across Towers T5, T6, and T7 (G+21 floors) with 3.05 m slab heights."
             }
           },
           {
@@ -255,7 +255,7 @@ export default function JsonLd() {
             "name": "What are the lifestyle amenities at The Reserve by Kolte Patil?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Key amenities include a 19,750 sq.ft. contemporary clubhouse with step seating, an 84 ft. x 27 ft. resort adult pool, a 14 ft. x 18 ft. kids pool, championship pickleball courts, multipurpose sports turf, 1.2 KM jogging track, and 30% EV-charging enabled parking."
+              "text": "Key amenities include a 19,750 sq.ft. contemporary clubhouse with step seating, an 84 ft. x 27 ft. resort adult pool, a 14 ft. x 18 ft. kids pool, championship pickleball courts, multipurpose sports turf, and 30% EV-charging enabled parking."
             }
           },
           {
@@ -264,6 +264,30 @@ export default function JsonLd() {
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "The Reserve utilizes 100% Aluform monolithic concrete construction for seismic resilience and durability, featuring expansive 3.05 m slab-to-slab heights (~2.9 m clear ceiling height)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does The Reserve compare to Nanded City Pune?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike Nanded City which is a 700-acre high-density mega-township with 10,000+ units sharing amenities, The Reserve is an exclusive 21.03-acre low-density sanctuary with only 487 units in Phase 1, true Mutha riverfront frontage, 3.05 m ceiling heights, and a dedicated 19,750 sq.ft. clubhouse exclusive to residents."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the parking arrangements and EV charging provisions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The project provides multi-level parking across 2 Basements (B1 + B2) and 1 Stilt level, with 30% of bays pre-equipped with dedicated EV-charging infrastructure and RFID access control."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is the developer of The Reserve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The project is developed by Kolte-Patil Developers Ltd (NSE: KOLTEPATIL, BSE: 532924), a leading publicly listed real estate developer with over 33 years of heritage and 25+ million sq. ft. delivered across Pune, Mumbai, and Bengaluru."
             }
           }
         ]
