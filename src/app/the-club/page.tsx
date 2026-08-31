@@ -13,17 +13,17 @@ export default function TheClub() {
   const [activeSpecTab, setActiveSpecTab] = useState(0);
 
   const amenities = [
-    { title: "Infinity Swimming Pool", desc: "Apartments with Swimming Pool Pune. Temperature-controlled waters overlooking the skyline.", img: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg" },
-    { title: "Luxury Clubhouse", desc: "Apartments with Clubhouse Pune. Exclusive access to our 5-star resident clubhouse and lounges.", img: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg" },
-    { title: "Wellness Community", desc: "Apartments with Gym Pune and Zen Gardens. Curated landscapes designed for absolute tranquility.", img: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" },
-    { title: "Spa & Wellness", desc: "Holistic wellness center with professional therapists, setting a new benchmark for luxury living in Pune.", img: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" }
+    { title: "84x27 ft. Resort Swimming Pool", desc: "Sprawling adult swimming pool paired with a dedicated 14x18 ft. kids pool and sun deck.", img: "https://www.koltepatil.com/assets/uploads/gallery/17853229111036034291.jpg" },
+    { title: "19,750 Sq.Ft. Clubhouse", desc: "Contemporary step seating architecture with resident lounges, multi-purpose halls, and recreational zones.", img: "https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg" },
+    { title: "Central Landscaped Boulevard", desc: "Grand green spine connecting the 21.03 acres master development with nature trails and seating pavilions.", img: "https://www.koltepatil.com/assets/uploads/gallery/1785322203994334241.jpg" },
+    { title: "Pickleball & Sports Turf", desc: "Championship-grade sports courts and outdoor recreation spaces for active fitness.", img: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" }
   ];
 
   const specs = [
-    { category: "Flooring", details: "Imported Italian Marble in living spaces. Premium engineered wood in master bedrooms." },
-    { category: "Kitchen", details: "Modular kitchen with built-in European appliances and quartz countertops." },
-    { category: "Smart Home", details: "Voice & app-controlled lighting, climate, and automated curtain systems." },
-    { category: "Security", details: "Biometric access, 24/7 CCTV surveillance, and dedicated concierge desk." }
+    { category: "Flooring", details: "Glazed vitrified tiles (Kajaria or equivalent) in living, dining, and bedrooms. Anti-skid tiles in bathrooms and balconies." },
+    { category: "Structure", details: "Full Aluform monolithic concrete construction with 3.05 m slab-to-slab height (~2.9 m clear height)." },
+    { category: "Fittings", details: "Jaquar or equivalent luxury CP and sanitary fittings with concealed cisterns." },
+    { category: "Security & EV", details: "Biometric digital door locks, Video Door Phones, and 30% EV-charging enabled parking across B1+B2+Stilt." }
   ];
 
   return (
@@ -34,8 +34,8 @@ export default function TheClub() {
         <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl mb-32 border-b border-[#d4af37]/20">
           <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
             <Image priority 
-              src="https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg"
-              alt="The Club Hero"
+              src="https://www.koltepatil.com/assets/uploads/gallery/1785322110367031201.jpg"
+              alt="19,750 Sq.Ft. Clubhouse at The Reserve by Kolte Patil"
               fill
               className="object-cover opacity-40 mix-blend-luminosity"
             />
@@ -49,7 +49,7 @@ export default function TheClub() {
               transition={{ duration: 1, delay: 0.2 }}
               className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-[#d4af37] mb-8 block font-bold"
             >
-              Luxury Amenities Pune
+              Luxury Amenities Sinhgad Road
             </motion.span>
             <motion.h1 
               initial={{ opacity: 0, y: 50 }}
@@ -65,7 +65,7 @@ export default function TheClub() {
               transition={{ duration: 1, delay: 0.8 }}
               className="font-sans font-light text-slate-400 max-w-xl mx-auto text-lg"
             >
-              A 50,000 sq.ft. private ecosystem designed exclusively for residents. An oasis of luxury in the heart of Pune.
+              A 19,750 sq.ft. contemporary clubhouse featuring step seating architecture, 84x27 ft. resort pool, and curated wellness pavilions.
             </motion.p>
           </div>
         </div>

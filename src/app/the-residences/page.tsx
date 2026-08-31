@@ -9,9 +9,8 @@ export default function TheResidences() {
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   const floorplans = [
-    { type: "Premium 2 BHK Pune", size: "750 sq.ft.", price: "Upon Request" },
-    { type: "Luxury 3 BHK Pune", size: "1,050 sq.ft.", price: "Upon Request" },
-    { type: "Spacious 3 Bedroom Flat Pune", size: "1,250 sq.ft.", price: "Upon Request" }
+    { type: "Vyana 2 BHK Riverside Residence", size: "791 sq.ft. (Carpet Area)", price: "Enquire for Pricing" },
+    { type: "Vyana 3 BHK Luxury Residence", size: "1,016 sq.ft. (Carpet Area)", price: "Enquire for Pricing" }
   ];
 
   return (

@@ -74,7 +74,7 @@ export default function MasterLayoutPage() {
                   },
                   {
                     title: "The Elevated Club Enclave",
-                    desc: "The 50,000 sq.ft. clubhouse is centrally positioned, ensuring equal access for all residents while maintaining architectural prominence."
+                    desc: "The 19,750 sq.ft. contemporary clubhouse is centrally positioned with step seating architecture, ensuring equal access for all residents while maintaining architectural prominence."
                   },
                   {
                     title: "The Tower Sanctuaries",

@@ -62,10 +62,10 @@ export default function TheVision() {
                 Building not just for today, but for the <span className="italic text-[#d4af37]">next hundred years.</span>
               </h2>
               <p className="font-sans text-sm font-light text-slate-400 leading-relaxed mb-6">
-                Kolte Patil's 30 years of architectural dominance culminated in this 50-acre masterpiece. Every stone, every angle, and every beam was debated and refined to meet the global standard of ultra-luxury.
+                Kolte Patil's 30+ years of architectural excellence culminates in this 21.03-acre riverside masterpiece at Vadgaon Khurd on Sinhgad Road. Every detail, from the aluform monolithic structure to the central landscaped boulevard, is crafted to meet the highest standard of luxury living in Pune.
               </p>
               <p className="font-sans text-sm font-light text-slate-400 leading-relaxed">
-                We didn't set out to build another residential complex. We set out to build an icon—a landmark that will stand as a testament to Pune's rapid global ascent.
+                We didn't set out to build another residential complex. We set out to build an icon — a serene riverside sanctuary where river, hills, sky and nature converge, minutes from the growth corridor of Sinhgad Road and the upcoming Pune Ring Road.
               </p>
             </motion.div>
 
