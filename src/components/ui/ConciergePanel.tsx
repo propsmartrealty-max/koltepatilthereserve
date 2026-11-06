@@ -63,15 +63,15 @@ export default function ConciergePanel() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="fixed inset-0 z-[200] flex items-center justify-center bg-black/80 backdrop-blur-2xl"
+          className="fixed inset-0 z-[200] flex items-center justify-center bg-[#06160E]/95 backdrop-blur-2xl p-4"
         >
           {/* Close Button */}
           <button 
             onClick={() => setIsConciergeOpen(false)}
             aria-label="Close Concierge Panel"
-            className="absolute top-12 right-12 text-white/50 hover:text-white transition-colors z-10"
+            className="absolute top-8 right-8 md:top-12 md:right-12 text-[#D4AF37] hover:text-white transition-colors z-10 px-4 py-2 rounded-full bg-white/5 border border-white/10"
           >
-            <span className="font-sans text-[10px] tracking-[0.3em] uppercase">Close [X]</span>
+            <span className="font-sans text-[10px] tracking-[0.3em] uppercase">Close [✕]</span>
           </button>
 
           <div className="w-full max-w-3xl px-6 relative">
@@ -119,7 +119,7 @@ export default function ConciergePanel() {
                       onClick={handleNext}
                       aria-label="Continue to next step"
                       disabled={!formData.name || (!formData.email && !formData.phone)}
-                      className="px-12 py-4 bg-white text-black font-sans text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-[#d4af37] transition-colors disabled:opacity-50"
+                      className="px-10 py-3.5 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#B38F24] text-[#06160E] font-sans text-xs tracking-[0.2em] uppercase font-bold hover:bg-white transition-colors disabled:opacity-50 cursor-pointer"
                     >
                       Continue &rarr;
                     </button>
@@ -137,7 +137,7 @@ export default function ConciergePanel() {
                   className="flex flex-col gap-12"
                 >
                   <div>
-                    <button onClick={handleBack} aria-label="Go back to previous step" className="text-white/50 text-xs mb-8 hover:text-white">&larr; Back</button>
+                    <button onClick={handleBack} aria-label="Go back to previous step" className="text-[#D4AF37] text-xs mb-8 hover:text-white flex items-center gap-2 cursor-pointer">&larr; Back</button>
                     <h2 className="font-serif text-5xl md:text-7xl text-white mb-4">What brings you to The Reserve?</h2>
                   </div>
                   
@@ -147,7 +147,7 @@ export default function ConciergePanel() {
                         key={opt}
                         onClick={() => setFormData({...formData, interest: opt})}
                         aria-label={`Select ${opt}`}
-                        className={`p-8 text-left border transition-all duration-300 ${formData.interest === opt ? 'border-[#d4af37] bg-[#d4af37]/10' : 'border-white/10 hover:border-white/30'}`}
+                        className={`p-8 text-left border rounded-2xl transition-all duration-300 cursor-pointer ${formData.interest === opt ? 'border-[#D4AF37] bg-[#D4AF37]/15' : 'border-white/10 hover:border-white/30 bg-white/5'}`}
                       >
                         <h4 className="font-serif text-2xl text-white">{opt}</h4>
                       </button>
@@ -159,9 +159,9 @@ export default function ConciergePanel() {
                       onClick={handleSubmit}
                       disabled={!formData.interest || isSubmitting}
                       aria-label="Submit Concierge Request"
-                      className="px-12 py-4 bg-white text-black font-sans text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-[#d4af37] transition-colors disabled:opacity-50"
+                      className="px-10 py-3.5 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#B38F24] text-[#06160E] font-sans text-xs tracking-[0.2em] uppercase font-bold hover:bg-white transition-colors disabled:opacity-50 cursor-pointer"
                     >
-                      {isSubmitting ? "Requesting..." : "Request Callback"}
+                      {isSubmitting ? "Transmitting..." : "Request Callback"}
                     </button>
                   </div>
                 </motion.div>

@@ -4,24 +4,15 @@ import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import RevealFooter from "@/components/layout/RevealFooter";
-import GlobalCursor from "@/components/ui/GlobalCursor";
 import { CursorProvider } from "@/context/CursorContext";
 import { ConciergeProvider } from "@/context/ConciergeContext";
 import ConciergePanel from "@/components/ui/ConciergePanel";
-import FloatingAction from "@/components/ui/FloatingAction";
-import AmbientAudio from "@/components/ui/AmbientAudio";
-import NoiseOverlay from "@/components/ui/NoiseOverlay";
+import LuxuryConciergePill from "@/components/ui/LuxuryConciergePill";
 import JsonLd from "@/components/seo/JsonLd";
 import LenisProvider from "@/components/ui/LenisProvider";
 import { PulseProvider } from "@/context/PulseContext";
-import MarketPulseToast from "@/components/ui/MarketPulseToast";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Script from "next/script";
-import dynamic from 'next/dynamic';
-
-const StickyCTA = dynamic(() => import('@/components/layout/StickyCTA'));
-const WhatsAppWidget = dynamic(() => import('@/components/layout/WhatsAppWidget'));
-const CommandPalette = dynamic(() => import('@/components/ui/CommandPalette'));
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -166,9 +157,9 @@ export default function RootLayout({
 
         {/* PWA & Brand Manifest */}
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#0B2B1B" />
+        <meta name="theme-color" content="#06160E" />
       </head>
-      <body className="min-h-full flex flex-col font-sans bg-[#0B2B1B] text-[var(--foreground)] selection:bg-[#d4af37] selection:text-white overflow-x-hidden">
+      <body className="min-h-full flex flex-col font-sans bg-[#06160E] text-[var(--foreground)] selection:bg-[#D4AF37] selection:text-[#06160E] overflow-x-hidden">
         {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
         {process.env.NEXT_PUBLIC_GTM_ID && <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />}
         {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
@@ -188,30 +179,22 @@ export default function RootLayout({
           </Script>
         )}
         <JsonLd />
-        <NoiseOverlay />
         <CursorProvider>
           <ConciergeProvider>
             <PulseProvider>
               <LenisProvider>
                 <Breadcrumbs />
-                <GlobalCursor />
-                <AmbientAudio />
                 <ConciergePanel />
-                <FloatingAction />
-                <MarketPulseToast />
                 <Navbar />
-                <main className="relative z-10 isolate flex-1 bg-[#0B2B1B]">
+                <main className="relative z-10 isolate flex-1 bg-[#06160E]">
                   {children}
                 </main>
                 <RevealFooter />
+                <LuxuryConciergePill />
               </LenisProvider>
             </PulseProvider>
           </ConciergeProvider>
         </CursorProvider>
-        {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
-        <StickyCTA />
-        <WhatsAppWidget />
-        <CommandPalette />
       </body>
     </html>
   );

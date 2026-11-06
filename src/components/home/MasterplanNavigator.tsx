@@ -98,14 +98,14 @@ export default function MasterplanNavigator() {
   const [activeZone, setActiveZone] = useState<ZoneData>(zones[0]);
 
   return (
-    <div className="w-full bg-[#05140D] border border-white/10 rounded-[3rem] p-6 md:p-10 shadow-2xl overflow-hidden">
+    <div className="w-full p-6 md:p-10 overflow-hidden">
       {/* Section Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8 pb-6 border-b border-white/10">
         <div>
-          <span className="text-xs uppercase tracking-widest text-[#d4af37] font-bold block mb-2">
+          <span className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold block mb-2">
             Interactive Enclave Explorer
           </span>
-          <h3 className="font-serif text-2xl md:text-4xl text-white">
+          <h3 className="font-serif text-2xl md:text-4xl text-white font-bold">
             Explore The 21.03-Acre Master Ecosystem
           </h3>
         </div>
@@ -118,7 +118,7 @@ export default function MasterplanNavigator() {
           </Link>
           <Link
             href="/floor-plans"
-            className="px-5 py-2.5 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors"
+            className="px-5 py-2.5 bg-[#D4AF37] text-[#06160E] text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors"
           >
             Floor Plans
           </Link>
@@ -133,15 +133,15 @@ export default function MasterplanNavigator() {
             <button
               key={zone.id}
               onClick={() => setActiveZone(zone)}
-              className={`px-5 py-3 rounded-2xl text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 flex items-center gap-2.5 ${
+              className={`px-5 py-3 rounded-2xl text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 flex items-center gap-2.5 cursor-pointer ${
                 isActive
-                  ? "bg-[#d4af37] text-slate-950 shadow-lg scale-[1.02]"
+                  ? "bg-[#D4AF37] text-[#06160E] shadow-lg scale-[1.02]"
                   : "bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/5"
               }`}
             >
-              <span className={`w-2 h-2 rounded-full ${isActive ? "bg-slate-950 animate-ping" : "bg-[#d4af37]"}`} />
+              <span className={`w-2 h-2 rounded-full ${isActive ? "bg-[#06160E] animate-ping" : "bg-[#D4AF37]"}`} />
               <span>{zone.title}</span>
-              <span className={`text-[10px] px-2 py-0.5 rounded-full ${isActive ? "bg-slate-950/20 text-slate-950" : "bg-white/10 text-[#d4af37]"}`}>
+              <span className={`text-[10px] px-2 py-0.5 rounded-full ${isActive ? "bg-black/15 text-[#06160E]" : "bg-white/10 text-[#D4AF37]"}`}>
                 {zone.tag}
               </span>
             </button>
@@ -170,19 +170,19 @@ export default function MasterplanNavigator() {
                 className="object-cover"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#05140D] via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#06160E] via-transparent to-transparent opacity-80" />
             </motion.div>
           </AnimatePresence>
 
           <div className="absolute top-4 left-4 z-10">
-            <span className="px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[#d4af37] text-[10px] font-bold uppercase tracking-widest">
+            <span className="px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-widest">
               {activeZone.badge}
             </span>
           </div>
 
           <div className="absolute bottom-6 left-6 right-6 z-10 flex justify-between items-end">
             <div>
-              <p className="text-white text-xs font-light text-white/70">{activeZone.subtitle}</p>
+              <p className="text-white/70 text-xs font-light">{activeZone.subtitle}</p>
               <h4 className="font-serif text-2xl text-white font-medium">{activeZone.title}</h4>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function MasterplanNavigator() {
         {/* Right: Spec Matrix & Action Card */}
         <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
           <div>
-            <span className="text-[#d4af37] text-xs font-bold uppercase tracking-widest block mb-1">
+            <span className="text-[#D4AF37] text-xs font-bold uppercase tracking-widest block mb-1">
               Architectural Specifications
             </span>
             <h4 className="font-serif text-2xl text-white mb-3">{activeZone.title}</h4>
@@ -218,7 +218,7 @@ export default function MasterplanNavigator() {
               href="https://wa.me/917744009295?text=Hello%2C%20I%20would%20like%20to%20receive%20the%20detailed%20masterplan%20brochure%20and%20pricing%20dossier%20for%20The%20Reserve%20Kolte%20Patil."
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center px-6 py-3.5 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors shadow-lg"
+              className="flex-1 text-center px-6 py-3.5 bg-[#D4AF37] text-[#06160E] text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors shadow-lg"
             >
               WhatsApp Dossier
             </a>

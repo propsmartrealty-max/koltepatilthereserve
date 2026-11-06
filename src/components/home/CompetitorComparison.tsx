@@ -23,7 +23,7 @@ const comparisonData: FeatureRow[] = [
     township: "Inward Concrete Roads & Dense High-Rise Blocks",
   },
   {
-    parameter: "Construction Quality",
+    parameter: "Construction Technology",
     reserve: "100% Aluform Monolithic Concrete (3.05 m Slab Height)",
     reserveHighlight: true,
     township: "Conventional Blockwork & Standard Ceilings (~2.75 m)",
@@ -35,14 +35,14 @@ const comparisonData: FeatureRow[] = [
     township: "Shared Across Thousands of Township Families",
   },
   {
-    parameter: "2 BHK & 3 BHK Carpet Area",
+    parameter: "2 & 3 BHK Carpet Area",
     reserve: "791 sq. ft. (2 BHK) | 1,016 sq. ft. (3 BHK) Space-Optimized",
     reserveHighlight: true,
     township: "~650–720 sq. ft. (2 BHK) | ~850–930 sq. ft. (3 BHK)",
   },
   {
     parameter: "EV-Ready Parking",
-    reserve: "2 Basements + Stilt with 30% Dedicated EV-Charging Bays",
+    reserve: "2 Basements + Stilt with Dedicated EV-Charging Infrastructure",
     reserveHighlight: true,
     township: "Predominantly Standard Surface / Retrofit Parking",
   },
@@ -56,31 +56,19 @@ const comparisonData: FeatureRow[] = [
 
 export default function CompetitorComparison() {
   return (
-    <div className="w-full bg-[#05140D] border border-white/10 rounded-[3rem] p-6 md:p-12 shadow-2xl overflow-hidden">
-      <div className="text-center max-w-3xl mx-auto mb-12">
-        <span className="text-[#d4af37] text-xs font-bold uppercase tracking-[0.3em] block mb-3">
-          Sinhgad Road Market Benchmark
-        </span>
-        <h3 className="font-serif text-3xl md:text-5xl text-white">
-          The Reserve vs Mega Townships
-        </h3>
-        <p className="text-white/70 text-sm font-light mt-3">
-          Why discerning homebuyers on Sinhgad Road choose a private 21.03-acre low-density riverside sanctuary over crowded mega-townships like Nanded City.
-        </p>
-      </div>
-
+    <div className="w-full">
       {/* Comparison Table */}
-      <div className="overflow-x-auto mb-8 no-scrollbar">
+      <div className="overflow-x-auto mb-8">
         <table className="w-full text-left border-collapse min-w-[650px]">
           <thead>
             <tr className="border-b border-white/10">
-              <th className="py-4 px-4 text-xs font-bold text-white/50 uppercase tracking-widest w-1/3">
+              <th className="py-4 px-5 text-xs font-bold text-white/50 uppercase tracking-widest w-1/3">
                 Key Comparison Parameter
               </th>
-              <th className="py-4 px-4 text-xs font-bold text-[#d4af37] uppercase tracking-widest w-1/3 bg-[#0B2B1B]/80 rounded-t-2xl">
-                ★ The Reserve by Kolte Patil
+              <th className="py-4 px-5 text-xs font-bold text-[#D4AF37] uppercase tracking-widest w-1/3 bg-[#0E2E1D] rounded-t-2xl border-t border-x border-[#D4AF37]/30">
+                ★ The Reserve by Kolte-Patil
               </th>
-              <th className="py-4 px-4 text-xs font-bold text-white/50 uppercase tracking-widest w-1/3">
+              <th className="py-4 px-5 text-xs font-bold text-white/50 uppercase tracking-widest w-1/3">
                 Mega Townships (e.g. Nanded City)
               </th>
             </tr>
@@ -88,17 +76,17 @@ export default function CompetitorComparison() {
           <tbody className="divide-y divide-white/5 text-xs font-light">
             {comparisonData.map((row, idx) => (
               <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
-                <td className="py-4 px-4 text-white font-medium">
+                <td className="py-4 px-5 text-white font-medium">
                   {row.parameter}
                 </td>
-                <td className="py-4 px-4 text-white bg-[#0B2B1B]/50 font-medium border-x border-white/5">
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#d4af37] font-bold">✓</span>
-                    <span>{row.reserve}</span>
+                <td className="py-4 px-5 text-white bg-[#0E2E1D]/60 font-medium border-x border-[#D4AF37]/20">
+                  <div className="flex items-start gap-2.5">
+                    <span className="text-[#D4AF37] font-bold">✓</span>
+                    <span className="text-white/95">{row.reserve}</span>
                   </div>
                 </td>
-                <td className="py-4 px-4 text-white/60">
-                  <div className="flex items-start gap-2">
+                <td className="py-4 px-5 text-white/60">
+                  <div className="flex items-start gap-2.5">
                     <span className="text-white/30">✕</span>
                     <span>{row.township}</span>
                   </div>
@@ -110,21 +98,25 @@ export default function CompetitorComparison() {
       </div>
 
       {/* Bottom CTA */}
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6 border-t border-white/10 bg-black/20 p-6 rounded-2xl">
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6 border-t border-white/10 p-4 rounded-2xl bg-white/5">
         <div>
-          <p className="text-xs uppercase tracking-widest text-[#d4af37] font-bold">MahaRERA Registration: PM1261012600748</p>
-          <p className="text-white text-sm font-medium">Phase 1: Vyana Towers T5, T6, T7 | 487 Residences</p>
+          <p className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold">
+            MahaRERA Registration: PM1261012600748
+          </p>
+          <p className="text-white text-xs font-light mt-0.5">
+            Phase 1: Vyana Towers T5, T6, T7 | Vadgaon Khurd, Sinhgad Road
+          </p>
         </div>
         <div className="flex gap-3">
           <Link
             href="/compare/the-reserve-vs-nanded-city-pune"
             className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white text-xs font-bold uppercase tracking-widest rounded-full transition-colors"
           >
-            Read In-Depth Guide →
+            In-Depth Guide →
           </Link>
           <Link
             href="/floor-plans"
-            className="px-6 py-3 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors"
+            className="px-6 py-3 bg-[#D4AF37] text-[#06160E] text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors"
           >
             Explore Floor Plans
           </Link>

@@ -2,118 +2,195 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "../ui/Button";
+import { MapPin, Phone, MessageCircle, ExternalLink, ShieldCheck } from "lucide-react";
+import { useConcierge } from "@/context/ConciergeContext";
 
 export default function RevealFooter() {
+  const { setIsConciergeOpen } = useConcierge();
+
+  const googleMapsUrl =
+    "https://www.google.com/maps/place/The+Reserve+by+Kolte+Patil/@18.4622871,73.8013712,15z/data=!4m6!3m5!1s0x3bc29503207d73ff:0xbcace0773986e884!8m2!3d18.4622871!4d73.8013712!16s%2Fg%2F11ywbwz1k0";
+
   return (
-    <footer className="relative w-full bg-[#05140D] border-t border-white/10 flex flex-col justify-end overflow-hidden text-white z-20">
+    <footer className="relative w-full bg-[#040E09] border-t border-[#D4AF37]/25 text-white z-20 overflow-hidden">
       
-      {/* Background Video Layer */}
-      <div className="absolute inset-0 z-0">
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline 
-          className="object-cover w-full h-full opacity-20 grayscale"
-        >
-          <source src="https://player.vimeo.com/external/394627252.hd.mp4?s=d00e57262ba627d3568853c89657f8cfec47fb21&profile_id=174" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#05140D] via-[#05140D]/95 to-[#0B2B1B]"></div>
-      </div>
+      {/* Soft Ambient Light Gradient */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#D4AF37]/10 via-transparent to-transparent pointer-events-none" />
 
-      <div className="relative z-20 w-full container mx-auto px-6 md:px-12 pb-12 pt-20 flex flex-col justify-end">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-12">
-          
-          {/* Brand */}
-          <div className="flex flex-col">
-            <h2 className="font-serif text-3xl mb-2 tracking-widest uppercase text-white">The Reserve</h2>
-            <span className="text-[10px] tracking-[0.3em] uppercase text-[#d4af37] mb-8 font-bold">By Kolte Patil</span>
-            <p className="text-sm text-white/60 font-light leading-relaxed max-w-xs">
-              India's most premium real estate digital experience. Luxury living redefined in the heart of Pune.
-            </p>
-          </div>
-
-          {/* Quick Links */}
-          <div className="flex flex-col">
-            <h3 className="text-[10px] uppercase tracking-[0.3em] text-white/40 mb-8 font-bold">Explore</h3>
-            <ul className="space-y-4 font-light text-sm text-white/80">
-              <li><Link href="/overview" className="hover:text-[#d4af37] transition-colors">The Narrative</Link></li>
-              <li><Link href="/master-layout" className="hover:text-[#d4af37] transition-colors">Masterplan</Link></li>
-              <li><Link href="/amenities" className="hover:text-[#d4af37] transition-colors">The Privileges</Link></li>
-              <li><Link href="/floor-plans" className="hover:text-[#d4af37] transition-colors">Residences</Link></li>
-              <li><Link href="/insights" className="hover:text-[#d4af37] transition-colors">Insights</Link></li>
-            </ul>
-          </div>
-
-          {/* Kolte Patil Universe */}
-          <div className="flex flex-col">
-            <h3 className="text-[10px] uppercase tracking-[0.3em] text-white/40 mb-8 font-bold">Kolte Patil Universe</h3>
-            <ul className="space-y-4 font-light text-sm text-white/80">
-              <li><a href="https://www.koltepatil.com/life-republic" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">Life Republic, Hinjewadi</a></li>
-              <li><a href="https://www.koltepatil.com/24k" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">24K Luxury, Baner</a></li>
-              <li><a href="https://www.koltepatil.com/ivy-estate" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">Ivy Estate, Wagholi</a></li>
-              <li><a href="https://www.koltepatil.com/universe" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">Universe, Hinjewadi</a></li>
-              <li><a href="https://www.koltepatil.com" target="_blank" rel="noopener noreferrer" className="text-[#d4af37] hover:text-white transition-colors">Explore All Projects →</a></li>
-            </ul>
-          </div>
-
-          {/* Contact & MahaRERA QR */}
-          <div className="flex flex-col items-start md:items-end text-left md:text-right">
-            <span className="font-serif text-xl text-white block mb-2">Connect</span>
-            <ul className="space-y-1 font-sans text-xs text-white/60 mb-4">
-              <li>Vadgaon Khurd, Sinhgad Road</li>
-              <li>Pune, Maharashtra 411041</li>
-              <li className="text-[#d4af37] font-medium font-mono text-[11px]">RERA: PM1261012600748</li>
-              <li className="mt-2"><a href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors font-medium">+91 77440 09295 (WhatsApp)</a></li>
-            </ul>
-            
-            {/* MahaRERA Official QR Badge */}
-            <div className="flex items-center gap-3 bg-white/5 p-2 rounded-xl border border-white/10">
-              <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-white p-0.5 shrink-0">
-                <Image 
-                  src="/images/qr/maharera-qr.png" 
-                  alt="MahaRERA PM1261012600748 QR"
-                  fill
-                  sizes="48px"
-                  className="object-contain"
-                />
-              </div>
-              <div className="text-left">
-                <span className="text-[8px] uppercase tracking-wider text-[#d4af37] font-bold block">Scan MahaRERA</span>
-                <span className="text-[8px] text-white/50 block font-mono">PM1261012600748</span>
-              </div>
+      <div className="relative z-10 container mx-auto px-6 md:px-12 pt-20 pb-16">
+        
+        {/* TOP BRAND & NEWSLETTER STRIP */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-16 border-b border-white/10 items-center">
+          <div className="lg:col-span-7 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="relative h-12 w-28 shrink-0">
+              <Image
+                src="/kolte-patil-logo.png"
+                alt="Kolte-Patil Developers Ltd"
+                fill
+                sizes="120px"
+                className="object-contain object-left filter brightness-110"
+              />
+            </div>
+            <div className="sm:border-l border-white/15 sm:pl-6">
+              <span className="font-serif text-2xl tracking-[0.2em] uppercase font-bold text-white block">
+                THE RESERVE
+              </span>
+              <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-[#D4AF37] font-semibold">
+                Vyana Sector 1 • Sinhgad Road, Pune
+              </span>
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="flex flex-col items-start">
-            <h3 className="text-[10px] uppercase tracking-[0.3em] text-white/40 mb-8 font-bold">Exclusive Access</h3>
-            <p className="text-sm text-white/60 font-light mb-6">
-              Register your interest to receive exclusive details and floor plans.
+          <div className="lg:col-span-5 flex flex-col sm:flex-row gap-3">
+            <button
+              onClick={() => setIsConciergeOpen(true)}
+              className="px-6 py-3.5 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#B38F24] text-[#06160E] font-sans text-xs font-bold tracking-widest uppercase hover:from-white hover:to-white transition-all duration-300 shadow-lg cursor-pointer text-center"
+            >
+              Request Cost Sheet & Blueprints
+            </button>
+            <a
+              href="https://wa.me/917744009295?text=Hello%20Kolte%20Patil%20Sales%20Team%2C%20I%20am%20interested%20in%20The%20Reserve%20Sinhgad%20Road."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-3.5 rounded-full bg-white/5 hover:bg-[#25D366] text-white hover:text-slate-950 font-sans text-xs font-semibold tracking-wider border border-white/10 transition-colors flex items-center justify-center gap-2"
+            >
+              <MessageCircle className="w-4 h-4 fill-current" />
+              <span>WhatsApp Concierge</span>
+            </a>
+          </div>
+        </div>
+
+        {/* MAIN MULTI-COLUMN DIRECTORY */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 py-16 border-b border-white/10 text-xs">
+          
+          {/* Col 1: About Project */}
+          <div className="flex flex-col gap-4">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">
+              The Sanctuary
+            </span>
+            <p className="text-white/70 font-light leading-relaxed">
+              A 21.03-acre masterplanned riverside development along the Mutha River at Vadgaon Khurd, Sinhgad Road, Pune. Featuring 2 & 3 BHK residences with 19,750 sq.ft. clubhouse and panoramic NDA hill views.
             </p>
-            <Link href="/contact" className="w-full">
-              <Button variant="golden" className="rounded-none px-8 w-full bg-[#d4af37] text-[#0B2B1B] hover:bg-white hover:text-[#0B2B1B]">
-                Enquire Now
-              </Button>
-            </Link>
+            <div className="flex items-center gap-2 text-[#D4AF37] mt-2">
+              <ShieldCheck className="w-4 h-4" />
+              <span className="font-semibold text-[11px]">IGBC Green Pre-Certified</span>
+            </div>
+          </div>
+
+          {/* Col 2: Navigation */}
+          <div className="flex flex-col gap-3">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">
+              Explore
+            </span>
+            <ul className="space-y-2.5 font-light text-white/75">
+              <li><Link href="/overview" className="hover:text-[#D4AF37] transition-colors">The Narrative & Vision</Link></li>
+              <li><Link href="/master-layout" className="hover:text-[#D4AF37] transition-colors">21-Acre Master Layout</Link></li>
+              <li><Link href="/floor-plans" className="hover:text-[#D4AF37] transition-colors">Vyana 2 & 3 BHK Blueprints</Link></li>
+              <li><Link href="/amenities" className="hover:text-[#D4AF37] transition-colors">The 19,750 Sq.Ft. Clubhouse</Link></li>
+              <li><Link href="/the-club" className="hover:text-[#D4AF37] transition-colors">The Club Privileges</Link></li>
+              <li><Link href="/specifications" className="hover:text-[#D4AF37] transition-colors">Architectural Specifications</Link></li>
+              <li><Link href="/gallery" className="hover:text-[#D4AF37] transition-colors">Visual Gallery</Link></li>
+            </ul>
+          </div>
+
+          {/* Col 3: Micro-Market & Location */}
+          <div className="flex flex-col gap-3">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">
+              Connectivity
+            </span>
+            <ul className="space-y-2.5 font-light text-white/75">
+              <li><Link href="/location" className="hover:text-[#D4AF37] transition-colors">Location Overview</Link></li>
+              <li><Link href="/location/nanded-fata" className="hover:text-[#D4AF37] transition-colors">Nanded Fata (3 Mins)</Link></li>
+              <li><Link href="/location/swargate" className="hover:text-[#D4AF37] transition-colors">Swargate Metro (15 Mins)</Link></li>
+              <li><Link href="/location/kothrud" className="hover:text-[#D4AF37] transition-colors">Kothrud Corridor (15 Mins)</Link></li>
+              <li><Link href="/location/pune-ring-road" className="hover:text-[#D4AF37] transition-colors">Upcoming Ring Road Access</Link></li>
+              <li><Link href="/compare/the-reserve-vs-nanded-city-pune" className="hover:text-[#D4AF37] transition-colors">The Reserve vs Nanded City</Link></li>
+            </ul>
+          </div>
+
+          {/* Col 4: Kolte-Patil Universe */}
+          <div className="flex flex-col gap-3">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">
+              Kolte-Patil Universe
+            </span>
+            <ul className="space-y-2.5 font-light text-white/75">
+              <li><a href="https://www.koltepatil.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors flex items-center gap-1">Corporate Portal <ExternalLink className="w-3 h-3" /></a></li>
+              <li><a href="https://www.koltepatil.com/life-republic" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors">Life Republic, Hinjewadi</a></li>
+              <li><a href="https://www.koltepatil.com/24k" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors">24K Luxury, Baner</a></li>
+              <li><a href="https://www.koltepatil.com/ivy-estate" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors">Ivy Estate, Wagholi</a></li>
+              <li><Link href="/developer" className="hover:text-[#D4AF37] transition-colors">3 Decades of Excellence</Link></li>
+            </ul>
+          </div>
+
+          {/* Col 5: MahaRERA Credential & QR */}
+          <div className="flex flex-col gap-4">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">
+              MahaRERA Credential
+            </span>
+
+            <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3">
+              <div className="relative w-14 h-14 rounded-lg overflow-hidden bg-white p-1 shrink-0">
+                <Image
+                  src="/images/qr/maharera-qr.png"
+                  alt="MahaRERA PM1261012600748 QR Code"
+                  fill
+                  sizes="56px"
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[9px] font-bold text-[#D4AF37] uppercase tracking-wider">
+                  MahaRERA Reg.
+                </span>
+                <span className="font-mono text-xs text-white font-bold tracking-wider mt-0.5">
+                  PM1261012600748
+                </span>
+                <a
+                  href="https://maharera.maharashtra.gov.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[9px] text-white/50 hover:text-white underline mt-1"
+                >
+                  Verify on MahaRERA →
+                </a>
+              </div>
+            </div>
+
+            {/* Sales Office Address */}
+            <div className="text-[11px] text-white/70 font-light flex flex-col gap-1.5 pt-1">
+              <span className="font-semibold text-white flex items-center gap-1.5">
+                <MapPin className="w-3.5 h-3.5 text-[#D4AF37]" /> Sales Experience Centre
+              </span>
+              <p>Survey Nos. 39/41/42/43/44/45/46/59/parts, Vadgaon Khurd, Sinhgad Road, Pune - 411041</p>
+              <a
+                href={googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#D4AF37] hover:underline font-medium text-[11px] flex items-center gap-1 mt-1"
+              >
+                Open Google Maps Navigation 📍
+              </a>
+            </div>
           </div>
 
         </div>
 
-        {/* Disclaimer */}
-        <div className="pb-6 text-[8px] text-white/30 leading-relaxed max-w-5xl mx-auto text-center">
-          DISCLAIMER: The project is registered under the name &lsquo;Vyana Phase-I-T5, T6, T7&rsquo;, under MAHARERA Registration No: PM1261012600748, details of which are available at maharera.maharashtra.gov.in. &ldquo;The Reserve&rdquo; is the marketing name of the larger layout. Site: Survey Nos. 39/41/42/43/44/45/46/59/parts, Vadgaon Khurd, Sinhgad Road, Pune - 411041.
+        {/* LEGAL DISCLAIMER */}
+        <div className="py-8 text-[9px] text-white/40 leading-relaxed max-w-5xl mx-auto text-center font-light border-b border-white/10">
+          DISCLAIMER: The project is registered under MahaRERA as &lsquo;Vyana Phase-I-T5, T6, T7&rsquo; under Registration No: PM1261012600748, details available at maharera.maharashtra.gov.in. &ldquo;The Reserve&rdquo; is the marketing identity for the larger 21.03-acre master layout. All images, renders, maps, floor plans, and amenities depicted are artistic impressions and indicative for illustrative purposes only. The developer reserves the right to alter specifications, layouts, or amenities in compliance with statutory approvals.
         </div>
 
-        {/* Legal */}
-        <div className="pt-6 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/50 uppercase tracking-[0.2em]">
-          <p>&copy; {new Date().getFullYear()} The Reserve by Kolte Patil. All rights reserved.</p>
+        {/* BOTTOM COPYRIGHT & LEGAL LINKS */}
+        <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-white/50 uppercase tracking-[0.2em]">
+          <p>© {new Date().getFullYear()} The Reserve by Kolte-Patil Developers Ltd. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-[#fd8e03] transition-colors">Privacy</Link>
-            <Link href="/terms" className="hover:text-[#fd8e03] transition-colors">Terms</Link>
+            <Link href="/privacy" className="hover:text-[#D4AF37] transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-[#D4AF37] transition-colors">Terms of Use</Link>
+            <Link href="/faq" className="hover:text-[#D4AF37] transition-colors">FAQs</Link>
+            <Link href="/contact" className="hover:text-[#D4AF37] transition-colors">Contact</Link>
           </div>
         </div>
+
       </div>
     </footer>
   );

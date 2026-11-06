@@ -3,206 +3,199 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useConcierge } from "@/context/ConciergeContext";
-import MagneticButton from "@/components/ui/MagneticButton";
+import { Phone, Calendar, Menu, X, ArrowUpRight } from "lucide-react";
 
 export default function Navbar() {
   const { setIsConciergeOpen } = useConcierge();
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [hidden, setHidden] = useState(false);
-  const { scrollY } = useScroll();
-
-  // Hide/Show navbar based on scroll direction for fluid experience
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious() ?? 0;
-    if (latest > previous && latest > 150) {
-      setHidden(true); // Scrolling down, hide the island to maximize screen space
-    } else {
-      setHidden(false); // Scrolling up, reveal the island
-    }
-    setIsScrolled(latest > 50);
-  });
-
-  const handleNavClick = () => {
-    setIsMobileMenuOpen(false);
-  };
 
   const navLinks = [
     { name: "Overview", href: "/overview" },
-    { name: "Master Layout", href: "/master-layout" },
+    { name: "Masterplan", href: "/master-layout" },
     { name: "Floor Plans", href: "/floor-plans" },
-    { name: "Amenities", href: "/amenities" },
+    { name: "Clubhouse & Amenities", href: "/amenities" },
     { name: "Specifications", href: "/specifications" },
-    { name: "Location", href: "/location" }
+    { name: "Location", href: "/location" },
+    { name: "Gallery", href: "/gallery" },
   ];
 
   return (
     <>
-      {/* THE FLOATING ISLAND NAVBAR */}
-      <motion.header
-        variants={{
-          visible: { y: 0, opacity: 1, scale: 1 },
-          hidden: { y: "-100%", opacity: 0, scale: 0.95 }
-        }}
-        animate={hidden && !isMobileMenuOpen ? "hidden" : "visible"}
-        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed top-6 left-0 right-0 z-[100] flex justify-center px-4 md:px-0 pointer-events-none"
-      >
-        <div 
-          className={`pointer-events-auto flex items-center justify-between transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-            isScrolled 
-              ? "bg-white/80 backdrop-blur-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] py-2 px-4 rounded-full border border-white/40 w-full md:max-w-4xl lg:max-w-5xl xl:max-w-6xl" 
-              : "bg-transparent py-4 px-6 w-full max-w-7xl"
-          }`}
-        >
-          {/* REBUILT LOGO SECTION: Bird Logo | Divider | THE RESERVE */}
-          <Link href="/" className="flex items-center gap-1.5 md:gap-2 z-50 group shrink-0" onClick={() => setIsMobileMenuOpen(false)}>
-            
-            {/* Kolte Patil Bird Logo (Transparent) */}
-            <div className="relative h-8 w-16 md:h-10 md:w-20 block transition-transform duration-500 group-hover:scale-105">
-                <Image 
-                  src="/kolte-patil-logo.png" 
-                  alt="Kolte Patil" 
-                  fill 
-                  sizes="80px" 
-                  className={`object-contain object-right transition-all duration-500 ${isScrolled ? '' : 'brightness-0 invert'}`}
-                />
+      {/* FLOATING ARCHITECTURAL NAVBAR */}
+      <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 md:px-6 pointer-events-none">
+        <nav className="pointer-events-auto w-full max-w-7xl mx-auto flex items-center justify-between py-3 px-5 md:px-8 rounded-full bg-[#06160E]/90 backdrop-blur-xl border border-[#D4AF37]/25 shadow-[0_15px_40px_rgba(0,0,0,0.6)] transition-all duration-300">
+          
+          {/* LOGO SECTION */}
+          <Link
+            href="/"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="flex items-center gap-3 group shrink-0"
+          >
+            {/* Kolte Patil Logo */}
+            <div className="relative h-9 w-20 md:h-10 md:w-24">
+              <Image
+                src="/kolte-patil-logo.png"
+                alt="Kolte-Patil Developers Ltd"
+                fill
+                sizes="100px"
+                priority
+                className="object-contain object-left filter brightness-110"
+              />
             </div>
 
-            {/* Red Divider Line */}
-            <div className={`h-6 md:h-8 w-[1.5px] transition-colors duration-500 ${isScrolled ? 'bg-red-700' : 'bg-red-500'}`} />
+            {/* Gold Divider */}
+            <div className="h-7 w-[1.5px] bg-gradient-to-b from-[#D4AF37] to-[#8C701B] opacity-70" />
 
-            {/* The Reserve Text Logo */}
-            <div className="flex flex-col justify-center">
-              <span className={`font-serif text-base md:text-lg tracking-[0.15em] uppercase transition-colors duration-500 ${isScrolled ? "text-[#0B2B1B]" : "text-white"}`}>
+            {/* The Reserve Brand Text */}
+            <div className="flex flex-col">
+              <span className="font-serif text-base md:text-lg tracking-[0.2em] uppercase font-bold text-white group-hover:text-[#D4AF37] transition-colors leading-tight">
                 THE RESERVE
               </span>
-              <span className={`font-sans text-[5px] md:text-[6px] tracking-[0.22em] font-bold uppercase transition-colors duration-500 flex flex-col md:flex-row gap-0.5 md:gap-1 ${isScrolled ? "text-[#0B2B1B]/70" : "text-white/70"}`}>
-                <span>BY KOLTE PATIL</span>
-                <span className="hidden md:inline">-</span>
-                <span>SINHGAD ROAD</span>
+              <span className="font-sans text-[7px] md:text-[8px] tracking-[0.25em] font-semibold uppercase text-[#D4AF37]">
+                BY KOLTE PATIL • SINHGAD RD
               </span>
             </div>
-
           </Link>
 
-          {/* DESKTOP LINKS (Fluidly hide on mobile) */}
-          <div className="hidden lg:flex items-center gap-4 xl:gap-8 mx-auto">
+          {/* DESKTOP NAVIGATION LINKS */}
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8 mx-auto">
             {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
+              <Link
+                key={link.name}
                 href={link.href}
-                onClick={handleNavClick}
-                className={`text-[9px] xl:text-xs uppercase tracking-widest font-bold hover:text-[#d4af37] transition-colors relative group whitespace-nowrap ${isScrolled ? "text-[#0B2B1B]" : "text-[#0B2B1B]/80"}`}
+                className="font-sans text-xs uppercase tracking-[0.18em] font-medium text-white/80 hover:text-[#D4AF37] transition-colors relative py-1 group"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#d4af37] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
           </div>
 
-          {/* CTAs & MENU BUTTON */}
-          <div className="flex items-center gap-2 md:gap-4 shrink-0">
-            <MagneticButton>
-              <button 
-                onClick={() => setIsConciergeOpen(true)}
-                aria-label="Open Concierge Panel for Inquiries"
-                className="hidden md:flex px-6 py-2.5 bg-[#0B2B1B] text-white rounded-full text-[9px] tracking-[0.2em] uppercase hover:bg-[#d4af37] hover:text-[#0B2B1B] transition-colors font-bold shadow-lg"
-              >
-                Enquire
-              </button>
-            </MagneticButton>
-            
-            <button 
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-md border border-[#0B2B1B]/5 text-[#0B2B1B] hover:bg-[#F5F5F5] transition-colors z-[110]"
+          {/* DESKTOP ACTIONS */}
+          <div className="flex items-center gap-3 shrink-0">
+            {/* Quick Call */}
+            <a
+              href="tel:+917744009295"
+              className="hidden xl:flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/5 hover:bg-white/10 text-white/90 text-xs font-mono tracking-wider border border-white/10 transition-colors"
+              title="Call Sales Concierge"
             >
-              <div className="flex flex-col gap-1 md:gap-1.5 w-4 md:w-5">
-                <motion.span 
-                  animate={isMobileMenuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-                  className="w-full h-[1.5px] bg-current origin-center transition-transform"
-                />
-                <motion.span 
-                  animate={isMobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-                  className="w-full h-[1.5px] bg-current transition-opacity"
-                />
-                <motion.span 
-                  animate={isMobileMenuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-                  className="w-full h-[1.5px] bg-current origin-center transition-transform"
-                />
-              </div>
+              <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
+              <span>+91 77440 09295</span>
+            </a>
+
+            {/* Enquire CTA */}
+            <button
+              onClick={() => setIsConciergeOpen(true)}
+              className="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#B38F24] hover:from-white hover:to-white text-[#06160E] font-sans text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-lg cursor-pointer"
+            >
+              <Calendar className="w-3.5 h-3.5" />
+              <span>Book Visit</span>
+            </button>
+
+            {/* Mobile / Tablet Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle Navigation Menu"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-white/5 border border-white/10 text-[#D4AF37] hover:bg-white/10 transition-colors cursor-pointer"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-5 h-5 text-white" />
+              ) : (
+                <Menu className="w-5 h-5 text-[#D4AF37]" />
+              )}
             </button>
           </div>
-        </div>
-      </motion.header>
+        </nav>
+      </header>
 
-      {/* ULTRA-ADVANCED FULL SCREEN MEGA MENU OVERLAY */}
+      {/* FULL SCREEN ARCHITECTURAL MEGA MENU OVERLAY */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            animate={{ opacity: 1, backdropFilter: "blur(30px)" }}
-            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 h-[100dvh] z-[90] bg-[#0B2B1B]/95 flex flex-col md:flex-row overflow-hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-40 bg-[#06160E]/98 backdrop-blur-2xl flex flex-col justify-between p-6 pt-28 md:p-16 overflow-y-auto"
           >
-            {/* Split Screen Image for Tablets/Desktop */}
-            <motion.div 
-              initial={{ x: "-100%" }}
-              animate={{ x: "0%" }}
-              exit={{ x: "-100%" }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="hidden md:block w-1/2 h-full relative"
-            >
-              <div className="absolute inset-0 bg-[url('/images/gallery/interior-deck.jpg')] bg-cover bg-center opacity-60 mix-blend-luminosity"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0B2B1B]/50 to-[#0B2B1B]"></div>
-            </motion.div>
-            
-            {/* Menu Items */}
-            <div className="w-full md:w-1/2 h-full flex flex-col justify-center px-8 md:px-20 pt-20">
-              <motion.div
-                initial="closed"
-                animate="open"
-                exit="closed"
-                variants={{
-                  open: { transition: { staggerChildren: 0.08, delayChildren: 0.2 } },
-                  closed: { transition: { staggerChildren: 0.05, staggerDirection: -1 } }
-                }}
-                className="flex flex-col gap-4 md:gap-8"
-              >
-                {navLinks.map((link, i) => (
-                  <motion.div
+            <div className="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              {/* Menu Links */}
+              <div className="flex flex-col gap-3">
+                <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#D4AF37] font-bold mb-2">
+                  Directory
+                </span>
+                {navLinks.map((link, idx) => (
+                  <Link
                     key={link.name}
-                    variants={{
-                      open: { y: 0, opacity: 1, rotateX: 0 },
-                      closed: { y: 40, opacity: 0, rotateX: 45 }
-                    }}
-                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    style={{ perspective: "1000px" }}
+                    href={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="font-serif text-2xl md:text-4xl text-white hover:text-[#D4AF37] transition-all duration-300 flex items-center justify-between py-2 border-b border-white/5 group"
                   >
-                    <Link
-                      href={link.href}
-                      onClick={handleNavClick}
-                      className="font-serif text-5xl md:text-7xl capitalize font-bold text-white hover:text-[#d4af37] transition-all duration-500 flex items-center gap-6 group"
-                    >
-                      <span className="text-sm font-sans text-white/30 tracking-widest group-hover:text-[#d4af37] transition-colors mt-2">0{i+1}</span>
-                      {link.name}
-                    </Link>
-                  </motion.div>
+                    <div className="flex items-center gap-4">
+                      <span className="font-sans text-xs text-[#D4AF37]/60 group-hover:text-[#D4AF37] transition-colors">
+                        0{idx + 1}
+                      </span>
+                      <span>{link.name}</span>
+                    </div>
+                    <ArrowUpRight className="w-5 h-5 text-white/30 group-hover:text-[#D4AF37] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </Link>
                 ))}
-              </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }} 
-                animate={{ opacity: 1, y: 0 }} 
-                transition={{ delay: 1, duration: 0.8 }}
-                className="mt-16 pt-8 border-t border-white/10 flex flex-col gap-4"
-              >
-                <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-white/50">Contact Concierge</p>
-                <a href="https://wa.me/917744009295?text=I%20am%20interested%20in%20The%20Reserve%20by%20Kolte%20Patil" target="_blank" rel="noopener noreferrer" className="font-serif text-3xl text-[#d4af37] hover:text-white transition-colors">+91 77440 09295</a>
-              </motion.div>
+              </div>
+
+              {/* Sidebar Info & RERA Credential */}
+              <div className="flex flex-col gap-6 md:pl-10 md:border-l border-white/10">
+                <div>
+                  <span className="font-serif text-xl text-white font-bold block mb-1">
+                    The Reserve by Kolte-Patil
+                  </span>
+                  <p className="text-xs text-white/70 font-light leading-relaxed max-w-sm">
+                    A 21.03-acre master riverside sanctuary along the Mutha River at Vadgaon Khurd, Sinhgad Road, Pune.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-2">
+                  <span className="text-[10px] uppercase tracking-widest text-[#D4AF37] font-bold">
+                    MahaRERA Registration
+                  </span>
+                  <span className="font-mono text-sm text-white font-bold tracking-wider">
+                    PM1261012600748
+                  </span>
+                  <span className="text-[10px] text-white/50">
+                    Vyana Phase 1 (Towers T5, T6, T7) • maharera.maharashtra.gov.in
+                  </span>
+                </div>
+
+                {/* Direct Action Buttons */}
+                <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                  <a
+                    href="https://wa.me/917744009295?text=Hello%20Kolte%20Patil%20Sales%20Team%2C%20I%20am%20interested%20in%20The%20Reserve%20Sinhgad%20Road.%20Please%20share%20brochure%20and%20pricing."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 py-3 px-4 rounded-xl bg-[#25D366] text-slate-950 font-sans text-xs font-bold uppercase tracking-wider text-center"
+                  >
+                    WhatsApp VIP
+                  </a>
+                  <button
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setIsConciergeOpen(true);
+                    }}
+                    className="flex-1 py-3 px-4 rounded-xl bg-[#D4AF37] text-[#06160E] font-sans text-xs font-bold uppercase tracking-wider text-center cursor-pointer"
+                  >
+                    Schedule Visit
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Credits */}
+            <div className="max-w-5xl mx-auto w-full pt-8 mt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-xs text-white/40 font-light">
+              <span>© {new Date().getFullYear()} The Reserve by Kolte-Patil Developers Ltd.</span>
+              <span className="mt-2 sm:mt-0 font-mono text-[11px] text-[#D4AF37]/80">
+                GPS: 18.4622871, 73.8013712
+              </span>
             </div>
           </motion.div>
         )}
