@@ -1,11 +1,43 @@
 export const locationData: Record<string, { title: string; keyword: string; excerpt: string; distance: string; driveTime: string; highlight: string; }> = {
+  "sinhgad-road": {
+    title: "Luxury Flats on Sinhgad Road, Pune | The Reserve by Kolte Patil",
+    keyword: "Flats on Sinhgad Road Pune",
+    excerpt: "Discover Pune's most iconic 21.03-acre masterplanned riverside sanctuary on Sinhgad Road. 2 & 3 BHK luxury residences with 19,750 sq.ft. clubhouse and scenic NDA hill views.",
+    distance: "0.0 km",
+    driveTime: "On Sinhgad Road",
+    highlight: "Primary arterial corridor of South-West Pune with elevated flyover and direct Ring Road connectivity."
+  },
+  "vadgaon-khurd": { 
+    title: "The Reserve at Vadgaon Khurd, Sinhgad Road | Kolte Patil", 
+    keyword: "Flats in Vadgaon Khurd", 
+    excerpt: "The authentic site of The Reserve by Kolte Patil at Vadgaon Khurd, Survey Nos. 39/41/42/43/44/45/46/59/parts. MahaRERA PM1261012600748.",
+    distance: "0.0 km",
+    driveTime: "On Site",
+    highlight: "Prime river-edge parcel with uninterrupted NDA hill vistas, central boulevard, and upcoming Ring Road junction."
+  },
   "nanded-fata": {
     title: "Luxury Flats near Nanded Fata, Sinhgad Road | The Reserve Kolte Patil",
     keyword: "Flats near Nanded Fata",
-    excerpt: "Discover 2, 2.5 & 3 BHK luxury riverside residences right near Nanded Fata on Sinhgad Road, Pune. 21.03-acre master development by Kolte Patil with 19,750 sq.ft. clubhouse.",
+    excerpt: "Discover 2 & 3 BHK luxury riverside residences right near Nanded Fata on Sinhgad Road, Pune. 21.03-acre master development by Kolte Patil with 19,750 sq.ft. clubhouse.",
     distance: "1.2 km",
     driveTime: "3 mins",
     highlight: "Immediate access to Nanded Fata junction, Mutha riverfront promenade, and Sinhgad Road flyover."
+  },
+  "nanded-city": { 
+    title: "The Reserve vs Nanded City Pune | Luxury 2 & 3 BHK Riverside Homes", 
+    keyword: "Apartments near Nanded City Pune", 
+    excerpt: "Experience low-density boutique luxury right next to Nanded City. 21.03 acres with only 487 residences in Phase 1, 19,750 sq.ft. clubhouse, and 84x27 ft. pool.",
+    distance: "3.4 km",
+    driveTime: "7 mins",
+    highlight: "Enjoy neighboring IT hubs and schools with private, uncrowded enclave living."
+  },
+  "pune-ring-road": {
+    title: "Property along Upcoming Pune Ring Road Corridor | The Reserve",
+    keyword: "Pune Ring Road Property Investment",
+    excerpt: "Strategically located adjoining the PMRDA Pune Ring Road. Reduce commute to Hinjewadi, PCMC, and Western Pune by 60% with exponential capital appreciation.",
+    distance: "0.5 km",
+    driveTime: "2 mins",
+    highlight: "Immediate access to the 128 km orbital expressway connecting Sinhgad Road to Hinjewadi and Airport."
   },
   "khadakwasla": {
     title: "Riverside Residences near Khadakwasla Dam & NDA | The Reserve",
@@ -31,14 +63,6 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     driveTime: "7 mins",
     highlight: "Direct Mutha river bridge connectivity and proximity to IT corridors."
   },
-  "vadgaon-khurd": { 
-    title: "The Reserve at Vadgaon Khurd, Sinhgad Road | Kolte Patil", 
-    keyword: "Flats in Vadgaon Khurd", 
-    excerpt: "The authentic site of The Reserve by Kolte Patil at Vadgaon Khurd, Survey Nos. 39/41/42/43/44/45/46/59/parts. MahaRERA PM1261012600748.",
-    distance: "0.0 km",
-    driveTime: "On Site",
-    highlight: "Prime river-edge parcel with uninterrupted NDA hill vistas and central boulevard."
-  },
   "vadgaon-budruk": { 
     title: "The Reserve Vadgaon Budruk | 2 & 3 BHK Kolte Patil", 
     keyword: "Flats in Vadgaon Budruk", 
@@ -46,14 +70,6 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     distance: "1.8 km",
     driveTime: "4 mins",
     highlight: "Centrally positioned near Sinhgad College institutes and shopping destinations."
-  },
-  "nanded-city": { 
-    title: "The Reserve vs Nanded City Pune | Luxury 2 & 3 BHK Riverside Homes", 
-    keyword: "Apartments near Nanded City Pune", 
-    excerpt: "Experience low-density boutique luxury right next to Nanded City. 21.03 acres with only 487 residences in Phase 1, 19,750 sq.ft. clubhouse, and 84x27 ft. pool.",
-    distance: "3.4 km",
-    driveTime: "7 mins",
-    highlight: "Enjoy neighboring IT hubs and schools with private, uncrowded enclave living."
   },
   "dhayari": { 
     title: "Premium Flats near Dhayari, Sinhgad Road | The Reserve", 
@@ -103,14 +119,6 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     driveTime: "14 mins",
     highlight: "Direct transit through Rajaram Bridge and upcoming riverfront connectivity."
   },
-  "swargate": { 
-    title: "Premium Apartments near Swargate, Pune | The Reserve", 
-    keyword: "Apartments near Swargate Pune", 
-    excerpt: "Escape central Pune congestion without sacrificing connectivity. The Reserve offers 21.03 acres of riverside sanctuary a quick 15-min drive from Swargate Metro.",
-    distance: "7.8 km",
-    driveTime: "15 mins",
-    highlight: "Direct access via Sinhgad Road flyover and proposed Metro corridor extension."
-  },
   "kothrud": { 
     title: "Luxury 2 & 3 BHK Homes near Kothrud | The Reserve Kolte Patil", 
     keyword: "Luxury Homes near Kothrud", 
@@ -118,6 +126,30 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     distance: "9.5 km",
     driveTime: "18 mins",
     highlight: "Seamless access via Karve Road, Warje bypass, and Mutha riverfront route."
+  },
+  "erandwane": {
+    title: "Luxury Riverside Homes for Erandwane Buyers | The Reserve",
+    keyword: "Erandwane Real Estate Upgrade",
+    excerpt: "Escape dense central Pune for a 21.03-acre riverside sanctuary with 19,750 sq.ft. clubhouse and resort-style amenities at Vadgaon Khurd.",
+    distance: "8.0 km",
+    driveTime: "16 mins",
+    highlight: "Fast connectivity to Law College Road, Deccan, and Karve Road via Rajaram Bridge."
+  },
+  "deccan-gymkhana": {
+    title: "Heritage Living Alternative near Deccan Gymkhana | The Reserve",
+    keyword: "Flats near Deccan Pune",
+    excerpt: "For families in Deccan and FC Road seeking a spacious 21-acre masterplanned development with clean air, river views, and modern amenities.",
+    distance: "9.8 km",
+    driveTime: "20 mins",
+    highlight: "Direct transit along Sinhgad Road flyover to Pune's cultural epicenter."
+  },
+  "swargate": { 
+    title: "Premium Apartments near Swargate, Pune | The Reserve", 
+    keyword: "Apartments near Swargate Pune", 
+    excerpt: "Escape central Pune congestion without sacrificing connectivity. The Reserve offers 21.03 acres of riverside sanctuary a quick 15-min drive from Swargate Metro.",
+    distance: "7.8 km",
+    driveTime: "15 mins",
+    highlight: "Direct access via Sinhgad Road flyover and proposed Metro corridor extension."
   },
   "bibwewadi": { 
     title: "Luxury Apartments near Bibwewadi | The Reserve by Kolte Patil", 
@@ -159,6 +191,22 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     driveTime: "25 mins",
     highlight: "Better value, massive land parcel, and superior natural riverside greens."
   },
+  "balewadi": {
+    title: "The Reserve by Kolte Patil vs Balewadi Real Estate | Pune",
+    keyword: "Balewadi Real Estate Comparison",
+    excerpt: "Compare dense high-rise developments in Balewadi with a low-density 21.03-acre riverside master layout with 3.05 m slab heights.",
+    distance: "17.5 km",
+    driveTime: "26 mins",
+    highlight: "Significantly higher open space density and pure riverfront environment."
+  },
+  "wakad": {
+    title: "Riverside Luxury Homes for Wakad Buyers | The Reserve Pune",
+    keyword: "Wakad Homebuyers Alternative",
+    excerpt: "Looking for an expansive, peaceful alternative to crowded Wakad streets? The Reserve on Sinhgad Road delivers 21.03 acres of pristine river-facing living.",
+    distance: "18.0 km",
+    driveTime: "28 mins",
+    highlight: "Effortless highway access via NH-48 and future Ring Road transit."
+  },
   "hinjewadi": { 
     title: "Riverside Residences for Hinjewadi IT Professionals | The Reserve", 
     keyword: "Hinjewadi IT Homes Pune", 
@@ -175,6 +223,22 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     driveTime: "35 mins",
     highlight: "Cleaner air, riverfront promenade, and scenic NDA hill vistas."
   },
+  "hadapsar": {
+    title: "Invest in Sinhgad Road from Hadapsar & Magarpatta | The Reserve",
+    keyword: "Hadapsar Real Estate Investment",
+    excerpt: "Diversify your property portfolio into Pune's high-growth South-West corridor with Kolte-Patil's flagship 21.03-acre development.",
+    distance: "16.0 km",
+    driveTime: "30 mins",
+    highlight: "High capital appreciation driven by Pune Ring Road and Metro connectivity."
+  },
+  "pcmc-pimpri-chinchwad": {
+    title: "Kolte Patil The Reserve for PCMC & Pimpri Chinchwad Buyers",
+    keyword: "PCMC Property Buyers Pune",
+    excerpt: "Discover premium riverside apartments from Pune's most trusted developer, offering world-class amenities and fast Western corridor transit.",
+    distance: "22.0 km",
+    driveTime: "35 mins",
+    highlight: "Seamless access via NH-48 and future western orbital corridor."
+  }
 };
 
 export const configData: Record<string, { title: string; keyword: string; excerpt: string; carpetArea: string; configType: string; }> = {
@@ -227,6 +291,20 @@ export const configData: Record<string, { title: string; keyword: string; excerp
     carpetArea: "791 - 1,016 sq. ft.",
     configType: "Riverfront Residences"
   },
+  "gated-community-pune": {
+    title: "Premium Gated Community Township on Sinhgad Road | The Reserve",
+    keyword: "Gated Community Pune",
+    excerpt: "Live in an exclusive, secure 21.03-acre gated master development with 3-tier security, RFID access, multi-level clubhouse, and lush nature buffers.",
+    carpetArea: "791 & 1,016 sq. ft.",
+    configType: "Gated Master Community"
+  },
+  "pricing-cost-sheet": {
+    title: "The Reserve Price List, Cost Sheet & Payment Plans | Sinhgad Road",
+    keyword: "The Reserve Price List Pune",
+    excerpt: "Get the complete official cost sheet, stamp duty & registration breakdown, all-inclusive price, and flexible construction-linked payment plans.",
+    carpetArea: "2 & 3 BHK Plans",
+    configType: "Official Pricing & Payment Schedules"
+  }
 };
 
 export const investmentData: Record<string, { title: string; keyword: string; excerpt: string; }> = {
@@ -268,11 +346,46 @@ export const investmentData: Record<string, { title: string; keyword: string; ex
 };
 
 export const projectData: Record<string, { title: string; keyword: string; excerpt: string; }> = {
-  "master-plan": { title: "21.03 Acres Master Plan | The Reserve by Kolte Patil", keyword: "Master Plan", excerpt: "Explore the 21.03-acre riverside master development featuring central landscaped boulevard, riverfront greens, and well-spaced residential towers." },
-  "pricing": { title: "2 & 3 BHK Pricing & Payment Plans | The Reserve Sinhgad Road", keyword: "The Reserve Price", excerpt: "Request official pricing, payment plans, and floor plans for 791 sq.ft. 2 BHK and 1,016 sq.ft. 3 BHK residences under MahaRERA PM1261012600748." },
-  "amenities": { title: "40+ World-Class Amenities | The Reserve by Kolte Patil", keyword: "The Reserve Amenities", excerpt: "19,750 sq.ft. clubhouse, 84x27 ft. adult swimming pool, kids pool, pickleball court, and central landscaped promenade." },
-  "security-systems": { title: "Advanced Security & Smart Access | The Reserve", keyword: "Security Systems", excerpt: "Digital door locks, video door phones, CCTV surveillance, and 30% EV-enabled multi-level basement parking." },
-  "sustainability": { title: "IGBC Pre-Certified Sustainable Riverside Homes Pune", keyword: "Sustainability Features", excerpt: "Eco-conscious living with solar power integration, rainwater harvesting, full aluform construction, and riverside green buffers." },
+  "master-plan": { 
+    title: "21.03 Acres Master Plan | The Reserve by Kolte Patil", 
+    keyword: "Master Plan The Reserve", 
+    excerpt: "Explore the 21.03-acre riverside master development featuring central landscaped boulevard, riverfront greens, and well-spaced residential towers." 
+  },
+  "pricing": { 
+    title: "2 & 3 BHK Pricing & Payment Plans | The Reserve Sinhgad Road", 
+    keyword: "The Reserve Price Sinhgad Road", 
+    excerpt: "Request official pricing, payment plans, and floor plans for 791 sq.ft. 2 BHK and 1,016 sq.ft. 3 BHK residences under MahaRERA PM1261012600748." 
+  },
+  "amenities": { 
+    title: "40+ World-Class Amenities | The Reserve by Kolte Patil", 
+    keyword: "The Reserve Amenities Pune", 
+    excerpt: "19,750 sq.ft. clubhouse, 84x27 ft. adult swimming pool, kids pool, pickleball court, and central landscaped promenade." 
+  },
+  "security-systems": { 
+    title: "Advanced Security & Smart Access | The Reserve", 
+    keyword: "Security Systems The Reserve", 
+    excerpt: "Digital door locks, video door phones, CCTV surveillance, and 30% EV-enabled multi-level basement parking." 
+  },
+  "sustainability": { 
+    title: "IGBC Pre-Certified Sustainable Riverside Homes Pune", 
+    keyword: "Sustainability Features Kolte Patil", 
+    excerpt: "Eco-conscious living with solar power integration, rainwater harvesting, full aluform construction, and riverside green buffers." 
+  },
+  "aluform-construction": {
+    title: "100% Aluform Monolithic Concrete Technology | The Reserve",
+    keyword: "Aluform Construction Sinhgad Road",
+    excerpt: "Monolithic concrete structure delivering superior seismic safety, 3.05 m slab heights, joint-free walls, and acoustic insulation."
+  },
+  "clubhouse-amenities": {
+    title: "19,750 Sq.Ft. Clubhouse & Resort Lifestyle Sanctuary | The Reserve",
+    keyword: "Clubhouse Amenities The Reserve",
+    excerpt: "Step-seating architecture, resident banquet hall, mini-theater, fitness suites, and 84x27 ft. Olympic-scale swimming pool."
+  },
+  "rera-approvals-pm1261012600748": {
+    title: "MahaRERA PM1261012600748 Legal Approvals & Title Report | Vyana",
+    keyword: "MahaRERA PM1261012600748",
+    excerpt: "Complete statutory transparency, commencement certificate, clear land titles, and verified MahaRERA registration for Vyana Phase 1."
+  }
 };
 
 export const masterFaqData = [
@@ -295,6 +408,11 @@ export const masterFaqData = [
     category: "Configurations & Space",
     q: "What configurations and carpet areas are available at The Reserve?",
     a: "Vyana at The Reserve offers 2 BHK residences with 791 sq. ft. carpet area and 3 BHK luxury residences with 1,016 sq. ft. carpet area. Both layouts feature zero space wastage and 3.05 m slab-to-slab height (~2.9 m clear ceiling height)."
+  },
+  {
+    category: "Pricing & Cost Sheet",
+    q: "What is the pricing and payment schedule for 2 & 3 BHK flats at The Reserve?",
+    a: "The starting price for Vyana 2 BHK (791 sq.ft.) is approximately ₹85 Lakhs onwards, while 3 BHK luxury residences (1,016 sq.ft.) range up to ₹1.65 Cr depending on floor rise and deck orientation. Kolte-Patil provides flexible construction-linked payment plans with approved home loan sanctions from SBI, HDFC, ICICI, and Axis Bank."
   },
   {
     category: "Construction & Specifications",
@@ -325,7 +443,10 @@ export const masterFaqData = [
     category: "Developer Track Record",
     q: "Who is the developer of The Reserve?",
     a: "The project is developed by Kolte-Patil Developers Ltd (NSE: KOLTEPATIL, BSE: 532924), a leading publicly listed real estate developer with over 33 years of heritage and 25+ million sq. ft. delivered across Pune, Mumbai, and Bengaluru."
+  },
+  {
+    category: "Infrastructure & Growth",
+    q: "How does the upcoming Pune Ring Road benefit residents of The Reserve?",
+    a: "The PMRDA Pune Ring Road runs adjoining The Reserve's boundary, offering high-speed signal-free access to Hinjewadi IT Park (25 mins), Pune Airport, and PCMC industrial belt, bypassing city traffic entirely and driving strong long-term capital appreciation."
   }
 ];
-
-

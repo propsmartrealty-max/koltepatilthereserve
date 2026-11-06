@@ -17,12 +17,23 @@ export default function JsonLd() {
         "telephone": "+91-7744009295",
         "description": "Pune's leading real estate developer with over 3 decades of excellence, shaping the skyline of Pune, Mumbai, and Bengaluru.",
         "foundingDate": "1991",
-        "knowsAbout": ["Pune Real Estate Market", "Luxury Housing", "Townships", "Commercial Real Estate"],
+        "tickerSymbol": ["BSE: 532924", "NSE: KOLTEPATIL"],
+        "knowsAbout": [
+          "Pune Real Estate Market",
+          "Kolte Patil The Reserve",
+          "Sinhgad Road Luxury Apartments",
+          "Vyana Phase 1",
+          "MahaRERA PM1261012600748",
+          "Townships",
+          "Commercial Real Estate"
+        ],
         "sameAs": [
           "https://www.facebook.com/KoltePatilDevelopers",
           "https://www.linkedin.com/company/kolte-patil-developers-ltd",
           "https://www.instagram.com/koltepatil",
-          "https://en.wikipedia.org/wiki/Kolte-Patil_Developers"
+          "https://en.wikipedia.org/wiki/Kolte-Patil_Developers",
+          "https://www.bseindia.com/stock-share-price/kolte-patil-developers-ltd/koltepatil/532924/",
+          "https://www.nseindia.com/get-quotes/equity?symbol=KOLTEPATIL"
         ]
       },
       {
