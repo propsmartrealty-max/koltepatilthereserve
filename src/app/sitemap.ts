@@ -12,6 +12,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 1. High-Priority Core Landing Pages
   const coreRoutes = [
     { route: '', priority: 1.0, changeFrequency: 'daily' as const },
+    { route: '/kolte-patil-the-reserve-price', priority: 0.98, changeFrequency: 'daily' as const },
+    { route: '/kolte-patil-the-reserve-brochure', priority: 0.98, changeFrequency: 'daily' as const },
+    { route: '/kolte-patil-the-reserve-floor-plans', priority: 0.98, changeFrequency: 'daily' as const },
+    { route: '/kolte-patil-the-reserve-master-layout', priority: 0.95, changeFrequency: 'weekly' as const },
+    { route: '/kolte-patil-the-reserve-amenities', priority: 0.95, changeFrequency: 'weekly' as const },
+    { route: '/kolte-patil-the-reserve-location', priority: 0.95, changeFrequency: 'weekly' as const },
+    { route: '/kolte-patil-the-reserve-towers', priority: 0.95, changeFrequency: 'weekly' as const },
+    { route: '/kolte-patil-the-reserve-construction-status', priority: 0.95, changeFrequency: 'daily' as const },
+    { route: '/kolte-patil-the-reserve-possession-date', priority: 0.95, changeFrequency: 'weekly' as const },
+    { route: '/kolte-patil-the-reserve-specifications', priority: 0.92, changeFrequency: 'weekly' as const },
+    { route: '/kolte-patil-the-reserve-contact', priority: 0.92, changeFrequency: 'daily' as const },
     { route: '/overview', priority: 0.95, changeFrequency: 'daily' as const },
     { route: '/pricing', priority: 0.95, changeFrequency: 'daily' as const },
     { route: '/brochure', priority: 0.95, changeFrequency: 'daily' as const },

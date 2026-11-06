@@ -84,16 +84,16 @@ export default function RevealFooter() {
             </span>
             <ul className="space-y-2.5 font-light text-white/75">
               <li><Link href="/overview" className="hover:text-[#D4AF37] transition-colors">The Narrative & Vision</Link></li>
-              <li><Link href="/pricing" className="hover:text-[#D4AF37] transition-colors font-medium text-[#D4AF37]">Pricing & Cost Sheet</Link></li>
-              <li><Link href="/brochure" className="hover:text-[#D4AF37] transition-colors font-medium text-[#D4AF37]">Download E-Brochure PDF</Link></li>
-              <li><Link href="/floor-plans" className="hover:text-[#D4AF37] transition-colors">Vyana 2 & 3 BHK Blueprints</Link></li>
-              <li><Link href="/towers" className="hover:text-[#D4AF37] transition-colors">Towers T5, T6, T7 Guide</Link></li>
-              <li><Link href="/construction-status" className="hover:text-[#D4AF37] transition-colors">Live Construction Progress</Link></li>
-              <li><Link href="/possession-date" className="hover:text-[#D4AF37] transition-colors">Possession & Handover Dates</Link></li>
-              <li><Link href="/master-layout" className="hover:text-[#D4AF37] transition-colors">21-Acre Master Layout</Link></li>
-              <li><Link href="/amenities" className="hover:text-[#D4AF37] transition-colors">The 19,750 Sq.Ft. Clubhouse</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-price" className="hover:text-[#D4AF37] transition-colors font-medium text-[#D4AF37]">Pricing & Cost Sheet</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-brochure" className="hover:text-[#D4AF37] transition-colors font-medium text-[#D4AF37]">Download E-Brochure PDF</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-floor-plans" className="hover:text-[#D4AF37] transition-colors">Vyana 2 & 3 BHK Blueprints</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-towers" className="hover:text-[#D4AF37] transition-colors">Towers T5, T6, T7 Guide</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-construction-status" className="hover:text-[#D4AF37] transition-colors">Live Construction Progress</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-possession-date" className="hover:text-[#D4AF37] transition-colors">Possession & Handover Dates</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-master-layout" className="hover:text-[#D4AF37] transition-colors">21-Acre Master Layout</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-amenities" className="hover:text-[#D4AF37] transition-colors">The 19,750 Sq.Ft. Clubhouse</Link></li>
               <li><Link href="/the-club" className="hover:text-[#D4AF37] transition-colors">The Club Privileges</Link></li>
-              <li><Link href="/specifications" className="hover:text-[#D4AF37] transition-colors">Architectural Specifications</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-specifications" className="hover:text-[#D4AF37] transition-colors">Architectural Specifications</Link></li>
               <li><Link href="/gallery" className="hover:text-[#D4AF37] transition-colors">Visual Gallery</Link></li>
             </ul>
           </div>

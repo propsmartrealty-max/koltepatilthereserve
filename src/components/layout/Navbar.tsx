@@ -13,11 +13,12 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Overview", href: "/overview" },
-    { name: "Floor Plans", href: "/floor-plans" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Amenities", href: "/amenities" },
-    { name: "Location", href: "/location" },
-    { name: "Brochure", href: "/brochure" },
+    { name: "Floor Plans", href: "/kolte-patil-the-reserve-floor-plans" },
+    { name: "Pricing", href: "/kolte-patil-the-reserve-price" },
+    { name: "Towers", href: "/kolte-patil-the-reserve-towers" },
+    { name: "Amenities", href: "/kolte-patil-the-reserve-amenities" },
+    { name: "Location", href: "/kolte-patil-the-reserve-location" },
+    { name: "Brochure", href: "/kolte-patil-the-reserve-brochure" },
   ];
 
   return (

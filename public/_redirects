@@ -20,6 +20,26 @@ http://www.koltepatil.digital/*           https://thereserve.koltepatil.digital/
 http://thereserve.koltepatil.digital/*    https://thereserve.koltepatil.digital/:splat  301!
 
 # ------------------------------------------------------------------------------
+# Strategic Prime Project Name 301 Canonicalization
+# ------------------------------------------------------------------------------
+/pricing                     /kolte-patil-the-reserve-price 301
+/price                       /kolte-patil-the-reserve-price 301
+/cost-sheet                  /kolte-patil-the-reserve-price 301
+/brochure                    /kolte-patil-the-reserve-brochure 301
+/brochure-pdf                /kolte-patil-the-reserve-brochure 301
+/floor-plans                 /kolte-patil-the-reserve-floor-plans 301
+/floorplans                  /kolte-patil-the-reserve-floor-plans 301
+/master-layout               /kolte-patil-the-reserve-master-layout 301
+/master-plan                 /kolte-patil-the-reserve-master-layout 301
+/amenities                   /kolte-patil-the-reserve-amenities 301
+/location                    /kolte-patil-the-reserve-location 301
+/specifications              /kolte-patil-the-reserve-specifications 301
+/towers                      /kolte-patil-the-reserve-towers 301
+/construction-status         /kolte-patil-the-reserve-construction-status 301
+/possession-date             /kolte-patil-the-reserve-possession-date 301
+/contact                     /kolte-patil-the-reserve-contact 301
+
+# ------------------------------------------------------------------------------
 # Legacy & Clean URL Normalization
 # ------------------------------------------------------------------------------
 /the-reserve/*              /overview 301
