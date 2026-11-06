@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/kolte-patil-the-reserve-price', priority: 0.98, changeFrequency: 'daily' as const },
     { route: '/kolte-patil-the-reserve-brochure', priority: 0.98, changeFrequency: 'daily' as const },
     { route: '/kolte-patil-the-reserve-floor-plans', priority: 0.98, changeFrequency: 'daily' as const },
+    { route: '/kolte-patil-the-reserve-rera', priority: 0.98, changeFrequency: 'daily' as const },
     { route: '/kolte-patil-the-reserve-master-layout', priority: 0.95, changeFrequency: 'weekly' as const },
     { route: '/kolte-patil-the-reserve-amenities', priority: 0.95, changeFrequency: 'weekly' as const },
     { route: '/kolte-patil-the-reserve-location', priority: 0.95, changeFrequency: 'weekly' as const },

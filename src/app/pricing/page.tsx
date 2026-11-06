@@ -479,15 +479,16 @@ export default function PricingPage() {
           <InternalLinkingMesh 
             title="Explore Pricing, Floor Plans & Investment Tools" 
             links={[
-              { title: "Download Official Project Brochure", url: "/brochure" },
-              { title: "Explore 2 & 3 BHK Floor Plans", url: "/floor-plans" },
-              { title: "21-Acre Master Layout Plan", url: "/master-layout" },
+              { title: "Download Official Project Brochure", url: "/kolte-patil-the-reserve-brochure" },
+              { title: "Explore 2 & 3 BHK Floor Plans", url: "/kolte-patil-the-reserve-floor-plans" },
+              { title: "21-Acre Master Layout Plan", url: "/kolte-patil-the-reserve-master-layout" },
+              { title: "Towers T5, T6, T7 Elevation & Layouts", url: "/kolte-patil-the-reserve-towers" },
+              { title: "Live Construction Status & Updates", url: "/kolte-patil-the-reserve-construction-status" },
+              { title: "Possession & Handover Dates", url: "/kolte-patil-the-reserve-possession-date" },
+              { title: "MahaRERA PM1261012600748 Approvals", url: "/kolte-patil-the-reserve-rera" },
               { title: "Home Loan EMI Calculator", url: "/tools/emi-calculator" },
               { title: "Pune Stamp Duty Calculator", url: "/tools/stamp-duty-calculator" },
-              { title: "MahaRERA Approvals (PM1261012600748)", url: "/project/rera-approvals-pm1261012600748" },
-              { title: "The Reserve vs Nanded City Comparison", url: "/compare/the-reserve-vs-nanded-city-pune" },
-              { title: "Location & Upcoming Ring Road", url: "/location/pune-ring-road" },
-              { title: "19,750 Sq.Ft. Luxury Clubhouse", url: "/amenities" }
+              { title: "19,750 Sq.Ft. Luxury Clubhouse", url: "/kolte-patil-the-reserve-amenities" }
             ]} 
           />
         </div>

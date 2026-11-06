@@ -38,6 +38,10 @@ http://thereserve.koltepatil.digital/*    https://thereserve.koltepatil.digital/
 /construction-status         /kolte-patil-the-reserve-construction-status 301
 /possession-date             /kolte-patil-the-reserve-possession-date 301
 /contact                     /kolte-patil-the-reserve-contact 301
+/rera                        /kolte-patil-the-reserve-rera 301
+/maharera                    /kolte-patil-the-reserve-rera 301
+/rera-approval               /kolte-patil-the-reserve-rera 301
+/project/rera-approvals-pm1261012600748 /kolte-patil-the-reserve-rera 301
 
 # ------------------------------------------------------------------------------
 # Legacy & Clean URL Normalization

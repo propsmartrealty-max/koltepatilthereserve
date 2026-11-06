@@ -88,6 +88,7 @@ export default function JsonLd() {
           "Kolte Patil The Reserve Amenities",
           "Kolte Patil The Reserve Location",
           "Kolte Patil The Reserve Specifications",
+          "Kolte Patil The Reserve MahaRERA PM1261012600748",
           "Kolte Patil The Reserve Contact"
         ],
         "url": [
@@ -102,6 +103,7 @@ export default function JsonLd() {
           "https://thereserve.koltepatil.digital/kolte-patil-the-reserve-amenities",
           "https://thereserve.koltepatil.digital/kolte-patil-the-reserve-location",
           "https://thereserve.koltepatil.digital/kolte-patil-the-reserve-specifications",
+          "https://thereserve.koltepatil.digital/kolte-patil-the-reserve-rera",
           "https://thereserve.koltepatil.digital/kolte-patil-the-reserve-contact"
         ]
       },

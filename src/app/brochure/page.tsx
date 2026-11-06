@@ -201,15 +201,16 @@ export default function BrochurePage() {
 
             {/* DOWNLOAD BUTTON STRIP */}
             <div className="mt-10 flex flex-wrap gap-4 items-center">
-              <Link
-                href="/contact"
-                className="px-8 py-4 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#B38F24] hover:from-white hover:to-white text-[#06160E] font-sans text-xs font-bold tracking-widest uppercase transition-all shadow-xl flex items-center gap-2"
+              <a
+                href="/kolte-patil-the-reserve-brochure.pdf"
+                download="kolte-patil-the-reserve-brochure.pdf"
+                className="px-8 py-4 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#B38F24] hover:from-white hover:to-white text-[#06160E] font-sans text-xs font-bold tracking-widest uppercase transition-all shadow-xl flex items-center gap-2 cursor-pointer"
               >
                 <Download className="w-4 h-4" />
-                <span>Instant Download Brochure PDF</span>
-              </Link>
+                <span>Instant Download Brochure PDF (28 Pages)</span>
+              </a>
               <Link
-                href="/floor-plans"
+                href="/kolte-patil-the-reserve-floor-plans"
                 className="px-6 py-4 rounded-full bg-white/5 hover:bg-white/15 text-white font-sans text-xs font-semibold tracking-wider border border-white/15 transition-colors flex items-center gap-2"
               >
                 <Eye className="w-4 h-4" />
@@ -227,12 +228,14 @@ export default function BrochurePage() {
           <InternalLinkingMesh 
             title="Explore The Reserve Real Estate Dossier" 
             links={[
-              { title: "Pricing & Itemized Cost Sheet", url: "/pricing" },
-              { title: "Vyana 2 & 3 BHK Floor Plans", url: "/floor-plans" },
-              { title: "21-Acre Master Layout Blueprint", url: "/master-layout" },
-              { title: "MahaRERA Approvals & Sanctions", url: "/project/rera-approvals-pm1261012600748" },
-              { title: "Clubhouse & Lifestyle Amenities", url: "/amenities" },
-              { title: "Sales Office & Site Navigation", url: "/contact" }
+              { title: "Pricing & Itemized Cost Sheet", url: "/kolte-patil-the-reserve-price" },
+              { title: "Vyana 2 & 3 BHK Floor Plans", url: "/kolte-patil-the-reserve-floor-plans" },
+              { title: "21-Acre Master Layout Blueprint", url: "/kolte-patil-the-reserve-master-layout" },
+              { title: "MahaRERA PM1261012600748 Approvals", url: "/kolte-patil-the-reserve-rera" },
+              { title: "Towers T5, T6, T7 Elevation & Layouts", url: "/kolte-patil-the-reserve-towers" },
+              { title: "Live Construction Status & On-Site Updates", url: "/kolte-patil-the-reserve-construction-status" },
+              { title: "Clubhouse & Lifestyle Amenities", url: "/kolte-patil-the-reserve-amenities" },
+              { title: "Sales Office & Site Navigation", url: "/kolte-patil-the-reserve-contact" }
             ]} 
           />
         </div>

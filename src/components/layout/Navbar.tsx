@@ -18,6 +18,7 @@ export default function Navbar() {
     { name: "Towers", href: "/kolte-patil-the-reserve-towers" },
     { name: "Amenities", href: "/kolte-patil-the-reserve-amenities" },
     { name: "Location", href: "/kolte-patil-the-reserve-location" },
+    { name: "MahaRERA", href: "/kolte-patil-the-reserve-rera" },
     { name: "Brochure", href: "/kolte-patil-the-reserve-brochure" },
   ];
 
@@ -155,17 +156,24 @@ export default function Navbar() {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-2">
-                  <span className="text-[10px] uppercase tracking-widest text-[#D4AF37] font-bold">
-                    MahaRERA Registration
-                  </span>
+                <Link
+                  href="/kolte-patil-the-reserve-rera"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#D4AF37]/50 transition-colors flex flex-col gap-2 group cursor-pointer"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] uppercase tracking-widest text-[#D4AF37] font-bold">
+                      MahaRERA Registration
+                    </span>
+                    <span className="text-[10px] text-[#D4AF37] group-hover:underline">Verify Details →</span>
+                  </div>
                   <span className="font-mono text-sm text-white font-bold tracking-wider">
                     PM1261012600748
                   </span>
                   <span className="text-[10px] text-white/50">
                     Vyana Phase 1 (Towers T5, T6, T7) • maharera.maharashtra.gov.in
                   </span>
-                </div>
+                </Link>
 
                 {/* Direct Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3 pt-2">

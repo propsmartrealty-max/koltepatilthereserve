@@ -86,6 +86,7 @@ export default function RevealFooter() {
               <li><Link href="/overview" className="hover:text-[#D4AF37] transition-colors">The Narrative & Vision</Link></li>
               <li><Link href="/kolte-patil-the-reserve-price" className="hover:text-[#D4AF37] transition-colors font-medium text-[#D4AF37]">Pricing & Cost Sheet</Link></li>
               <li><Link href="/kolte-patil-the-reserve-brochure" className="hover:text-[#D4AF37] transition-colors font-medium text-[#D4AF37]">Download E-Brochure PDF</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-rera" className="hover:text-[#D4AF37] transition-colors font-medium text-[#D4AF37]">MahaRERA PM1261012600748</Link></li>
               <li><Link href="/kolte-patil-the-reserve-floor-plans" className="hover:text-[#D4AF37] transition-colors">Vyana 2 & 3 BHK Blueprints</Link></li>
               <li><Link href="/kolte-patil-the-reserve-towers" className="hover:text-[#D4AF37] transition-colors">Towers T5, T6, T7 Guide</Link></li>
               <li><Link href="/kolte-patil-the-reserve-construction-status" className="hover:text-[#D4AF37] transition-colors">Live Construction Progress</Link></li>
@@ -105,6 +106,7 @@ export default function RevealFooter() {
             </span>
             <ul className="space-y-2.5 font-light text-white/75">
               <li><Link href="/location" className="hover:text-[#D4AF37] transition-colors">Location Overview</Link></li>
+              <li><Link href="/kolte-patil-the-reserve-location" className="hover:text-[#D4AF37] transition-colors font-medium text-[#D4AF37]">Sinhgad Road Flyover (12 Mins)</Link></li>
               <li><Link href="/location/nanded-fata" className="hover:text-[#D4AF37] transition-colors">Nanded Fata (3 Mins)</Link></li>
               <li><Link href="/location/swargate" className="hover:text-[#D4AF37] transition-colors">Swargate Metro (15 Mins)</Link></li>
               <li><Link href="/location/kothrud" className="hover:text-[#D4AF37] transition-colors">Kothrud Corridor (15 Mins)</Link></li>
@@ -133,7 +135,10 @@ export default function RevealFooter() {
               MahaRERA Credential
             </span>
 
-            <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3">
+            <Link
+              href="/kolte-patil-the-reserve-rera"
+              className="p-3.5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#D4AF37]/50 transition-colors flex items-center gap-3 group"
+            >
               <div className="relative w-14 h-14 rounded-lg overflow-hidden bg-white p-1 shrink-0">
                 <Image
                   src="/images/qr/maharera-qr.png"
@@ -144,22 +149,17 @@ export default function RevealFooter() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-[9px] font-bold text-[#D4AF37] uppercase tracking-wider">
-                  MahaRERA Reg.
+                <span className="text-[9px] font-bold text-[#D4AF37] uppercase tracking-wider flex items-center gap-1">
+                  MahaRERA Reg. <ShieldCheck className="w-2.5 h-2.5 text-[#D4AF37]" />
                 </span>
                 <span className="font-mono text-xs text-white font-bold tracking-wider mt-0.5">
                   PM1261012600748
                 </span>
-                <a
-                  href="https://maharera.maharashtra.gov.in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[9px] text-white/50 hover:text-white underline mt-1"
-                >
-                  Verify on MahaRERA →
-                </a>
+                <span className="text-[9px] text-[#D4AF37] group-hover:underline mt-1">
+                  View Sanctions & Escrow →
+                </span>
               </div>
-            </div>
+            </Link>
 
             {/* Sales Office Address */}
             <div className="text-[11px] text-white/70 font-light flex flex-col gap-1.5 pt-1">

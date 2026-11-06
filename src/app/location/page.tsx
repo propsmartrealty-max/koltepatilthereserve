@@ -124,21 +124,36 @@ export default function LocationPage() {
 
         {/* Future Growth Catalysts */}
         <div className="p-10 md:p-12 rounded-[2.5rem] bg-[#05140D] border border-[#d4af37]/30 shadow-2xl mb-12">
-          <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-2">Infrastructure Growth</span>
-          <h3 className="font-serif text-3xl text-white mb-6">Upcoming Pune Infrastructure Catalysts</h3>
+          <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-2">Infrastructure Growth & Commute</span>
+          <h3 className="font-serif text-3xl text-white mb-6">Transformative Pune Infrastructure Catalysts</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/10">
-              <h4 className="font-serif text-lg text-white mb-2">Proposed Pune Ring Road</h4>
-              <p className="text-white/60 text-xs font-light leading-relaxed">Adjoining ring road corridor will provide direct high-speed bypass connectivity across all four quadrants of Pune.</p>
+              <div className="flex items-center justify-between mb-2">
+                <h4 className="font-serif text-lg text-white">Sinhgad Road Elevated Flyover</h4>
+                <span className="text-[9px] uppercase tracking-wider font-bold bg-[#25D366]/20 text-[#25D366] px-2 py-0.5 rounded-full">Operational</span>
+              </div>
+              <p className="text-white/60 text-xs font-light leading-relaxed">
+                The landmark elevated flyover between Rajaram Bridge and Fun Time Multiplex bypasses major surface bottlenecks, reducing commute to Swargate, Deccan, and central Pune to just 10-12 minutes.
+              </p>
             </div>
             <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/10">
-              <h4 className="font-serif text-lg text-white mb-2">Sinhgad Road Elevated Flyover</h4>
-              <p className="text-white/60 text-xs font-light leading-relaxed">Multi-tier flyover significantly eases commute towards Swargate, Deccan Gymkhana, and central Pune.</p>
+              <div className="flex items-center justify-between mb-2">
+                <h4 className="font-serif text-lg text-white">Pune Ring Road Corridor</h4>
+                <span className="text-[9px] uppercase tracking-wider font-bold bg-[#D4AF37]/20 text-[#D4AF37] px-2 py-0.5 rounded-full">Under Execution</span>
+              </div>
+              <p className="text-white/60 text-xs font-light leading-relaxed">
+                Adjoining 128-km Pune Ring Road provides immediate high-speed bypass connectivity directly to Hinjewadi IT Park, PCMC, Pune-Bangalore Highway, and Chakan industrial zone.
+              </p>
             </div>
             <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/10">
-              <h4 className="font-serif text-lg text-white mb-2">Swargate Metro Expansion</h4>
-              <p className="text-white/60 text-xs font-light leading-relaxed">Upcoming underground metro extension connecting Swargate to Katraj brings mass rapid transit minutes away.</p>
+              <div className="flex items-center justify-between mb-2">
+                <h4 className="font-serif text-lg text-white">Khadakwasla-Swargate Metro</h4>
+                <span className="text-[9px] uppercase tracking-wider font-bold bg-[#D4AF37]/20 text-[#D4AF37] px-2 py-0.5 rounded-full">Phase 2 DPR</span>
+              </div>
+              <p className="text-white/60 text-xs font-light leading-relaxed">
+                Sanctioned Metro corridor extending from Khadakwasla along Sinhgad Road directly to Swargate and Kharadi, bringing rapid mass transit stations within walking distance of The Reserve.
+              </p>
             </div>
           </div>
 

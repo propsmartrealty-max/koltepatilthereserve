@@ -226,12 +226,12 @@ export default function PossessionDatePage() {
           <InternalLinkingMesh 
             title="Explore Legal Approvals, Pricing & Construction Status" 
             links={[
-              { title: "Live Construction Status & On-Site Updates", url: "/construction-status" },
-              { title: "Towers T5, T6, T7 Elevation & Layouts", url: "/towers" },
-              { title: "MahaRERA Approvals (PM1261012600748)", url: "/project/rera-approvals-pm1261012600748" },
-              { title: "Pricing & Itemized Cost Sheet", url: "/pricing" },
-              { title: "Download Official Project Brochure", url: "/brochure" },
-              { title: "Vyana 2 & 3 BHK Floor Plans", url: "/floor-plans" },
+              { title: "Live Construction Status & On-Site Updates", url: "/kolte-patil-the-reserve-construction-status" },
+              { title: "Towers T5, T6, T7 Elevation & Layouts", url: "/kolte-patil-the-reserve-towers" },
+              { title: "MahaRERA PM1261012600748 Legal Sanctions", url: "/kolte-patil-the-reserve-rera" },
+              { title: "Pricing & Itemized Cost Sheet", url: "/kolte-patil-the-reserve-price" },
+              { title: "Download Official Project Brochure", url: "/kolte-patil-the-reserve-brochure" },
+              { title: "Vyana 2 & 3 BHK Floor Plans", url: "/kolte-patil-the-reserve-floor-plans" },
             ]} 
           />
         </div>

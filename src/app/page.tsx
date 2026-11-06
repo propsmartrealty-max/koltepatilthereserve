@@ -96,12 +96,16 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0E2E1D]/80 border border-[#D4AF37]/30 backdrop-blur-md mb-6 shadow-lg"
           >
-            <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse" />
-            <span className="text-[10px] md:text-xs font-semibold uppercase tracking-[0.25em] text-[#D4AF37]">
-              21.03-Acre Master Riverside Sanctuary • MahaRERA PM1261012600748
-            </span>
+            <Link
+              href="/kolte-patil-the-reserve-rera"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0E2E1D]/80 border border-[#D4AF37]/30 hover:border-[#D4AF37] backdrop-blur-md mb-6 shadow-lg transition-colors group cursor-pointer"
+            >
+              <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse" />
+              <span className="text-[10px] md:text-xs font-semibold uppercase tracking-[0.25em] text-[#D4AF37] group-hover:text-white transition-colors">
+                21.03-Acre Master Riverside Sanctuary • MahaRERA PM1261012600748 ↗
+              </span>
+            </Link>
           </motion.div>
 
           {/* Monumental Headline */}
@@ -858,7 +862,10 @@ export default function Home() {
                 </button>
 
                 <p className="text-[10px] text-white/40 text-center font-light mt-1">
-                  🔒 Strictly confidential. Your details are never shared. MahaRERA PM1261012600748.
+                  🔒 Strictly confidential. Your details are never shared.{" "}
+                  <Link href="/kolte-patil-the-reserve-rera" className="text-[#D4AF37] hover:underline">
+                    MahaRERA PM1261012600748
+                  </Link>.
                 </p>
               </form>
             )}
@@ -885,6 +892,123 @@ export default function Home() {
 
           </div>
 
+        </div>
+      </section>
+
+      {/* STRATEGIC PRIME PROJECT ECOSYSTEM DIRECTORY */}
+      <section className="py-16 px-6 md:px-12 bg-[#040E09] border-t border-white/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-8">
+            <div>
+              <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-[#D4AF37] font-bold block mb-1">
+                Project Knowledge Graph
+              </span>
+              <h3 className="font-serif text-2xl md:text-3xl text-white">
+                The Reserve by Kolte-Patil Strategic Hubs
+              </h3>
+            </div>
+            <span className="text-xs text-white/50 font-light">
+              Official Vadgaon Khurd, Sinhgad Road, Pune Directory
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 text-xs">
+            <Link
+              href="/kolte-patil-the-reserve-price"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">Price & Cost Sheets</span>
+              <span className="text-[10px] text-white/40 mt-1">₹85L - ₹1.25 Cr*</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-brochure"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">Download PDF Brochure</span>
+              <span className="text-[10px] text-white/40 mt-1">Official 28-Page Dossier</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-floor-plans"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">Floor Plans & Layouts</span>
+              <span className="text-[10px] text-white/40 mt-1">2 & 3 BHK Blueprints</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-rera"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">MahaRERA Legal Hub</span>
+              <span className="text-[10px] text-[#D4AF37] mt-1 font-mono">PM1261012600748</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-towers"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">Towers T5, T6, T7</span>
+              <span className="text-[10px] text-white/40 mt-1">G+21 Storeys Elevation</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-construction-status"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">Construction Status</span>
+              <span className="text-[10px] text-[#25D366] mt-1">Live On-Site Progress</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-possession-date"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">Possession Timeline</span>
+              <span className="text-[10px] text-white/40 mt-1">RERA Mandated 2028</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-master-layout"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">21.03-Acre Masterplan</span>
+              <span className="text-[10px] text-white/40 mt-1">Riverside Sanctuary</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-amenities"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">19,750 Sq.Ft. Clubhouse</span>
+              <span className="text-[10px] text-white/40 mt-1">40+ Resort Amenities</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-location"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">Sinhgad Road Elevated Flyover</span>
+              <span className="text-[10px] text-white/40 mt-1">12 Mins to Swargate</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-specifications"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">Technical Specs</span>
+              <span className="text-[10px] text-white/40 mt-1">100% Aluform Poured Concrete</span>
+            </Link>
+
+            <Link
+              href="/kolte-patil-the-reserve-contact"
+              className="p-3.5 rounded-xl bg-white/5 hover:bg-[#0E2E1D] border border-white/10 hover:border-[#D4AF37]/40 transition-colors text-white/80 hover:text-[#D4AF37] flex flex-col justify-between"
+            >
+              <span className="font-medium">Site Visit & Experience Centre</span>
+              <span className="text-[10px] text-white/40 mt-1">Open 7 Days a Week</span>
+            </Link>
+          </div>
         </div>
       </section>
 
