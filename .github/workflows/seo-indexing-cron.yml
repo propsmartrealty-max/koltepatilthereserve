@@ -1,0 +1,28 @@
+name: Automated Google & IndexNow Search Engine Dispatch
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Run daily at 04:00 UTC (9:30 AM IST)
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  index-and-ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Execute Automated Search Engine Ping & IndexNow Dispatch
+        run: |
+          node scripts/ping-search-engines.mjs
+        env:
+          INDEXNOW_KEY: koltepatilthereserve2026

@@ -238,6 +238,62 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     distance: "22.0 km",
     driveTime: "35 mins",
     highlight: "Seamless access via NH-48 and future western orbital corridor."
+  },
+  "mahalunge": {
+    title: "The Reserve Sinhgad Road vs Mahalunge Township Living | Kolte Patil Pune",
+    keyword: "Mahalunge Real Estate Pune",
+    excerpt: "Compare high-density West Pune township living in Mahalunge with the exclusive 21.03-acre low-density riverside sanctuary of The Reserve on Sinhgad Road. 70%+ open greens, 19,750 sq.ft. clubhouse.",
+    distance: "19.5 km",
+    driveTime: "30 mins",
+    highlight: "Peaceful riverside ambiance with fast bypass connectivity to Hinjewadi Phase 1 and Ring Road."
+  },
+  "punawale": {
+    title: "Luxury Flats for Punawale & West Pune Commuters | The Reserve Kolte Patil",
+    keyword: "Punawale Real Estate Alternative",
+    excerpt: "Explore 2 & 3 BHK luxury residences on Sinhgad Road offering uncrowded riverside living, Olympic-scale pool, and Ring Road access for Punawale and Hinjewadi commuters.",
+    distance: "21.0 km",
+    driveTime: "32 mins",
+    highlight: "Direct connection via Mumbai-Bengaluru Highway bypass and upcoming PMRDA orbital expressway."
+  },
+  "tathawade": {
+    title: "The Reserve Sinhgad Road vs Tathawade Real Estate | Pune Property Guide",
+    keyword: "Tathawade Property Comparison",
+    excerpt: "Compare dense multi-tower clusters in Tathawade with an authentic 21.03-acre riverside master layout featuring 3.05 m slab heights and scenic NDA mountain horizons.",
+    distance: "20.5 km",
+    driveTime: "30 mins",
+    highlight: "Clean air index, Mutha riverfront promenade, and superior price-to-carpet value."
+  },
+  "viman-nagar": {
+    title: "The Reserve by Kolte Patil for Viman Nagar & East Pune Property Buyers",
+    keyword: "Viman Nagar Real Estate Alternative",
+    excerpt: "For families and investors in East Pune seeking an expansive, nature-immersed 21-acre master planned community with established Kolte-Patil construction excellence.",
+    distance: "22.0 km",
+    driveTime: "38 mins",
+    highlight: "Decongested lifestyle with rapid transit via Sinhgad Road flyover and Pune Ring Road."
+  },
+  "kalyani-nagar": {
+    title: "Luxury Riverside Retreat for Kalyani Nagar Buyers | The Reserve Pune",
+    keyword: "Kalyani Nagar Luxury Property Alternative",
+    excerpt: "Elevate your living beyond crowded central avenues. Discover pristine 2 & 3 BHK river-facing sanctuaries with 40+ resort lifestyle amenities at Vadgaon Khurd.",
+    distance: "20.0 km",
+    driveTime: "35 mins",
+    highlight: "Unmatched open space ratio, tranquil riverside breeze, and 19,750 sq.ft. clubhouse."
+  },
+  "aundh": {
+    title: "The Reserve Sinhgad Road: The Spacious Alternative for Aundh Homebuyers",
+    keyword: "Aundh Real Estate Alternative Pune",
+    excerpt: "Escape high-density redevelopment in Aundh. Choose an expansive 21.03-acre riverside enclave with panoramic hill views and seamless highway connectivity.",
+    distance: "17.0 km",
+    driveTime: "28 mins",
+    highlight: "Low-density boutique living with dedicated sports arenas and 84-ft lap pool."
+  },
+  "baner-pashan-link-road": {
+    title: "Baner Pashan Link Road to The Reserve Sinhgad Road | Luxury Homes Pune",
+    keyword: "Baner Pashan Property Comparison",
+    excerpt: "Discover why discerning homebuyers from Baner-Pashan are choosing The Reserve for its pure riverside serenity, Vastu compliance, and 100% aluform poured concrete construction.",
+    distance: "15.0 km",
+    driveTime: "24 mins",
+    highlight: "Direct highway access through Chandani Chowk and Warje bypass."
   }
 };
 
@@ -325,6 +381,48 @@ export const configData: Record<string, { title: string; keyword: string; excerp
     excerpt: "Thoughtfully aligned East-West entrance layouts, kitchen in Agni-mool (South-East), and master bedroom in South-West for prosperity and positive chi.",
     carpetArea: "791 & 1,016 sq. ft.",
     configType: "Vastu Aligned Residences"
+  },
+  "4-bhk-pune": {
+    title: "4 BHK Ultra-Luxury & Sky Duplex Residences in Pune | Kolte Patil The Reserve",
+    keyword: "4 BHK Flats Pune",
+    excerpt: "Exclusive combined 4 BHK and grand sky residences offering over 1,800 - 2,050 sq.ft. carpet area, panoramic 180-degree Mutha riverfront and NDA hill decks, and private foyer access.",
+    carpetArea: "1,807 - 2,032 sq. ft.",
+    configType: "4 BHK Presidential Sky Suite"
+  },
+  "duplex-sky-villas-pune": {
+    title: "Duplex & Sky Villas on Sinhgad Road, Pune | The Reserve by Kolte Patil",
+    keyword: "Sky Villas Pune",
+    excerpt: "Double-height living spaces, panoramic open sky terraces, 3.05 m slab heights, and resort-grade amenities spanning 21.03 acres of riverside sanctuary at Vadgaon Khurd.",
+    carpetArea: "1,600 - 2,200 sq. ft.",
+    configType: "Signature Sky Duplex"
+  },
+  "simplex-penthouses-pune": {
+    title: "Simplex & Penthouse Apartments in Pune | The Reserve Sinhgad Road",
+    keyword: "Penthouses in Pune",
+    excerpt: "Top-floor penthouse sanctuaries in Towers T5, T6, and T7 overlooking the scenic Mutha river and lush Western Ghats. Verified MahaRERA PM1261012600748.",
+    carpetArea: "1,450 - 1,950 sq. ft.",
+    configType: "Top-Floor Penthouse Suite"
+  },
+  "flats-in-hinjewadi-vs-sinhgad-road": {
+    title: "Flats in Hinjewadi vs The Reserve Sinhgad Road | Pune Real Estate Comparison",
+    keyword: "Flats in Hinjewadi vs Sinhgad Road",
+    excerpt: "Detailed comparative evaluation between dense Hinjewadi IT high-rises and the tranquil 21.03-acre riverside luxury enclave of The Reserve with direct Western bypass connectivity.",
+    carpetArea: "791 & 1,016 sq. ft.",
+    configType: "Corridor Comparison: Hinjewadi vs Sinhgad Road"
+  },
+  "flats-in-mahalunge-vs-the-reserve": {
+    title: "Township Flats in Mahalunge vs The Reserve Sinhgad Road | Real Estate Guide",
+    keyword: "Mahalunge Township vs The Reserve",
+    excerpt: "Comparing mega-township living in Mahalunge with low-density riverside sanctuary living on Sinhgad Road. 487 boutique residences in Phase 1 vs 10,000+ unit township density.",
+    carpetArea: "791 & 1,016 sq. ft.",
+    configType: "Township vs Boutique Sanctuary"
+  },
+  "flats-in-baner-vs-the-reserve": {
+    title: "Luxury Flats in Baner vs The Reserve Sinhgad Road | Price & Value Analysis",
+    keyword: "Flats in Baner vs Sinhgad Road",
+    excerpt: "Why discerning homebuyers in Baner are diversifying into The Reserve for 30% higher carpet efficiency, 21.03 acres of nature, and 100% full aluform monolithic pour construction.",
+    carpetArea: "791 & 1,016 sq. ft.",
+    configType: "Price-to-Value Comparison"
   }
 };
 
@@ -348,6 +446,26 @@ export const investmentData: Record<string, { title: string; keyword: string; ex
     title: "NRI Real Estate Investment in Pune | Kolte Patil The Reserve", 
     keyword: "NRI Investment Pune", 
     excerpt: "Complete end-to-end assistance for NRI buyers looking for freehold luxury property in Pune with high rental yield and capital appreciation." 
+  },
+  "nri-homes-dubai-gulf-usa": {
+    title: "NRI Real Estate Portal: Dubai, Gulf, USA & Singapore Investors in Pune",
+    keyword: "NRI Property Investment Pune Dubai USA",
+    excerpt: "Specialized NRI concierge desk providing NRE/NRO bank remittance support, title clearance, legal escrow transparency, and power of attorney execution for The Reserve."
+  },
+  "hni-luxury-real-estate-pune": {
+    title: "HNI Luxury Real Estate Investment in Pune | The Reserve by Kolte Patil",
+    keyword: "HNI Luxury Real Estate Pune",
+    excerpt: "Bespoke property asset acquisition for High Net-Worth Individuals (HNIs) seeking landmark riverside land parcels, 19,750 sq.ft. private club, and capital growth."
+  },
+  "it-corridor-property-pune": {
+    title: "IT Corridor Real Estate Investment: Hinjewadi & Baner Professionals",
+    keyword: "IT Corridor Property Pune",
+    excerpt: "Strategic real estate positioning for tech leaders in Hinjewadi Phase 1-3, Baner, and Magarpatta looking for scenic, stress-free riverside living with high rental returns."
+  },
+  "sinhgad-road-capital-appreciation": {
+    title: "Sinhgad Road Real Estate Price Appreciation Forecast 2026-2030",
+    keyword: "Sinhgad Road Property Price Forecast",
+    excerpt: "Comprehensive financial projection evaluating how the operational elevated flyover, Pune Ring Road interchange, and Mutha river rejuvenation will drive 20-25% CAGR."
   },
   "rental-yield-pune": { 
     title: "High Rental Yield Apartments on Sinhgad Road Pune", 

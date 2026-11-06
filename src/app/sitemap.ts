@@ -47,8 +47,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/virtual-tour', priority: 0.85, changeFrequency: 'weekly' as const },
     { route: '/updates', priority: 0.85, changeFrequency: 'weekly' as const },
     { route: '/faq', priority: 0.85, changeFrequency: 'weekly' as const },
-    { route: '/insights', priority: 0.85, changeFrequency: 'daily' as const },
-    { route: '/blog', priority: 0.85, changeFrequency: 'daily' as const },
+    { route: '/insights', priority: 0.9, changeFrequency: 'daily' as const },
+    { route: '/blog', priority: 0.92, changeFrequency: 'daily' as const },
     { route: '/privacy', priority: 0.5, changeFrequency: 'monthly' as const },
     { route: '/terms', priority: 0.5, changeFrequency: 'monthly' as const },
   ].map((item) => ({

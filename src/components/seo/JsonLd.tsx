@@ -255,7 +255,7 @@ export default function JsonLd() {
         "@id": "https://thereserve.koltepatil.digital/#unit-2bhk",
         "name": "Vyana 2 BHK Riverside Residence | The Reserve by Kolte Patil",
         "description": "Premium 2 BHK riverside residence with 791 sq.ft. (73.49 sq.m.) RERA carpet area, 3.05 m slab height, panoramic balcony deck, and covered parking.",
-        "url": "https://thereserve.koltepatil.digital/the-residences/2-bhk-flats-sinhgad-road",
+        "url": "https://thereserve.koltepatil.digital/the-residences/2-bhk-pune",
         "image": "https://thereserve.koltepatil.digital/images/floor-plans/vyana-2bhk-floorplan.png",
         "offers": {
           "@type": "Offer",
@@ -288,7 +288,7 @@ export default function JsonLd() {
         "@id": "https://thereserve.koltepatil.digital/#unit-3bhk",
         "name": "Vyana 3 BHK Grand Sanctuary | The Reserve by Kolte Patil",
         "description": "Opulent 3 BHK riverside residence with 1,016 sq.ft. (94.39 sq.m.) RERA carpet area, 3.05 m slab height, scenic NDA hill view deck, and EV-ready parking.",
-        "url": "https://thereserve.koltepatil.digital/the-residences/3-bhk-flats-sinhgad-road",
+        "url": "https://thereserve.koltepatil.digital/the-residences/3-bhk-pune",
         "image": "https://thereserve.koltepatil.digital/images/floor-plans/vyana-3bhk-floorplan.png",
         "offers": {
           "@type": "Offer",
@@ -309,6 +309,39 @@ export default function JsonLd() {
           "floorSize": {
             "@type": "QuantitativeValue",
             "value": 1016,
+            "unitCode": "FTK"
+          },
+          "containedInPlace": {
+            "@id": "https://thereserve.koltepatil.digital/#property"
+          }
+        }
+      },
+      {
+        "@type": "RealEstateListing",
+        "@id": "https://thereserve.koltepatil.digital/#unit-4bhk",
+        "name": "Vyana 4 BHK Presidential Sky Suite | The Reserve by Kolte Patil",
+        "description": "Exclusive combined 4 BHK luxury penthouse and sky duplex residences offering 1,807+ sq.ft. carpet area, 180-degree Mutha riverfront and NDA hill vistas, 3.05 m slab heights, and dedicated multi-bay EV parking.",
+        "url": "https://thereserve.koltepatil.digital/the-residences/4-bhk-pune",
+        "image": "https://thereserve.koltepatil.digital/images/gallery/vyana-towers.jpg",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "price": "21000000",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "seller": {
+            "@id": "https://thereserve.koltepatil.digital/#organization"
+          }
+        },
+        "itemOffered": {
+          "@type": "Apartment",
+          "name": "Vyana 4 BHK Sky Suite",
+          "numberOfRooms": 4,
+          "numberOfBedrooms": 4,
+          "numberOfBathroomsTotal": 4,
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "value": 1807,
             "unitCode": "FTK"
           },
           "containedInPlace": {
