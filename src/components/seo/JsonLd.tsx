@@ -31,9 +31,12 @@ export default function JsonLd() {
           "https://www.facebook.com/KoltePatilDevelopers",
           "https://www.linkedin.com/company/kolte-patil-developers-ltd",
           "https://www.instagram.com/koltepatil",
+          "https://twitter.com/KoltePatilLtd",
+          "https://www.youtube.com/@KoltePatilDevelopersLtd",
           "https://en.wikipedia.org/wiki/Kolte-Patil_Developers",
           "https://www.bseindia.com/stock-share-price/kolte-patil-developers-ltd/koltepatil/532924/",
-          "https://www.nseindia.com/get-quotes/equity?symbol=KOLTEPATIL"
+          "https://www.nseindia.com/get-quotes/equity?symbol=KOLTEPATIL",
+          "https://www.zaubacorp.com/company/KOLTE-PATIL-DEVELOPERS-LTD/L45200PN1991PLC129428"
         ]
       },
       {

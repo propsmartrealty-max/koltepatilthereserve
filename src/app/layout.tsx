@@ -43,6 +43,16 @@ export const metadata: Metadata = {
       'x-default': 'https://thereserve.koltepatil.digital',
     },
   },
+  icons: {
+    icon: [
+      { url: '/favicon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/kolte-patil-logo.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/favicon.png',
+  },
   title: {
     default: "Kolte Patil The Reserve Sinhgad Road, Pune | 2 & 3 BHK Luxury Riverside Residences",
     template: "%s | The Reserve by Kolte Patil Sinhgad Road Pune",
