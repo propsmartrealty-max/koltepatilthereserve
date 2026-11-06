@@ -180,6 +180,9 @@ export default function RootLayout({
         {/* PWA & Brand Manifest */}
         <link rel="manifest" href="/manifest.json" />
         
+        {/* RSS / Atom Feed for Google Discover & News */}
+        <link rel="alternate" type="application/rss+xml" title="The Reserve by Kolte Patil Editorial RSS Feed" href="/rss.xml" />
+        
         {/* LLM & AI Entity Grounding Specification */}
         <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs Entity Grounding" />
       </head>

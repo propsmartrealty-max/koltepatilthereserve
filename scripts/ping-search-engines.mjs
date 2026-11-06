@@ -109,13 +109,19 @@ async function main() {
   console.log(`[SEO Engine] Target Sitemap: ${SITEMAP_URL}`);
   console.log(`[SEO Engine] Submitting ${HIGH_PRIORITY_URLS.length} high-priority canonical URLs...`);
 
-  // 1. Google Sitemap Ping
+  // 1. Google Sitemap & RSS Ping
   const googlePing = await pingUrl(`https://www.google.com/ping?sitemap=${encodeURIComponent(SITEMAP_URL)}`);
-  console.log(`[Google Ping] Status: ${googlePing.status || googlePing.error}`);
+  console.log(`[Google Sitemap Ping] Status: ${googlePing.status || googlePing.error}`);
 
-  // 2. Bing Sitemap Ping
+  const googleRssPing = await pingUrl(`https://www.google.com/ping?sitemap=${encodeURIComponent(`${BASE_URL}/rss.xml`)}`);
+  console.log(`[Google RSS Ping] Status: ${googleRssPing.status || googleRssPing.error}`);
+
+  // 2. Bing Sitemap & RSS Ping
   const bingPing = await pingUrl(`https://www.bing.com/ping?sitemap=${encodeURIComponent(SITEMAP_URL)}`);
-  console.log(`[Bing Ping] Status: ${bingPing.status || bingPing.error}`);
+  console.log(`[Bing Sitemap Ping] Status: ${bingPing.status || bingPing.error}`);
+
+  const bingRssPing = await pingUrl(`https://www.bing.com/ping?sitemap=${encodeURIComponent(`${BASE_URL}/rss.xml`)}`);
+  console.log(`[Bing RSS Ping] Status: ${bingRssPing.status || bingRssPing.error}`);
 
   // 3. IndexNow Batch Submission
   const indexNowResult = await submitIndexNow(DOMAIN, INDEXNOW_KEY, HIGH_PRIORITY_URLS);

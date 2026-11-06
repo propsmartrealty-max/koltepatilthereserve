@@ -9,6 +9,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://thereserve.koltepatil.digital';
   const now = new Date();
 
+  const defaultImages = [
+    `${baseUrl}/images/gallery/vyana-towers.jpg`,
+    `${baseUrl}/images/overview/21-acres-masterplan.jpg`,
+  ];
+
+  const getImagesForRoute = (route: string) => {
+    if (route.includes('floor-plan') || route.includes('residence') || route.includes('bhk')) {
+      return [
+        `${baseUrl}/images/floor-plans/vyana-2bhk-floorplan.png`,
+        `${baseUrl}/images/floor-plans/vyana-3bhk-floorplan.png`,
+        `${baseUrl}/images/gallery/vyana-towers.jpg`,
+      ];
+    }
+    if (route.includes('amenities') || route.includes('club')) {
+      return [
+        `${baseUrl}/images/gallery/resort-swimming-pool.jpg`,
+        `${baseUrl}/images/gallery/clubhouse-lounge.jpg`,
+        `${baseUrl}/images/gallery/clubhouse-step-seating.jpg`,
+        `${baseUrl}/images/gallery/sports-turf.jpg`,
+      ];
+    }
+    if (route.includes('master-layout') || route.includes('master-plan')) {
+      return [
+        `${baseUrl}/images/overview/21-acres-masterplan.jpg`,
+        `${baseUrl}/images/gallery/central-boulevard.jpg`,
+      ];
+    }
+    if (route.includes('location')) {
+      return [
+        `${baseUrl}/images/overview/location-map.jpg`,
+        `${baseUrl}/images/gallery/river-hills.jpg`,
+      ];
+    }
+    if (route.includes('rera')) {
+      return [
+        `${baseUrl}/images/qr/maharera-qr.png`,
+        `${baseUrl}/images/gallery/vyana-towers.jpg`,
+      ];
+    }
+    return defaultImages;
+  };
+
   // 1. High-Priority Core Landing Pages
   const coreRoutes = [
     { route: '', priority: 1.0, changeFrequency: 'daily' as const },
@@ -56,30 +98,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: item.changeFrequency,
     priority: item.priority,
+    images: getImagesForRoute(item.route),
   }));
 
-  // 2. Dynamic Location Micro-Market Pages (22 Micro-Markets)
+  // 2. Dynamic Location Micro-Market Pages
   const locationRoutes = Object.keys(locationData).map((market) => ({
     url: `${baseUrl}/location/${market}`,
     lastModified: now,
     changeFrequency: 'weekly' as const,
     priority: 0.85,
+    images: getImagesForRoute(`/location/${market}`),
   }));
 
-  // 3. Dynamic Configuration Pages (7 Configurations)
+  // 3. Dynamic Configuration Pages
   const configRoutes = Object.keys(configData).map((config) => ({
     url: `${baseUrl}/the-residences/${config}`,
     lastModified: now,
     changeFrequency: 'weekly' as const,
     priority: 0.9,
+    images: getImagesForRoute(`/the-residences/${config}`),
   }));
 
-  // 4. Dynamic Investment Intent Pages (7 Intent Hubs)
+  // 4. Dynamic Investment Intent Pages
   const investmentRoutes = Object.keys(investmentData).map((intent) => ({
     url: `${baseUrl}/investment/${intent}`,
     lastModified: now,
     changeFrequency: 'weekly' as const,
     priority: 0.85,
+    images: defaultImages,
   }));
 
   // 5. Dynamic MDX Insight Articles
@@ -89,6 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(insight.meta.date),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
+    images: defaultImages,
   }));
 
   // 6. Dynamic MDX Guide Pillars
@@ -98,6 +145,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(guide.meta.date),
     changeFrequency: 'weekly' as const,
     priority: 0.9,
+    images: defaultImages,
   }));
 
   // 7. Dynamic MDX Compare Hubs
@@ -107,6 +155,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(compare.meta.date),
     changeFrequency: 'weekly' as const,
     priority: 0.85,
+    images: defaultImages,
   }));
 
   // 8. Dynamic Project Feature Pages
@@ -115,6 +164,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: 'weekly' as const,
     priority: 0.85,
+    images: getImagesForRoute(`/project/${feat}`),
   }));
 
   // 9. Interactive Financial SEO Tools
@@ -126,6 +176,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: 'weekly' as const,
     priority: item.priority,
+    images: defaultImages,
   }));
 
   return [

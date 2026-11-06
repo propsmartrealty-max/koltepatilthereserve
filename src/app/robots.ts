@@ -50,7 +50,10 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/private/', '/thank-you'],
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: [
+      `${baseUrl}/sitemap.xml`,
+      `${baseUrl}/rss.xml`,
+    ],
     host: baseUrl,
   };
 }
