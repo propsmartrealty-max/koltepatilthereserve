@@ -740,6 +740,83 @@ export default function Home() {
 
           </div>
 
+          {/* SOUTH-WEST PUNE GOLDEN CORRIDOR SPOTLIGHT: WARJE, KOTHRUD, ERANDWANE */}
+          <div className="mt-16 p-8 md:p-10 rounded-3xl bg-[#040E09] border border-[#D4AF37]/30 shadow-2xl">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+              <div>
+                <span className="text-[10px] uppercase tracking-[0.3em] text-[#D4AF37] font-bold block mb-1">
+                  South-West Pune Epicenter
+                </span>
+                <h3 className="font-serif text-2xl md:text-3xl text-white">
+                  The Natural Luxury Upgrade for Warje, Kothrud &amp; Erandwane
+                </h3>
+              </div>
+              <Link
+                href="/compare/the-reserve-sinhgad-road-vs-kothrud-erandwane-properties"
+                className="px-6 py-2.5 rounded-full bg-[#D4AF37]/15 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#06160E] border border-[#D4AF37]/40 text-xs font-semibold tracking-wider transition-colors inline-flex items-center gap-2"
+              >
+                <span>Compare with Kothrud / Erandwane</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Link
+                href="/location/warje"
+                className="p-6 rounded-2xl bg-[#081E13] border border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-serif text-lg text-white group-hover:text-[#D4AF37] transition-colors">Warje Corridor</span>
+                    <span className="font-mono text-xs font-bold text-[#D4AF37] bg-[#D4AF37]/15 px-2.5 py-0.5 rounded-full">6 Mins (3.8 km)</span>
+                  </div>
+                  <p className="text-xs text-white/70 font-light leading-relaxed">
+                    Cross the direct Mutha river bridge into 21.03 acres of resort greenery. Seamless highway access to NH-48 and Chandani Chowk without traffic delays.
+                  </p>
+                </div>
+                <span className="text-[11px] text-[#D4AF37] font-medium mt-4 group-hover:underline flex items-center gap-1">
+                  Explore Warje Transit &rarr;
+                </span>
+              </Link>
+
+              <Link
+                href="/location/kothrud"
+                className="p-6 rounded-2xl bg-[#081E13] border border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-serif text-lg text-white group-hover:text-[#D4AF37] transition-colors">Kothrud Corridor</span>
+                    <span className="font-mono text-xs font-bold text-[#D4AF37] bg-[#D4AF37]/15 px-2.5 py-0.5 rounded-full">12 Mins (7.5 km)</span>
+                  </div>
+                  <p className="text-xs text-white/70 font-light leading-relaxed">
+                    Save ₹1 Crore+ compared to congested Kothrud redevelopment buildings. Enjoy 3.05 m slab heights, 19,750 sq.ft. clubhouse, and 84-ft resort pool via Rajaram Bridge.
+                  </p>
+                </div>
+                <span className="text-[11px] text-[#D4AF37] font-medium mt-4 group-hover:underline flex items-center gap-1">
+                  Explore Kothrud Upgrade &rarr;
+                </span>
+              </Link>
+
+              <Link
+                href="/location/erandwane"
+                className="p-6 rounded-2xl bg-[#081E13] border border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-serif text-lg text-white group-hover:text-[#D4AF37] transition-colors">Erandwane Corridor</span>
+                    <span className="font-mono text-xs font-bold text-[#D4AF37] bg-[#D4AF37]/15 px-2.5 py-0.5 rounded-full">14 Mins (8.0 km)</span>
+                  </div>
+                  <p className="text-xs text-white/70 font-light leading-relaxed">
+                    Minutes from Deenanath Mangeshkar Hospital and Law College Road via the new Elevated Flyover. Unmatched open space density, clean air, and riverside serenity.
+                  </p>
+                </div>
+                <span className="text-[11px] text-[#D4AF37] font-medium mt-4 group-hover:underline flex items-center gap-1">
+                  Explore Erandwane Upgrade &rarr;
+                </span>
+              </Link>
+            </div>
+          </div>
+
         </div>
       </section>
 

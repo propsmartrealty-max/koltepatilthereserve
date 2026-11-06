@@ -2,10 +2,10 @@ export const locationData: Record<string, { title: string; keyword: string; exce
   "sinhgad-road": {
     title: "Luxury Flats on Sinhgad Road, Pune | The Reserve by Kolte Patil",
     keyword: "Flats on Sinhgad Road Pune",
-    excerpt: "Discover Pune's most iconic 21.03-acre masterplanned riverside sanctuary on Sinhgad Road. 2 & 3 BHK luxury residences with 19,750 sq.ft. clubhouse and scenic NDA hill views.",
+    excerpt: "Discover Pune's most iconic 21.03-acre masterplanned riverside sanctuary on Sinhgad Road at Vadgaon Khurd. Premium 2 & 3 BHK residences (791 & 1,016 sq.ft.) with 19,750 sq.ft. clubhouse, 84-ft resort pool, and scenic NDA hill vistas. Operational elevated flyover connects directly to Swargate and central Pune in 10-12 mins.",
     distance: "0.0 km",
     driveTime: "On Sinhgad Road",
-    highlight: "Primary arterial corridor of South-West Pune with elevated flyover and direct Ring Road connectivity."
+    highlight: "Primary arterial corridor of South-West Pune with newly operational elevated flyover, direct Mutha river frontage, and PMRDA Ring Road interchange."
   },
   "vadgaon-khurd": { 
     title: "The Reserve at Vadgaon Khurd, Sinhgad Road | Kolte Patil", 
@@ -14,6 +14,30 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     distance: "0.0 km",
     driveTime: "On Site",
     highlight: "Prime river-edge parcel with uninterrupted NDA hill vistas, central boulevard, and upcoming Ring Road junction."
+  },
+  "warje": { 
+    title: "Luxury 2 & 3 BHK Flats near Warje | The Reserve by Kolte Patil", 
+    keyword: "Flats near Warje Pune", 
+    excerpt: "Just 6 minutes from Warje via the direct Mutha river bridge, The Reserve offers 791 & 1,016 sq.ft. luxury apartments across a 21.03-acre riverside sanctuary with 19,750 sq.ft. clubhouse and 84-ft resort pool.",
+    distance: "3.8 km",
+    driveTime: "6 mins",
+    highlight: "Immediate cross-river connectivity via Warje bridge and bypass highway, providing resort living minutes from Warje flyover."
+  },
+  "kothrud": { 
+    title: "Luxury 2 & 3 BHK Homes near Kothrud | The Reserve Kolte Patil", 
+    keyword: "Luxury Homes near Kothrud", 
+    excerpt: "Upgrade from congested Kothrud redevelopment buildings to an expansive 21.03-acre riverside master layout just 12 minutes away via Rajaram Bridge. Get double the usable space, 19,750 sq.ft. clubhouse, and 70%+ open greens at half the price per sq.ft.",
+    distance: "7.5 km",
+    driveTime: "12 mins",
+    highlight: "Seamless access via Rajaram Bridge, Karve Road, and DP Road, connecting Kothrud families to riverside luxury."
+  },
+  "erandwane": {
+    title: "Luxury Riverside Homes for Erandwane Buyers | The Reserve Pune",
+    keyword: "Erandwane Real Estate Upgrade",
+    excerpt: "Why pay ₹18,000/sq.ft. for cramped standalone redevelopment in Erandwane? Discover 21.03 acres of riverside sanctuary just 14 minutes away via Rajaram Bridge. 3.05 m slab heights, 19,750 sq.ft. clubhouse, and peaceful NDA hill views.",
+    distance: "8.0 km",
+    driveTime: "14 mins",
+    highlight: "Fast connectivity to Law College Road, Deccan, and Deenanath Mangeshkar Hospital via Rajaram Bridge."
   },
   "nanded-fata": {
     title: "Luxury Flats near Nanded Fata, Sinhgad Road | The Reserve Kolte Patil",
@@ -95,14 +119,6 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     driveTime: "8 mins",
     highlight: "Rapid connectivity to Navale Bridge junction and Mumbai-Bengaluru Highway."
   },
-  "warje": { 
-    title: "Luxury 2 & 3 BHK Flats near Warje | The Reserve Kolte Patil", 
-    keyword: "Flats near Warje Pune", 
-    excerpt: "Only 10 mins from Warje Flyover, The Reserve offers 791 & 1,016 sq.ft. luxury apartments with 19,750 sq.ft. clubhouse and Olympic-inspired pools.",
-    distance: "5.0 km",
-    driveTime: "10 mins",
-    highlight: "Direct connectivity to Mutha river bridge and Mumbai-Bengaluru Highway bypass."
-  },
   "katraj": { 
     title: "Luxury Flats near Katraj, Pune | The Reserve by Kolte Patil", 
     keyword: "Flats near Katraj Pune", 
@@ -115,25 +131,9 @@ export const locationData: Record<string, { title: string; keyword: string; exce
     title: "Premium Homes near Karve Nagar | The Reserve Sinhgad Road", 
     keyword: "Homes near Karve Nagar Pune", 
     excerpt: "Why settle for congested lanes in Karve Nagar? Discover expansive nature-inspired living at The Reserve just across the Mutha river corridor.",
-    distance: "6.5 km",
-    driveTime: "14 mins",
+    distance: "4.5 km",
+    driveTime: "8 mins",
     highlight: "Direct transit through Rajaram Bridge and upcoming riverfront connectivity."
-  },
-  "kothrud": { 
-    title: "Luxury 2 & 3 BHK Homes near Kothrud | The Reserve Kolte Patil", 
-    keyword: "Luxury Homes near Kothrud", 
-    excerpt: "Upgrade from cramped Kothrud redevelopment buildings to the expansive 21.03-acre riverside master layout with 70%+ green cover and scenic NDA hill views.",
-    distance: "9.5 km",
-    driveTime: "18 mins",
-    highlight: "Seamless access via Karve Road, Warje bypass, and Mutha riverfront route."
-  },
-  "erandwane": {
-    title: "Luxury Riverside Homes for Erandwane Buyers | The Reserve",
-    keyword: "Erandwane Real Estate Upgrade",
-    excerpt: "Escape dense central Pune for a 21.03-acre riverside sanctuary with 19,750 sq.ft. clubhouse and resort-style amenities at Vadgaon Khurd.",
-    distance: "8.0 km",
-    driveTime: "16 mins",
-    highlight: "Fast connectivity to Law College Road, Deccan, and Karve Road via Rajaram Bridge."
   },
   "deccan-gymkhana": {
     title: "Heritage Living Alternative near Deccan Gymkhana | The Reserve",
