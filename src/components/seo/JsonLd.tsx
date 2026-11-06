@@ -51,6 +51,26 @@ export default function JsonLd() {
         }
       },
       {
+        "@type": "WebPage",
+        "@id": "https://thereserve.koltepatil.digital/#webpage",
+        "url": "https://thereserve.koltepatil.digital",
+        "name": "Kolte Patil The Reserve Sinhgad Road, Pune | 2 & 3 BHK Luxury Residences",
+        "isPartOf": {
+          "@id": "https://thereserve.koltepatil.digital/#website"
+        },
+        "about": {
+          "@id": "https://thereserve.koltepatil.digital/#property"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://thereserve.koltepatil.digital/images/gallery/vyana-towers.jpg"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", "#project-speakable-summary", ".speakable-fact"]
+        }
+      },
+      {
         "@type": "SiteNavigationElement",
         "@id": "https://thereserve.koltepatil.digital/#navigation",
         "name": [
@@ -212,6 +232,153 @@ export default function JsonLd() {
             "@type": "LocationFeatureSpecification",
             "name": "Aluform Monolithic Concrete Construction",
             "value": "True"
+          }
+        ]
+      },
+      {
+        "@type": "RealEstateListing",
+        "@id": "https://thereserve.koltepatil.digital/#unit-2bhk",
+        "name": "Vyana 2 BHK Riverside Residence | The Reserve by Kolte Patil",
+        "description": "Premium 2 BHK riverside residence with 791 sq.ft. (73.49 sq.m.) RERA carpet area, 3.05 m slab height, panoramic balcony deck, and covered parking.",
+        "url": "https://thereserve.koltepatil.digital/the-residences/2-bhk-flats-sinhgad-road",
+        "image": "https://thereserve.koltepatil.digital/images/floor-plans/vyana-2bhk-floorplan.png",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "price": "8500000",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "seller": {
+            "@id": "https://thereserve.koltepatil.digital/#organization"
+          }
+        },
+        "itemOffered": {
+          "@type": "Apartment",
+          "name": "Vyana 2 BHK Residence",
+          "numberOfRooms": 2,
+          "numberOfBedrooms": 2,
+          "numberOfBathroomsTotal": 2,
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "value": 791,
+            "unitCode": "FTK"
+          },
+          "containedInPlace": {
+            "@id": "https://thereserve.koltepatil.digital/#property"
+          }
+        }
+      },
+      {
+        "@type": "RealEstateListing",
+        "@id": "https://thereserve.koltepatil.digital/#unit-3bhk",
+        "name": "Vyana 3 BHK Grand Sanctuary | The Reserve by Kolte Patil",
+        "description": "Opulent 3 BHK riverside residence with 1,016 sq.ft. (94.39 sq.m.) RERA carpet area, 3.05 m slab height, scenic NDA hill view deck, and EV-ready parking.",
+        "url": "https://thereserve.koltepatil.digital/the-residences/3-bhk-flats-sinhgad-road",
+        "image": "https://thereserve.koltepatil.digital/images/floor-plans/vyana-3bhk-floorplan.png",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "price": "12500000",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "seller": {
+            "@id": "https://thereserve.koltepatil.digital/#organization"
+          }
+        },
+        "itemOffered": {
+          "@type": "Apartment",
+          "name": "Vyana 3 BHK Sanctuary",
+          "numberOfRooms": 3,
+          "numberOfBedrooms": 3,
+          "numberOfBathroomsTotal": 3,
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "value": 1016,
+            "unitCode": "FTK"
+          },
+          "containedInPlace": {
+            "@id": "https://thereserve.koltepatil.digital/#property"
+          }
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://thereserve.koltepatil.digital/#walkthrough-video",
+        "name": "The Reserve by Kolte Patil - Official Architectural Walkthrough & Cinematic Tour",
+        "description": "Cinematic walkthrough of The Reserve by Kolte Patil at Vadgaon Khurd, Sinhgad Road, Pune. Explore 21.03 acres of riverside living, 19,750 sq.ft. clubhouse, and 2 & 3 BHK residences.",
+        "thumbnailUrl": [
+          "https://thereserve.koltepatil.digital/images/gallery/vyana-towers.jpg",
+          "https://thereserve.koltepatil.digital/images/gallery/clubhouse-step-seating.jpg"
+        ],
+        "uploadDate": "2026-08-01T09:00:00+05:30",
+        "contentUrl": "https://player.vimeo.com/video/394627252",
+        "embedUrl": "https://player.vimeo.com/video/394627252",
+        "duration": "PT2M30S"
+      },
+      {
+        "@type": "ImageGallery",
+        "@id": "https://thereserve.koltepatil.digital/#gallery",
+        "name": "The Reserve by Kolte Patil Architectural Renders and Floor Plans",
+        "hasPart": [
+          {
+            "@type": "ImageObject",
+            "name": "Vyana High-Rise Towers Elevation",
+            "caption": "Architectural elevation of Towers T5, T6, and T7 at The Reserve by Kolte Patil",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/gallery/vyana-towers.jpg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "19,750 Sq.Ft. Clubhouse with Step Seating",
+            "caption": "Iconic multi-tier clubhouse with amphitheater step seating",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/gallery/clubhouse-step-seating.jpg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "84-ft Resort Swimming Pool & Aqua Loungers",
+            "caption": "Resort-style adult pool with kids splash pool and sun deck",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/gallery/resort-swimming-pool.jpg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Expansive Living Room & River Viewing Deck",
+            "caption": "3.05m slab height living room opening into Mutha River views",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/gallery/interior-deck.jpg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Vyana 3 BHK Master Bedroom Suite",
+            "caption": "Luxury master bedroom suite with premium vitrified flooring",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/gallery/master-bedroom.jpg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Central Landscaped Boulevard & Buffer Park",
+            "caption": "Green buffer and vehicular-free central boulevard",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/gallery/central-boulevard.jpg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Championship Sports Turf & Pickleball Arena",
+            "caption": "Dedicated sports arena with pickleball and cricket practice net",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/gallery/sports-turf.jpg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "21.03-Acre Masterplan Layout",
+            "caption": "Comprehensive master layout plan of The Reserve sanctuary",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/overview/21-acres-masterplan.jpg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Vyana 3 BHK 1,016 Sq.Ft. Floor Plan Blueprint",
+            "caption": "Detailed architectural layout of 3 BHK luxury residence",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/floor-plans/vyana-3bhk-floorplan.png"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Vyana 2 BHK 791 Sq.Ft. Floor Plan Blueprint",
+            "caption": "Detailed architectural layout of 2 BHK luxury residence",
+            "contentUrl": "https://thereserve.koltepatil.digital/images/floor-plans/vyana-2bhk-floorplan.png"
           }
         ]
       },

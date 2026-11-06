@@ -11,10 +11,13 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: [
           'Googlebot',
           'Googlebot-Image',
+          'Googlebot-Video',
           'Googlebot-Mobile',
           'Googlebot-News',
           'Google-InspectionTool',
+          'Google-Extended',
           'Mediapartners-Google',
+          'Storebot-Google',
           'Bingbot',
           'Applebot',
           'Applebot-Extended',

@@ -1,11 +1,11 @@
 {
-  "name": "The Reserve by Kolte Patil",
+  "name": "The Reserve by Kolte Patil | Sinhgad Road, Pune",
   "short_name": "The Reserve",
-  "description": "2 & 3 BHK Riverside Luxury Residences on Sinhgad Road, Pune by Kolte-Patil Developers Ltd.",
+  "description": "2 & 3 BHK Riverside Luxury Residences on Sinhgad Road, Pune by Kolte-Patil Developers Ltd. MahaRERA PM1261012600748.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0B2B1B",
-  "theme_color": "#0B2B1B",
+  "background_color": "#06160E",
+  "theme_color": "#06160E",
   "orientation": "portrait-primary",
   "icons": [
     {

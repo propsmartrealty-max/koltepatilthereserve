@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Outfit, Cinzel } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
@@ -26,10 +26,22 @@ const cinzel = Cinzel({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: '#06160E',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  colorScheme: 'dark',
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://thereserve.koltepatil.digital'),
   alternates: {
     canonical: 'https://thereserve.koltepatil.digital',
+    languages: {
+      'en-IN': 'https://thereserve.koltepatil.digital',
+      'x-default': 'https://thereserve.koltepatil.digital',
+    },
   },
   title: {
     default: "Kolte Patil The Reserve Sinhgad Road, Pune | 2 & 3 BHK Luxury Riverside Residences",
@@ -157,7 +169,9 @@ export default function RootLayout({
 
         {/* PWA & Brand Manifest */}
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#06160E" />
+        
+        {/* LLM & AI Entity Grounding Specification */}
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs Entity Grounding" />
       </head>
       <body className="min-h-full flex flex-col font-sans bg-[#06160E] text-[var(--foreground)] selection:bg-[#D4AF37] selection:text-[#06160E] overflow-x-hidden">
         {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}

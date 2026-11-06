@@ -117,8 +117,9 @@ export default function Home() {
             </span>
           </motion.h1>
 
-          {/* Narrative Subtitle */}
+          {/* Narrative Subtitle (Targeted by Google Assistant / Voice Search Speakable Schema) */}
           <motion.p
+            id="project-speakable-summary"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
