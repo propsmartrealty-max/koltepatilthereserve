@@ -1,8 +1,27 @@
 # ==============================================================================
-# CLOUDFLARE PAGES EDGE 301 REDIRECTS & CANONICALIZATION
+# CLOUDFLARE PAGES EDGE 301 REDIRECTS & CANONICAL DOMAIN HARDENING
+# Apex Domain: koltepatil.digital
+# Target Canonical: https://thereserve.koltepatil.digital
 # ==============================================================================
 
-# Legacy URL Normalization
+# 1. Staging Domain (.pages.dev) -> Canonical Custom Domain
+https://koltepatilthereserve.pages.dev/*  https://thereserve.koltepatil.digital/:splat  301!
+http://koltepatilthereserve.pages.dev/*   https://thereserve.koltepatil.digital/:splat  301!
+
+# 2. Apex koltepatil.digital -> Canonical Subdomain
+https://koltepatil.digital/*              https://thereserve.koltepatil.digital/:splat  301!
+http://koltepatil.digital/*               https://thereserve.koltepatil.digital/:splat  301!
+
+# 3. www.koltepatil.digital -> Canonical Subdomain
+https://www.koltepatil.digital/*          https://thereserve.koltepatil.digital/:splat  301!
+http://www.koltepatil.digital/*           https://thereserve.koltepatil.digital/:splat  301!
+
+# 4. Insecure HTTP -> Forced HTTPS
+http://thereserve.koltepatil.digital/*    https://thereserve.koltepatil.digital/:splat  301!
+
+# ------------------------------------------------------------------------------
+# Legacy & Clean URL Normalization
+# ------------------------------------------------------------------------------
 /the-reserve/*              /overview 301
 /kolte-patil-the-reserve/*  /overview 301
 /vyana/*                    /the-residences 301

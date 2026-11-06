@@ -1,11 +1,12 @@
 # ==============================================================================
 # CLOUDFLARE ENTERPRISE GRADE EDGE HEADERS & CUSTOM DOMAIN HARDENING
+# Apex Domain: koltepatil.digital
 # Target Custom Domain: thereserve.koltepatil.digital
 # Fallback Deployment: koltepatilthereserve.pages.dev
 # ==============================================================================
 
 /*
-  # Enterprise HTTP Security Headers
+  # Enterprise HTTP Security Headers & HSTS Preload
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
@@ -19,6 +20,7 @@
   X-DNS-Prefetch-Control: on
   X-Permitted-Cross-Domain-Policies: none
   X-Custom-Domain: thereserve.koltepatil.digital
+  X-Apex-Domain: koltepatil.digital
   
   # Google & Search Engine Directives at Edge
   X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
@@ -26,8 +28,8 @@
   # Cloudflare 103 Early Hints for Instant Font & Resource Handshake
   Link: <https://fonts.googleapis.com>; rel=preconnect; crossorigin, <https://fonts.gstatic.com>; rel=preconnect; crossorigin
   
-  # Hardened Content Security Policy with Analytics, Maps & Media Whitelist
-  Content-Security-Policy: default-src 'self' https://thereserve.koltepatil.digital; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://thereserve.koltepatil.digital https://images.unsplash.com https://cdn.pixabay.com https://www.koltepatil.com https://*.google.com https://*.googleapis.com https://*.gstatic.com https://www.facebook.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://thereserve.koltepatil.digital https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://static.cloudflareinsights.com https://cloudflareinsights.com https://formsubmit.co https://*.clarity.ms; frame-src 'self' https://player.vimeo.com https://maps.google.com https://maps.google.it https://www.google.com https://*.google.com; media-src 'self' https://player.vimeo.com https://*.vimeocdn.com;
+  # Hardened Content Security Policy across Apex & Subdomains
+  Content-Security-Policy: default-src 'self' https://thereserve.koltepatil.digital https://koltepatil.digital https://*.koltepatil.digital; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://thereserve.koltepatil.digital https://koltepatil.digital https://*.koltepatil.digital https://images.unsplash.com https://cdn.pixabay.com https://www.koltepatil.com https://*.google.com https://*.googleapis.com https://*.gstatic.com https://www.facebook.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://thereserve.koltepatil.digital https://koltepatil.digital https://*.koltepatil.digital https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://static.cloudflareinsights.com https://cloudflareinsights.com https://formsubmit.co https://*.clarity.ms; frame-src 'self' https://player.vimeo.com https://maps.google.com https://maps.google.it https://www.google.com https://*.google.com; media-src 'self' https://player.vimeo.com https://*.vimeocdn.com;
 
 # ------------------------------------------------------------------------------
 # 1-Year Immutable Edge Caching for Static JS / CSS / Fonts / Images

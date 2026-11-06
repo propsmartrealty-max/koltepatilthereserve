@@ -39,15 +39,15 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Strict-Transport-Security',
-            value: 'max-age=31536000; includeSubDomains; preload',
+            value: 'max-age=63072000; includeSubDomains; preload',
           },
           {
             key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=()',
+            value: 'camera=(), microphone=(), geolocation=(self), payment=()',
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://images.unsplash.com https://cdn.pixabay.com https://www.koltepatil.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://static.cloudflareinsights.com https://formsubmit.co; frame-src 'self' https://player.vimeo.com;"
+            value: "default-src 'self' https://thereserve.koltepatil.digital https://koltepatil.digital https://*.koltepatil.digital; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com https://connect.facebook.net https://clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://thereserve.koltepatil.digital https://koltepatil.digital https://images.unsplash.com https://cdn.pixabay.com https://www.koltepatil.com https://*.google.com https://*.gstatic.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://thereserve.koltepatil.digital https://koltepatil.digital https://www.google-analytics.com https://static.cloudflareinsights.com https://formsubmit.co; frame-src 'self' https://player.vimeo.com https://maps.google.com https://www.google.com;"
           }
         ],
       },
