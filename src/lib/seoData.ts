@@ -304,6 +304,27 @@ export const configData: Record<string, { title: string; keyword: string; excerp
     excerpt: "Get the complete official cost sheet, stamp duty & registration breakdown, all-inclusive price, and flexible construction-linked payment plans.",
     carpetArea: "2 & 3 BHK Plans",
     configType: "Official Pricing & Payment Schedules"
+  },
+  "2-bhk-791-sqft-sinhgad-road": {
+    title: "2 BHK 791 Sq.Ft. Flat on Sinhgad Road | Kolte Patil The Reserve",
+    keyword: "2 BHK 791 Sq Ft Sinhgad Road",
+    excerpt: "Spacious 2 BHK riverside residence with 791 sq.ft. RERA carpet area, 3.05 m slab height, private viewing deck, and dedicated covered parking.",
+    carpetArea: "791 sq. ft.",
+    configType: "2 BHK Luxury (791 sq.ft.)"
+  },
+  "3-bhk-1016-sqft-sinhgad-road": {
+    title: "3 BHK 1,016 Sq.Ft. Flat on Sinhgad Road | Kolte Patil The Reserve",
+    keyword: "3 BHK 1016 Sq Ft Sinhgad Road",
+    excerpt: "Flagship 3 BHK luxury residence with 1,016 sq.ft. RERA carpet area, master suite with private deck, panoramic NDA hill views, and EV parking.",
+    carpetArea: "1,016 sq. ft.",
+    configType: "3 BHK Grand Sanctuary (1,016 sq.ft.)"
+  },
+  "vastu-compliant-homes": {
+    title: "100% Vastu-Compliant 2 & 3 BHK Flats | The Reserve Sinhgad Road",
+    keyword: "Vastu Compliant Flats Sinhgad Road",
+    excerpt: "Thoughtfully aligned East-West entrance layouts, kitchen in Agni-mool (South-East), and master bedroom in South-West for prosperity and positive chi.",
+    carpetArea: "791 & 1,016 sq. ft.",
+    configType: "Vastu Aligned Residences"
   }
 };
 
@@ -385,6 +406,41 @@ export const projectData: Record<string, { title: string; keyword: string; excer
     title: "MahaRERA PM1261012600748 Legal Approvals & Title Report | Vyana",
     keyword: "MahaRERA PM1261012600748",
     excerpt: "Complete statutory transparency, commencement certificate, clear land titles, and verified MahaRERA registration for Vyana Phase 1."
+  },
+  "towers-t5-t6-t7": {
+    title: "Towers T5, T6, T7 Floor-Wise Layouts & Elevations | The Reserve",
+    keyword: "The Reserve Towers T5 T6 T7",
+    excerpt: "Ground + 21 residential floors with 3.05 m slab heights, 3 high-speed elevators per tower, and panoramic river or hill-facing corner units."
+  },
+  "construction-status": {
+    title: "Kolte Patil The Reserve Construction Status 2026 | Live Work Progress",
+    keyword: "The Reserve Construction Status",
+    excerpt: "Track verified on-site structural milestones, foundation progress, aluform monolithic pour schedules, and official architect certifications."
+  },
+  "possession-date": {
+    title: "Kolte Patil The Reserve Possession Date | Vyana Phase 1 Timeline & OC",
+    keyword: "The Reserve Possession Date",
+    excerpt: "Official MahaRERA completion milestones, phased handover schedules for Towers T5, T6, and T7, and statutory possession governance."
+  },
+  "resort-swimming-pool": {
+    title: "84-ft Resort Swimming Pool & Poolside Cabanas | The Reserve",
+    keyword: "The Reserve Swimming Pool",
+    excerpt: "84 ft. x 27 ft. Olympic-scale adult lap pool flanked by submerged aqua loungers, poolside cabanas, and 14 ft. x 18 ft. kids splash pool."
+  },
+  "sports-arenas-pickleball": {
+    title: "Pickleball Court, Sports Turf & Fitness Arenas | The Reserve",
+    keyword: "The Reserve Sports Amenities",
+    excerpt: "Championship-grade pickleball arena, multipurpose cricket practice turf, and reflexology jogging track amidst 21.03 acres of riverfront greens."
+  },
+  "riverfront-promenade": {
+    title: "Mutha Riverfront Promenade & Nature Buffer Walk | The Reserve",
+    keyword: "Mutha Riverfront Promenade Pune",
+    excerpt: "Direct frontage along the Mutha River corridor featuring landscaped nature trails, meditation decks, and tranquil morning mist views."
+  },
+  "ev-charging-parking": {
+    title: "30% Dedicated EV-Charging Parking Bays | The Reserve Kolte Patil",
+    keyword: "EV Charging Apartments Sinhgad Road",
+    excerpt: "Multi-level parking across 2 Basements (B1+B2) and Stilt level with pre-installed EV charging infrastructure, RFID barriers, and wide turning radius."
   }
 };
 
