@@ -197,17 +197,18 @@ export default function RevealFooter() {
               <span className="text-white font-medium text-xs text-[#D4AF37] mb-1">Configurations &amp; Living</span>
               <Link href="/the-residences/2-bhk-pune" className="hover:text-white transition-colors">2 BHK Flats Sinhgad Road (791 Sq.Ft.)</Link>
               <Link href="/the-residences/3-bhk-pune" className="hover:text-white transition-colors">3 BHK Luxury Residences Pune (1,016 Sq.Ft.)</Link>
-              <Link href="/the-residences/4-bhk-pune" className="hover:text-white transition-colors">4 BHK Sky Suites &amp; Penthouses</Link>
-              <Link href="/the-residences/duplex-sky-villas-pune" className="hover:text-white transition-colors">Duplex &amp; Sky Villas Sinhgad Road</Link>
+              <Link href="/the-residences/4-bhk-pune" className="hover:text-white transition-colors">4 BHK Sky Suites &amp; Combined Residences</Link>
+              <Link href="/the-residences/5-bhk-pune" className="hover:text-white transition-colors">5 BHK Presidential Sky Mansions</Link>
+              <Link href="/the-residences/sky-duplex-pune" className="hover:text-white transition-colors">Luxury Sky Duplexes &amp; Double-Height Voids</Link>
+              <Link href="/the-residences/simplex-penthouses-pune" className="hover:text-white transition-colors">Top-Floor Simplex Penthouses</Link>
               <Link href="/the-residences/vastu-compliant-homes" className="hover:text-white transition-colors">100% Vastu Compliant Homes Pune</Link>
               <Link href="/kolte-patil-the-reserve-floor-plans" className="hover:text-white transition-colors">Vyana Phase 1 Architectural Blueprints</Link>
               <Link href="/kolte-patil-the-reserve-price" className="hover:text-white transition-colors">Itemized Price List &amp; Cost Sheet</Link>
-              <Link href="/kolte-patil-the-reserve-towers" className="hover:text-white transition-colors">Towers T5, T6, T7 Floor Plans</Link>
             </div>
 
-            {/* Cluster 2: West Pune, Hinjewadi & Mahalunge */}
+            {/* Cluster 2: West Pune, Hinjewadi & PCMC */}
             <div className="flex flex-col gap-2">
-              <span className="text-white font-medium text-xs text-[#D4AF37] mb-1">Hinjewadi &amp; West Pune</span>
+              <span className="text-white font-medium text-xs text-[#D4AF37] mb-1">West Pune, Hinjewadi &amp; PCMC</span>
               <Link href="/compare/the-reserve-vs-life-republic-hinjewadi-mahalunge" className="hover:text-white transition-colors">The Reserve vs Life Republic Hinjewadi</Link>
               <Link href="/compare/the-reserve-vs-pride-purple-park-titan-hinjewadi" className="hover:text-white transition-colors">The Reserve vs Pride Purple Park Titan</Link>
               <Link href="/compare/the-reserve-vs-mahindra-happinest-tathawade" className="hover:text-white transition-colors">The Reserve vs Mahindra Happinest Tathawade</Link>
@@ -215,33 +216,39 @@ export default function RevealFooter() {
               <Link href="/location/mahalunge" className="hover:text-white transition-colors">Mahalunge Township vs Riverside Luxury</Link>
               <Link href="/location/baner" className="hover:text-white transition-colors">Baner Real Estate Alternative</Link>
               <Link href="/location/wakad" className="hover:text-white transition-colors">Wakad &amp; Western Bypass Transit</Link>
-              <Link href="/location/punawale" className="hover:text-white transition-colors">Punawale &amp; Tathawade Corridor</Link>
+              <Link href="/location/pashan" className="hover:text-white transition-colors">Flats in Pashan vs The Reserve</Link>
+              <Link href="/location/sus" className="hover:text-white transition-colors">Flats in Sus &amp; Sus-Pashan Road</Link>
+              <Link href="/location/ravet" className="hover:text-white transition-colors">Ravet &amp; PCMC Express Corridor</Link>
             </div>
 
-            {/* Cluster 3: South & Central Pune Corridors */}
+            {/* Cluster 3: South, Central & East Pune Corridors */}
             <div className="flex flex-col gap-2">
-              <span className="text-white font-medium text-xs text-[#D4AF37] mb-1">Sinhgad Road &amp; Central Pune</span>
+              <span className="text-white font-medium text-xs text-[#D4AF37] mb-1">South, Central &amp; East Pune</span>
               <Link href="/kolte-patil-the-reserve-location" className="hover:text-white transition-colors">Operational Sinhgad Road Flyover</Link>
-              <Link href="/location/vadgaon-khurd" className="hover:text-white transition-colors">Vadgaon Khurd Master Land Parcel</Link>
-              <Link href="/location/nanded-fata" className="hover:text-white transition-colors">Nanded Fata &amp; Mutha Riverfront</Link>
-              <Link href="/compare/the-reserve-vs-nanded-city-pune" className="hover:text-white transition-colors">The Reserve vs Nanded City Pune</Link>
-              <Link href="/compare/the-reserve-vs-majestique-manhattan-sinhgad-road" className="hover:text-white transition-colors">The Reserve vs Majestique Manhattan</Link>
-              <Link href="/compare/the-reserve-vs-venkatesh-skydale-sinhgad-road" className="hover:text-white transition-colors">The Reserve vs Venkatesh Skydale</Link>
-              <Link href="/location/kothrud" className="hover:text-white transition-colors">Kothrud Corridor (15 Mins)</Link>
+              <Link href="/location/warje" className="hover:text-white transition-colors">Warje River Bridge (6 Mins)</Link>
+              <Link href="/location/kothrud" className="hover:text-white transition-colors">Kothrud Corridor via Rajaram Bridge (12 Mins)</Link>
+              <Link href="/location/erandwane" className="hover:text-white transition-colors">Erandwane Luxury Upgrade (14 Mins)</Link>
+              <Link href="/location/sahakar-nagar" className="hover:text-white transition-colors">Sahakar Nagar &amp; Padmavati (10 Mins)</Link>
               <Link href="/location/swargate" className="hover:text-white transition-colors">Swargate Metro Station (12 Mins)</Link>
+              <Link href="/location/mukund-nagar" className="hover:text-white transition-colors">Mukund Nagar &amp; Gultekdi</Link>
+              <Link href="/location/koregaon-park" className="hover:text-white transition-colors">Koregaon Park vs The Reserve</Link>
+              <Link href="/location/magarpatta-city" className="hover:text-white transition-colors">Magarpatta City &amp; Hadapsar IT Belt</Link>
+              <Link href="/location/keshav-nagar" className="hover:text-white transition-colors">Keshav Nagar &amp; Kharadi Bypass</Link>
             </div>
 
             {/* Cluster 4: NRI, Research & Approvals */}
             <div className="flex flex-col gap-2">
-              <span className="text-white font-medium text-xs text-[#D4AF37] mb-1">NRI, Legal &amp; Research</span>
+              <span className="text-white font-medium text-xs text-[#D4AF37] mb-1">Guides, Research &amp; Approvals</span>
+              <Link href="/guides/pune-real-estate-master-investment-guide-2026" className="hover:text-white transition-colors font-medium text-[#D4AF37]">2026 Pune Real Estate Master Guide</Link>
+              <Link href="/compare/the-reserve-vs-pune-real-estate-micro-markets-comparison" className="hover:text-white transition-colors">The Reserve vs Entire Pune Real Estate</Link>
+              <Link href="/compare/the-reserve-sinhgad-road-vs-kothrud-erandwane-properties" className="hover:text-white transition-colors">The Reserve vs Kothrud / Erandwane</Link>
+              <Link href="/guides/kothrud-erandwane-homebuyers-upgrade-guide-sinhgad-road" className="hover:text-white transition-colors">Kothrud &amp; Erandwane Upgrade Manual</Link>
+              <Link href="/guides/warje-karve-nagar-to-sinhgad-road-luxury-homes" className="hover:text-white transition-colors">Warje &amp; Karve Nagar Upgrade Guide</Link>
               <Link href="/investment/nri-homes-dubai-gulf-usa" className="hover:text-white transition-colors">NRI Real Estate (Dubai, Gulf, USA)</Link>
               <Link href="/kolte-patil-the-reserve-rera" className="hover:text-white transition-colors font-medium text-[#D4AF37]">MahaRERA PM1261012600748 Hub</Link>
-              <Link href="/guides/pune-real-estate-market-micro-markets-ranking-2026" className="hover:text-white transition-colors">2026 Pune Real Estate Market Guide</Link>
-              <Link href="/guides/nri-homebuyer-guide-pune-real-estate-dubai-usa-singapore" className="hover:text-white transition-colors">NRI Homebuyer's Legal Guide</Link>
               <Link href="/blog" className="hover:text-white transition-colors">Real Estate Editorial &amp; Blog</Link>
-              <Link href="/insights" className="hover:text-white transition-colors">Market Reports &amp; Perspectives</Link>
+              <Link href="/insights" className="hover:text-white transition-colors">Market Intelligence &amp; Reports</Link>
               <Link href="/tools/emi-calculator" className="hover:text-white transition-colors">Home Loan EMI Calculator</Link>
-              <a href="/kolte-patil-the-reserve-brochure.pdf" download="kolte-patil-the-reserve-brochure.pdf" className="hover:text-white transition-colors text-[#D4AF37]">Download Official Brochure PDF</a>
             </div>
           </div>
         </div>
