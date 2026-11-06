@@ -23,6 +23,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
       title: `${meta.title} | Real Estate Market Trends | The Reserve by Kolte Patil`,
       description: `${meta.excerpt} Stay ahead of Pune property trends. Read our latest insights and book a consultation with Kolte Patil developers today.`,
+      alternates: {
+        canonical: `https://thereserve.koltepatil.digital/insights/${resolvedParams.slug}`,
+        languages: {
+          'en-IN': `https://thereserve.koltepatil.digital/insights/${resolvedParams.slug}`,
+          'x-default': `https://thereserve.koltepatil.digital/insights/${resolvedParams.slug}`,
+        },
+      },
       openGraph: {
         title: meta.title,
         description: meta.excerpt,

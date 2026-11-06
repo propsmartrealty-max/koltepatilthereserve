@@ -23,6 +23,13 @@ export async function generateMetadata({ params }: { params: Promise<{ pillar: s
     return {
       title: `${meta.title} | Luxury Apartments Pune | The Reserve by Kolte Patil`,
       description: `${meta.excerpt} Discover premium amenities and riverside living. Enquire today to learn more about the best real estate investment on Sinhagad Road.`,
+      alternates: {
+        canonical: `https://thereserve.koltepatil.digital/guides/${resolvedParams.pillar}`,
+        languages: {
+          'en-IN': `https://thereserve.koltepatil.digital/guides/${resolvedParams.pillar}`,
+          'x-default': `https://thereserve.koltepatil.digital/guides/${resolvedParams.pillar}`,
+        },
+      },
       openGraph: {
         title: meta.title,
         description: meta.excerpt,

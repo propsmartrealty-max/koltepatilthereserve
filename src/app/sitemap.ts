@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const coreRoutes = [
     { route: '', priority: 1.0, changeFrequency: 'daily' as const },
     { route: '/overview', priority: 0.95, changeFrequency: 'daily' as const },
+    { route: '/pricing', priority: 0.95, changeFrequency: 'daily' as const },
+    { route: '/brochure', priority: 0.95, changeFrequency: 'daily' as const },
     { route: '/the-residences', priority: 0.95, changeFrequency: 'daily' as const },
     { route: '/floor-plans', priority: 0.95, changeFrequency: 'daily' as const },
     { route: '/master-layout', priority: 0.9, changeFrequency: 'weekly' as const },

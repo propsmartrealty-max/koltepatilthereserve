@@ -13,12 +13,11 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Overview", href: "/overview" },
-    { name: "Masterplan", href: "/master-layout" },
     { name: "Floor Plans", href: "/floor-plans" },
-    { name: "Clubhouse & Amenities", href: "/amenities" },
-    { name: "Specifications", href: "/specifications" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "Amenities", href: "/amenities" },
     { name: "Location", href: "/location" },
-    { name: "Gallery", href: "/gallery" },
+    { name: "Brochure", href: "/brochure" },
   ];
 
   return (

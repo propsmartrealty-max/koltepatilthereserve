@@ -1,10 +1,14 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Project Specifications | Premium Quality Homes at The Reserve Pune',
-  description: 'Review the high-end project specifications of The Reserve by Kolte Patil. Uncompromising quality with imported marble, premium fittings, and digital security.',
+  title: 'Kolte Patil The Reserve Specifications | Aluform Structure & Finishes',
+  description: 'Detailed architectural specifications for Kolte Patil The Reserve (Vyana Phase 1), Sinhgad Road, Pune. 100% Aluform monolithic concrete, 3.05 m slab heights, Jaquar fittings, and Kajaria vitrified flooring.',
   alternates: {
     canonical: 'https://thereserve.koltepatil.digital/specifications',
+    languages: {
+      'en-IN': 'https://thereserve.koltepatil.digital/specifications',
+      'x-default': 'https://thereserve.koltepatil.digital/specifications',
+    },
   }
 };
 

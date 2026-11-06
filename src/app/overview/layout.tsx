@@ -2,10 +2,14 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'The Reserve Overview | Luxury Apartments on Sinhagad Road by Kolte Patil',
-  description: 'Discover the philosophy behind The Reserve by Kolte Patil. A rare 21.03-acre riverside luxury real estate development on Sinhgad Road, Pune.',
+  title: 'Kolte Patil The Reserve Project Overview | 21-Acre Riverside Development',
+  description: 'Complete overview of Kolte Patil The Reserve (Vyana Phase 1) on Sinhgad Road, Pune. 21.03 acres of riverside living, 19,750 sq.ft. clubhouse, 2 & 3 BHK luxury residences, and MahaRERA PM1261012600748 certification.',
   alternates: {
     canonical: 'https://thereserve.koltepatil.digital/overview',
+    languages: {
+      'en-IN': 'https://thereserve.koltepatil.digital/overview',
+      'x-default': 'https://thereserve.koltepatil.digital/overview',
+    },
   }
 };
 

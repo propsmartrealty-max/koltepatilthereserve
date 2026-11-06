@@ -54,10 +54,10 @@ export const metadata: Metadata = {
     shortcut: '/favicon.png',
   },
   title: {
-    default: "Kolte Patil The Reserve Sinhgad Road, Pune | 2 & 3 BHK Luxury Riverside Residences",
+    default: "Kolte Patil The Reserve Sinhgad Road | Official Portal | 2 & 3 BHK From ₹85 L*",
     template: "%s | The Reserve by Kolte Patil Sinhgad Road Pune",
   },
-  description: "The Reserve by Kolte Patil (Vyana Phase 1): 2 & 3 BHK luxury riverside residences at Vadgaon Khurd, Sinhgad Road, Pune. 21.03 acres master development, 19,750 sq.ft. clubhouse, 84x27 ft. pool, NDA hill views. MahaRERA PM1261012600748.",
+  description: "Official Developer Portal: The Reserve by Kolte-Patil (Vyana Phase 1), Sinhgad Road, Pune. 21-Acre Riverside Sanctuary, 2 & 3 BHK (791 & 1,016 sq.ft.), 19,750 sq.ft. Clubhouse. Verified MahaRERA PM1261012600748. Get Instant Cost Sheet & Floor Plans.",
   keywords: [
     // Brand Core
     "Kolte Patil The Reserve",

@@ -78,8 +78,10 @@ export default function JsonLd() {
         "@id": "https://thereserve.koltepatil.digital/#navigation",
         "name": [
           "Overview",
-          "Amenities",
+          "Pricing & Cost Sheet",
+          "Download Brochure",
           "Floor Plans",
+          "Amenities",
           "Location",
           "Gallery",
           "Specifications",
@@ -87,8 +89,10 @@ export default function JsonLd() {
         ],
         "url": [
           "https://thereserve.koltepatil.digital/overview",
-          "https://thereserve.koltepatil.digital/amenities",
+          "https://thereserve.koltepatil.digital/pricing",
+          "https://thereserve.koltepatil.digital/brochure",
           "https://thereserve.koltepatil.digital/floor-plans",
+          "https://thereserve.koltepatil.digital/amenities",
           "https://thereserve.koltepatil.digital/location",
           "https://thereserve.koltepatil.digital/gallery",
           "https://thereserve.koltepatil.digital/specifications",

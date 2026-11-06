@@ -2,10 +2,14 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: '2 & 3 BHK Floor Plans | The Reserve by Kolte Patil',
-  description: 'View the master-crafted 2 and 3 BHK floor plans at The Reserve, Sinhgad Road. Thoughtfully designed spaces with excellent cross ventilation and natural light.',
+  title: 'Kolte Patil The Reserve Floor Plans | 2 & 3 BHK Blueprints (791 & 1,016 Sq.Ft.)',
+  description: 'Explore detailed 2 BHK (791 sq.ft.) and 3 BHK (1,016 sq.ft.) floor plans for Kolte Patil The Reserve (Vyana Phase 1), Sinhgad Road, Pune. Complete room dimensions, river-facing balcony decks, and 3.05m slab heights. Download blueprints PDF.',
   alternates: {
     canonical: 'https://thereserve.koltepatil.digital/floor-plans',
+    languages: {
+      'en-IN': 'https://thereserve.koltepatil.digital/floor-plans',
+      'x-default': 'https://thereserve.koltepatil.digital/floor-plans',
+    },
   }
 };
 

@@ -2,10 +2,14 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Premium Amenities | The Reserve by Kolte Patil, Sinhgad Road',
-  description: 'Explore world-class amenities at The Reserve by Kolte Patil. Featuring a 21-acre landscape, riverside walkways, luxury clubhouse, and IGBC Platinum lifestyle.',
+  title: 'Kolte Patil The Reserve Amenities | 19,750 Sq.Ft. Clubhouse & 84-Ft Pool',
+  description: 'Experience 40+ lifestyle amenities at Kolte Patil The Reserve on Sinhgad Road, Pune. Features 19,750 sq.ft. multi-tier clubhouse, 84x27 ft. resort swimming pool, pickleball arena, and Mutha riverfront trail.',
   alternates: {
     canonical: 'https://thereserve.koltepatil.digital/amenities',
+    languages: {
+      'en-IN': 'https://thereserve.koltepatil.digital/amenities',
+      'x-default': 'https://thereserve.koltepatil.digital/amenities',
+    },
   }
 };
 

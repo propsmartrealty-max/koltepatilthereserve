@@ -22,6 +22,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
       title: `${meta.title} | Property Comparison Pune | The Reserve by Kolte Patil`,
       description: `${meta.excerpt} Compare luxury properties in Pune. See why The Reserve offers unmatched value and amenities. Enquire today for exclusive details.`,
+      alternates: {
+        canonical: `https://thereserve.koltepatil.digital/compare/${resolvedParams.slug}`,
+        languages: {
+          'en-IN': `https://thereserve.koltepatil.digital/compare/${resolvedParams.slug}`,
+          'x-default': `https://thereserve.koltepatil.digital/compare/${resolvedParams.slug}`,
+        },
+      },
       openGraph: {
         title: meta.title,
         description: meta.excerpt,
