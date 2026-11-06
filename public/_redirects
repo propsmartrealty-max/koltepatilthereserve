@@ -20,6 +20,13 @@ http://www.koltepatil.digital/*           https://thereserve.koltepatil.digital/
 http://thereserve.koltepatil.digital/*    https://thereserve.koltepatil.digital/:splat  301!
 
 # ------------------------------------------------------------------------------
+# RSS & Syndication Feed Redirects
+# ------------------------------------------------------------------------------
+/rss                         /rss.xml 301
+/feed                        /feed.xml 301
+/atom.xml                    /feed.xml 301
+
+# ------------------------------------------------------------------------------
 # Strategic Prime Project Name 301 Canonicalization
 # ------------------------------------------------------------------------------
 /pricing                     /kolte-patil-the-reserve-price 301

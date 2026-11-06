@@ -25,7 +25,7 @@ export default function ConciergePanel() {
           "Accept": "application/json"
         },
         body: JSON.stringify({
-          _subject: "New Lead from The Reserve Website!",
+          _subject: "VIP Lead: The Reserve Concierge Panel",
           Name: formData.name,
           Phone: formData.phone,
           Email: formData.email,
@@ -33,7 +33,10 @@ export default function ConciergePanel() {
         })
       });
     } catch (error) {
-      console.error(error);
+      console.warn("Concierge lead submission note:", error);
+    } finally {
+      setIsSubmitting(false);
+      setStep(3); // Success step
     }
     
     // Marketing Bridge: Push conversion event to DataLayer (GTM/GA4/Meta)
@@ -46,13 +49,11 @@ export default function ConciergePanel() {
       });
     }
 
-    setIsSubmitting(false);
-    setStep(3); // Success step
     setTimeout(() => {
       setIsConciergeOpen(false);
       setStep(1);
       setFormData({ name: "", phone: "", email: "", interest: "" });
-    }, 3000);
+    }, 6000);
   };
 
   return (
@@ -178,10 +179,18 @@ export default function ConciergePanel() {
                   <div className="w-20 h-20 rounded-full border border-[#d4af37] flex items-center justify-center text-[#d4af37] text-3xl">
                     ✓
                   </div>
-                  <h2 className="font-serif text-5xl text-white">Request Received</h2>
-                  <p className="font-serif text-xl text-white/50 max-w-md">
+                  <h2 className="font-serif text-4xl md:text-5xl text-white">Request Received</h2>
+                  <p className="font-serif text-lg md:text-xl text-white/70 max-w-md">
                     Thank you, {formData.name.split(' ')[0]}. A member of our concierge team will contact you shortly.
                   </p>
+                  <a
+                    href={`https://wa.me/917744009295?text=${encodeURIComponent(`Hi, I requested concierge callback for The Reserve by Kolte-Patil (${formData.interest || 'Luxury Residences'}). My name is ${formData.name}.`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-2 px-8 py-3 rounded-full bg-[#25D366] text-slate-950 font-bold text-xs uppercase tracking-wider hover:bg-white transition-all shadow-lg"
+                  >
+                    <span>Instant WhatsApp VIP Connect 💬</span>
+                  </a>
                 </motion.div>
               )}
             </AnimatePresence>

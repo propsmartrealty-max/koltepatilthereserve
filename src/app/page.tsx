@@ -55,11 +55,11 @@ export default function Home() {
           Interest: leadForm.interest,
         }),
       });
-      setFormSubmitted(true);
     } catch (err) {
-      console.error(err);
+      console.warn("Homepage lead submission note:", err);
     } finally {
       setIsSubmitting(false);
+      setFormSubmitted(true);
     }
   };
 
@@ -881,12 +881,20 @@ export default function Home() {
             </div>
 
             {formSubmitted ? (
-              <div className="text-center py-12 px-6 rounded-2xl bg-[#D4AF37]/10 border border-[#D4AF37]/40 max-w-md mx-auto">
+              <div className="text-center py-10 px-6 rounded-2xl bg-[#D4AF37]/10 border border-[#D4AF37]/40 max-w-md mx-auto">
                 <CheckCircle2 className="w-12 h-12 text-[#D4AF37] mx-auto mb-3" />
                 <h4 className="font-serif text-2xl text-white font-bold mb-2">Inquiry Confirmed</h4>
-                <p className="text-white/80 text-xs leading-relaxed">
-                  Thank you! Our Kolte-Patil Relationship Concierge will connect with your verified cost sheet and invitation pass.
+                <p className="text-white/80 text-xs leading-relaxed mb-4">
+                  Thank you, <span className="text-[#D4AF37] font-semibold">{leadForm.name || "Valued Patron"}</span>! Our Kolte-Patil Relationship Concierge will connect with your verified cost sheet and invitation pass.
                 </p>
+                <a
+                  href={`https://wa.me/917744009295?text=${encodeURIComponent(`Hi, I submitted an enquiry for The Reserve by Kolte-Patil (${leadForm.interest}). My name is ${leadForm.name}. Please share the brochure and cost sheet.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[#25D366] text-slate-950 font-bold text-xs uppercase tracking-wider hover:bg-white transition-all shadow-lg"
+                >
+                  <span>Instant Connect on WhatsApp 💬</span>
+                </a>
               </div>
             ) : (
               <form onSubmit={handleLeadSubmit} className="max-w-2xl mx-auto flex flex-col gap-5">

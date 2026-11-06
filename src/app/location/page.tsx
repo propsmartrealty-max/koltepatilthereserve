@@ -122,6 +122,38 @@ export default function LocationPage() {
 
         </div>
 
+        {/* Live Interactive Google Map */}
+        <div className="p-8 md:p-12 rounded-[2.5rem] bg-[#05140D] border border-white/10 shadow-2xl mb-16">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-6">
+            <div>
+              <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-1">Live Satellite & Street Navigation</span>
+              <h3 className="font-serif text-2xl md:text-3xl text-white">Interactive Site Location</h3>
+              <p className="text-white/60 text-xs font-light mt-1">Directly accessible via Sinhgad Road & Mutha Riverfront, Vadgaon Khurd, Pune 411041</p>
+            </div>
+            <a 
+              href="https://www.google.com/maps/place/The+Reserve+by+Kolte+Patil/@18.4622871,73.8013712,15z/data=!4m6!3m5!1s0x3bc29503207d73ff:0xbcace0773986e884!8m2!3d18.4622871!4d73.8013712!16s%2Fg%2F11ywbwz1k0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-[#d4af37] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white transition-colors shrink-0 shadow-lg"
+            >
+              Get Turn-by-Turn Directions 📍
+            </a>
+          </div>
+          <div className="w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden border border-white/10 shadow-inner bg-[#0B2B1B]">
+            <iframe
+              title="Interactive Location Map - The Reserve by Kolte Patil"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1645856417725!2d73.8013712!3d18.4622871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29503207d73ff%3A0xbcace0773986e884!2sThe%20Reserve%20by%20Kolte%20Patil!5e0!3m2!1sen!2sin!4v1719700000000!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full filter contrast-[1.05] brightness-[0.95]"
+            />
+          </div>
+        </div>
+
         {/* Future Growth Catalysts */}
         <div className="p-10 md:p-12 rounded-[2.5rem] bg-[#05140D] border border-[#d4af37]/30 shadow-2xl mb-12">
           <span className="text-[#d4af37] text-xs uppercase tracking-widest font-bold block mb-2">Infrastructure Growth & Commute</span>

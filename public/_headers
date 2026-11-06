@@ -62,6 +62,26 @@
   Cache-Control: public, max-age=86400, stale-while-revalidate=86400
   Content-Type: application/manifest+json; charset=utf-8
 
+/rss.xml
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Content-Type: application/rss+xml; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/feed.xml
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Content-Type: application/atom+xml; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/koltepatilthereserve2026.txt
+  Cache-Control: public, max-age=86400, stale-while-revalidate=86400
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/kolte-patil-the-reserve-brochure.pdf
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Content-Type: application/pdf
+  Content-Disposition: inline; filename="kolte-patil-the-reserve-brochure.pdf"
+
 /llms.txt
   Cache-Control: public, max-age=86400, stale-while-revalidate=86400
   Content-Type: text/markdown; charset=utf-8
